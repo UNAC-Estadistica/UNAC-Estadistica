@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-md-10 text-justify">
+    {{ content }}
+  </div>
+  <div class="col-md-2">
+    <div class="list-group">
+      {% for clase in site.pages %}
+        {% if clase.clase and clase.curso == page.curso %}
+          <a href="{{ clase.url }}" class="list-group-item {% if clase.url == page.url %}active{% endif %}">
+            <h4 class="list-group-item-heading">Clase {{ clase.clase }}</h4>
+            <p class="list-group-item-text">{{ clase.title }}</p>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

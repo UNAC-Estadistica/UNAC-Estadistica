@@ -1,6 +1,6 @@
 ---
-layout: page
-title: About
+layout: curso
+title: Acerca de
 permalink: /about/
 ---
 
