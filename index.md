@@ -5,7 +5,7 @@ order: 00
 ---
 
 
-- [video](VID-20150302-WA0000.mp4){:target="_blank"}
+- [video para meditar](VID-20150302-WA0000.mp4){:target="_blank"}
     
     
      
