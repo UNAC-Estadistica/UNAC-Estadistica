@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>Resultado de PSPP</TITLE>
+<META NAME="generator" CONTENT="GNU pspp 0.8.4">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<STYLE TYPE="text/css">
+<!--
+body {
+  background: white;
+  color: black;
+  padding: 0em 12em 0em 3em;
+  margin: 0
+}
+body>p {
+  margin: 0pt 0pt 0pt 0em
+}
+body>p + p {
+  text-indent: 1.5em;
+}
+h1 {
+  font-size: 150%;
+  margin-left: -1.33em
+}
+h2 {
+  font-size: 125%;
+  font-weight: bold;
+  margin-left: -.8em
+}
+h3 {
+  font-size: 100%;
+  font-weight: bold;
+  margin-left: -.5em }
+h4 {
+  font-size: 100%;
+  margin-left: 0em
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  color: blue
+}
+html {
+  margin: 0
+}
+code {
+  font-family: sans-serif
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em
+}
+th { background: #dddddd; font-weight: normal; font-style: oblique }
+caption {
+  text-align: left
+}
+-->
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" TEXT="#000000"
+ LINK="#1f00ff" ALINK="#ff0000" VLINK="#9900dd">
+<DIV class="GET_DATA"><H3>GET DATA</H3>
+<PRE class="syntax">GET DATA<BR>  /TYPE=TXT<BR>  /FILE=&quot;/home/kenneth/Dropbox/sem201501/unac/estadistica/circulos2/Muestra_Kenneth.csv&quot;<BR>  /IMPORTCASES=ALL<BR>  /ARRANGEMENT=DELIMITED<BR>  /DELCASE=LINE<BR>  /FIRSTCASE=2<BR>  /DELIMITERS=&quot;;&quot;<BR>  /VARIABLES=<BR>    Nombre A9<BR>    NumCirculo F3.0<BR>    Diametro F3.1.<BR></PRE>
+<DIV class="FREQUENCIES"><H3>FREQUENCIES</H3>
+<PRE class="syntax">FREQUENCIES<BR>	/VARIABLES= Diametro<BR>	/FORMAT=AVALUE TABLE<BR>	/STATISTICS=ALL<BR>	/HISTOGRAM=NONORMAL.<BR></PRE>
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Diametro</CAPTION>
+  <TR>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Etiqueta de Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Frecuencia</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje Válido</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: thin solid"><EM>Porcentaje Acumulado</EM></TH>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">,4</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">3</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">10,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">10,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: thin solid">10,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">,9</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">11</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">36,67</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">36,67</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">46,67</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1,4</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">9</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">30,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">30,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">76,67</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1,8</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">4</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">13,33</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">13,33</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">90,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">2,7</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">2</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">6,67</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">6,67</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">96,67</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">3,6</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">3,33</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">3,33</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">100,00</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT" COLSPAN="2" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid"><EM>Total</EM></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">30</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid; border-right: thin solid"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Diametro</CAPTION>
+  <TR>
+    <TD STYLE="border-top: thin solid; border-left: thin solid"><EM>N</EM></TD>
+    <TD STYLE="border-top: thin solid"><EM>Válido</EM></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: thin solid">30</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD><EM>Perdidos</EM></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">0</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"><EM>Media</EM></TD>
+    <TD></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">1,33</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"><EM>Err.Est.Media</EM></TD>
+    <TD></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">,13</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"><EM>Modo</EM></TD>
+    <TD></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">,90</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"><EM>Desv Std</EM></TD>
+    <TD></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">,71</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"><EM>Varianza</EM></TD>
+    <TD></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">,50</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"><EM>Curtosis</EM></TD>
+    <TD></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">2,87</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"><EM>Err.Est.Curt.</EM></TD>
+    <TD></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">,83</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"><EM>Asimetría</EM></TD>
+    <TD></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">1,47</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"><EM>Err.Est.Asim.</EM></TD>
+    <TD></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">,43</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"><EM>Intervalo</EM></TD>
+    <TD></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">3,20</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"><EM>Mínimo</EM></TD>
+    <TD></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">,40</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"><EM>Máximo</EM></TD>
+    <TD></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">3,60</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"><EM>Suma</EM></TD>
+    <TD></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">39,90</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-bottom: thin solid; border-left: thin solid"></TD>
+    <TD STYLE="border-bottom: thin solid">50 (Mediana)</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: thin solid; border-left: thin solid; border-right: thin solid">1,4</TD>
+  </TR>
+</TBODY></TABLE>
+
+<IMG SRC="Frecuencias_Diametros-1.png" ALT="Chart: Diametro"></BODY>
+</HTML>
+<!-- end of file -->
