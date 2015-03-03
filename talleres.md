@@ -49,7 +49,7 @@ order: 02
   * Análisis descriptivo de la variable de díametros.
   * Determinar si la distribución podría ser normal o no.
   
-- Fecha de entrega: Lunes 10 de marzo de 2015 antes de las 23:59 hora de
+- Fecha de entrega: Martes 10 de marzo de 2015 antes de las 23:59 hora de
   Colombia al correo **krcabrer@unac.edu.co**.
   
   
