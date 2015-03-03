@@ -6,6 +6,7 @@ order: 02
 
 ### Seguimiento 
 
+#### Taller 1
 - Entrega de la base de datos de los tiempos de reacción en formato de PSPP (formato **.sav**).
      
   Fecha de entega: 27 de febrero de 2015 antes de las 17:59 hora de Colombia.
@@ -23,7 +24,8 @@ order: 02
   - Puesto1
      
   - Puesto2
-   
+
+#### Taller 2
 - Entrega de la base de datos del muestreo con 30 datos de los círculos. (Formato **.xlsx**)
   
   Fecha de entega: 27 de febrero de 2015 antes de las 17:59 hora de Colombia.
@@ -36,3 +38,18 @@ order: 02
     
   - Diametro
     
+    
+#### Taller 3
+- Realizar un análisis estadístico descriptivo de la variable
+ de diámetro tomada con los número aleatorios de los círculos.
+ 
+- El trabajo escrito en formato **.pdf** debe tener los siguientes elementos:
+  * Portada.
+  * Objetivo(s).
+  * Análisis descriptivo de la variable de díametros.
+  * Determinar si la distribución podría ser normal o no.
+  
+- Fecha de entrega: Lunes 10 de marzo de 2015 antes de las 23:59 hora de
+  Colombia al correo **krcabrer@unac.edu.co**.
+  
+  
