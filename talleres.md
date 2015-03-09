@@ -1,6 +1,6 @@
 ---
 layout: curso
-title: 'talleres'
+title: 'Talleres'
 order: 02
 ---
 

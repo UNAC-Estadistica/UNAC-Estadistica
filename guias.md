@@ -1,6 +1,6 @@
 ---
 layout: curso
-title: 'guias'
+title: 'Guías'
 order: 03
 ---
 
