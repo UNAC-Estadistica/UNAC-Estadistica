@@ -15,7 +15,7 @@ Mide la posibilidad con la cual pueda ocurrir un evento al realizar un experimen
 Si denotamos $$A$$ por el evento, entonces $$P(A)$$ se asocia a la probabilidad de ese evento.
 
 Por ejemplo si examinamos el estado del tiempo para Medellín y nos dice que a las 11:00 pm de 
-hoy hay una probabilidad del 50% de que llueva entonces escribimos:
+hoy hay una probabilidad del 51% de que llueva entonces escribimos:
 
 $$
 \begin{aligned}
@@ -129,40 +129,82 @@ $$
 ¿Cuál será la probabilidad de que si se toma un grupo de dos personas la una sepa la definición de probabilidad y
 la otra no la sepa?
 
-Si se tiene la distribución de probabilidades en el espacio muestral las probabilidades se calculan utilizando la regla 
-de la suma.
-
 ### Regla de la suma de probabilidades
 
-Si los eventos son mutuamente excluyentes. Es decir que **NO** se pueden suceder los dos al mismo tiempo.
+- Si los eventos son mutuamente excluyentes. Es decir que **NO** se pueden suceder los dos al mismo tiempo.
 
-$$
-P(A \cup B) = P(A) + P(B) 
-$$
+ $$
+ P(A \cup B) = P(A) + P(B) 
+ $$
 
-Si los eventos no son mutuamente excluyentes, entonces la fórmula es:
+- Si los eventos no son mutuamente excluyentes, entonces la fórmula es:
 
 $$
 P(A \cup B) = P(A) + P(B) - P(A \cap B)
 $$
 
 
+- Ejemplos:
+  * Se sabe que en la UNAC el 60% de los estudiantes estudian inglés, y el 20% estudian portugués. Por otro
+    lado se sabe que los que estudian tanto inglés como portugués al mismo tiempo son el 5%. ¿Cuál es la
+    probabilidad de que al tomar un estudiante al azar este estudiando algún idioma ya sea inglés, portugués o ambos?
+
+    En este caso definamos el evento los eventos $$I$$:Estudia inglés, $$P$$: Estudia portugués, luego se está
+    preguntando por $$P(I \cup P)$$. De acuerdo al enunciado $$P(I)=0.6$$, $$P(P)=0.2$$ y $$P(I \cap P) = 0.05$$.
+
+    Debido a que **no** son eventos excluyentes entonces se utilizará la fórmula:
+
+    $$
+    P(A \cup B) = P(A) + P(B) - P(A \cap B)
+    $$
+
+    Entonces para nuestro caso tenemos:
+
+    $$
+    \begin{aligned}
+     P(I \cup P) & = P(I) + P(P) - P(I \cap P) = 0.6 + 0.2 - 0.05 = 0.75 \\
+     P(I \cup P) & = 0.75
+    \end{aligned}
+    $$
+
+    Luego la probabilidad de encontrar al azar un estudiante que al menos esté estudiando un idioma en UNAC es de $$0.75$$.
+
+  * Se sabe que en la UNAC el porcentaje de estudiantes que son de la costa es del 30%, el porcentaje de los llaneros es 
+    del 25%, el porcentaje de santandereanos es del 20% y el del Valle son el 10% y del resto del país el 15%. ¿Cuál es la probabilidad
+    de que al tomar un estudiante al azar este sea de la costa o del Valle?
+
+    En este caso definimos los eventos $$C:$$Ser de La Costa, $$L$$: Ser del Llano, $$S$$: Ser de Santander, $$V:$$ Ser del Valle y
+    $$R:$$ resto del país. Entonces la pregunta es $$P(C \cup V)$$.
+    
+    Como los eventos son mutuamente excluyentes entonces:
+
+    $$
+    \begin{aligned}
+     P(C \cup V) & = P(C) + P(V) = 0.3 + 0.25 = 0.55 \\
+     P(C \cup V) & = 0.55
+    \end{aligned}
+    $$
+    
+    Luego el probabilidad de encontrar al azar un estudiante que sea de La Costa o del Valle es de $$0.55$$.
+  
+    
+
 ### Regla de la probabilidad condicional
 
-Si se quiere calcular la probabilidad de un evento dado que ya sucedió otro evento se calcula como:
+- Si se quiere calcular la probabilidad de un evento dado que ya sucedió otro evento se calcula como:
 
 $$
  P(A | B) = \frac{P(A \cap B}{P(B)}
 $$
 
-Si dos eventos son independientes (el uno no influye en el otro) se tiene que:
+- Si dos eventos son independientes (el uno no influye en el otro) se tiene que:
 
 $$
  P(A \cap B) = P(A) P(B)
 $$
 
 
-Como consecuencia tenemos que si los eventos son independientes, es decir que ninguno dependa del otro entonces:
+- Como consecuencia tenemos que si los eventos son independientes, es decir que ninguno dependa del otro entonces:
 
 $$
  P(A | B) = P(A)
@@ -174,7 +216,10 @@ $$
  P(A \cap B) = P(A | B)P(B) = P(B | A)P(A)
 $$
 
+### Distribución de probabilidades
 
+Si se tiene la distribución de probabilidades en el espacio muestral las probabilidades se calculan utilizando la regla 
+de la suma.
 
 
 
