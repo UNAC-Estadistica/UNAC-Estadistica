@@ -187,7 +187,19 @@ $$
     
     Luego el probabilidad de encontrar al azar un estudiante que sea de La Costa o del Valle es de $$0.55$$.
   
-    
+  * En una comunidad se sabe que el porcentaje que consumen un alimentos altos en grasa
+    o consumen alimentos altos en azúcar o ambos tipos de alimentos es del 80%. 
+    También se sabe que los que consumen altos contenidos en grasa es el 50% y los que
+    consumen altos contenidos de azúcar es del 60%. ¿Qué probabilidad existe que
+    que al seleccionar una persona de esa comunidad consuma tanto alimentos altos en
+    grasa como alimentos con altos contenidos de azúcar?
+
+    En este caso se tiene que $$G:$$ Consume alimentos altos en grasa,
+    $$A:$$ Consumen alimentos con alto contenido de azúcar. Además se menciona
+    que $$P(G) = 0.50$$, $$P(A) = 0.60$$, y $$P(A \cup G)$$. 
+
+    $$
+    $$
 
 ### Regla de la probabilidad condicional
 
