@@ -314,10 +314,10 @@ $$
   * Se sabe que el porcentaje de estudiantes residentes en la UNAC es el 70% de los estudiantes, y
     también se ha establecido que si el estudiante es residente la probabilidad de que tenga un
     promedio mayor a 3.8 es de 80%. ¿Cuál es el porcentaje de estudiantes que son residentes y
-    tiene un promedio mayor de 3.8?
+    tienen un promedio mayor de 3.8?
 
     Definimos a $$R:$$ El estudiante es residente, $$A:$$ El estudiante tiene un promedio alto (mayor a 3.8).
-    Luego tenemos que $$P(R)=0.7$$ y $$P(A|R)=0.8$$.
+    Luego tenemos que $$P(R)=0.7$$ y $$P(A|R)=0.8$$. Se pregunta por $$P(R \cap A)$$.
 
     Al utilizar la fórmula de la probabilidad condicional
 
@@ -325,7 +325,7 @@ $$
     P(A | R) = \frac{P(A \cap R)}{P(R)}
     $$
  
-    se tiene que se conoce $$P(A | R)$$$ y también $$P(R)$$, entonces despejamos a $$P(A \cap R)$$.
+    se tiene que se conoce $$P(A | R)$$ y también $$P(R)$$, entonces despejamos a $$P(A \cap R)$$.
 
     $$
     P(A \cap R) = P(A|R)P(R) = 0.8 \cdot 0.7 = 0.56
