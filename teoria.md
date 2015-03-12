@@ -199,23 +199,54 @@ $$
   * Se ha observado que la distribución de porcentajes de acuerdo al número de salarios mínimos
     mensuales legales  vigentes (SMMLV) ganan los colombianos es:
 
-    | Ingresos en SMMLV | Porcentaje |
-    | ------------------- | ------------ | 
-    | 0 | 7.4% |
-    | (0,0.5] | 21.9% |
-    | (0.5,1] | 25.8% |
-    | (1, 1.5] | 22.7% |
-    | (1.5, $$\infty$$) | 22.2% |
+
+    | Grupo   | Ingresos en SMMLV | Porcentaje |
+    |:--------:|: -------------------:|:------------:| 
+    |1 | 0 | 7.4% |
+    |2 |(0,0.5] | 21.9% |
+    |3 |(0.5,1] | 25.8% |
+    |4 |(1, 1.5] | 22.7% |
+    |5 |(1.5, $$\infty$$) | 22.2% |
+    |Total |  |   100% |
+    {: .table .table-hover}
 
     + ¿Qué probabilidad existe que una persona elegida al azar gane más de 1 SMMLV?
     + ¿Qué probabilidad existe que una persona elegida al azar gane medio o menos SMMLV?
     + ¿Qué probabilidad existe que una persona elegida al azar gane un SMMLV o menos?
     + ¿Qué probabilidad existe que una persona elegida al azar gane algo de salario (distinto de cero)?
 
-    Definamos los eventos $$A_1:$$ Ganar cero SMMLV, $$A_2:$$ Ganar mayor que cero y
-    medio SMMLV, $$A_3:$$ Ganar mayor de medio SMMLV y un SMMLV, $$A_4$$
 
+    Definamos los eventos $$A_1:$$ Ganar cero SMMLV, $$A_2:$$ Ganar más que cero y
+    medio SMMLV, $$A_3:$$ Ganar más de medio SMMLV y un SMMLV, $$A_4:$$ Ganar más de uno SMMLV y
+    uno y medio SMMLV y $$A_5:$$ Ganar más de uno y medio SMMLV.
+
+    En este caso las probabilidades se distribuyen así $$P(A_1)=0.074$$, $$P(A_2)=0.219$$, $$P(A_3)=0.258$$, 
+    $$P(A_4)=0.227$$ y $$P(A_5)=0.222$$ 
+
+    Notemos que los eventos así definidos son mutuamente excluyentes así que se puede verificar que:
+     
+    $$
+    P(A_1 \cup A_2 \cup A_3 \cup A_4 \cup A_5) = P(A_1) + P(A_2) + P(A_3)+ P(A_4)+ P(A_5) = 1
+    $$
     
+    + Para este caso se pregunta $$P(A_4 \cup A_5)$$. Dado que los eventos son mutuamente excluyentes, 
+    entonces $$P(A_4 \cup A_5) = P(A_4) + P(A_5) = 0.227 + 0.222 = 0.449$$. Es decir que el 44.9% de las personas
+    ganan más de un SMMLV.
+
+    + Para este caso se pregunta $$P(A_1 \cup A_2)$$. De nuevo los eventos son mutuamente excluyentes,
+    entonces $$P(A_1 \cup A_2) = P(A_1) + P(A_2) = 0.074 + 0.219 = 0.293$$. Es decir que el 29.3% de las
+    personas ganan medio o menos SMMLV.
+    
+    + En este caso se pregunta por  $$P(A_1 \cup A_2 \cup A_3)$$. Como los eventos son mutuamente excluyentes,
+    entonces $$P(A_1 \cup A_2 \cup A_3) = P(A_1)+ P(A_2) + P(A_3)  = 0.074 + 0.219 + 0.258 = 551$$. Es decir
+    que el 55.1% de las personas ganan un SMMLV o menos. Es decir la mayoría de las personas ganan en Colombia
+    un SMMLV o menos.
+
+    + Se puede resolver este punto similar a los anteriores, pero es más facil realizar el siguiente cálculo.
+    Dado que se tiene $$P(A_1)$$, lo que nos están preguntando es $$P(A_1')$$ y se puede calcular como:
+    $$P(A_1') = 1 - P(A_1) = 1 - 0.074 = 0.926$$. Es decir que el 92.6% de los colombianos reciben algún tipo
+    de ingreso.
+
   * En una comunidad se sabe que el porcentaje que consumen un alimentos altos en grasa
     o consumen alimentos altos en azúcar o ambos tipos de alimentos es del 80%. 
     También se sabe que los que consumen altos contenidos en grasa es el 50% y los que
@@ -247,6 +278,45 @@ $$
     
     Entonces el porcentaje que consume altos contenidos de grasa y simultáneamente altos contenidos de azúcar es del 30%.
 
+  * Las distribuciones de las probabilidades se puede hacer también mediante una fórmula (es más convinientes y
+    es muy usual). Por ejemplo supongamos que $$X$$ es la cantidad de inversión que usted realiza
+    en la bolsa de valores y sólo está permitido invertir, 6, 7, 8 y 9 millones de pesos, y únicamente
+    esas cantidades de manera excluyente. Las probabilidades de obtener una ganancia está dada por la siguiente fórmula:
+
+    $$
+     P(X=x) = \frac{x-5}{10}, x=6,7,8,9 \quad \textrm{Donde } X \textrm{ es el dinero invertido en millones de pesos}.
+    $$
+
+    Es decir si queremos saber con qué probabilidad se gana en la inversión al invertir ocho (8)
+    millones de pesos entonces reemplazamos en la fórmula y obtenemos:
+
+    $$
+     P(X=8) = \frac{8-5}{10} = \frac{3}{10} = 0.3
+    $$
+     
+    Se puede verificar que $$P(X=6 \cup X=7 \cup X=8 \cup X=9) = P(X=6) + P(X=7) + P(X=8) + P(X=9) = 1$$, 
+    debido a que son evento mutuamente excluyentes.
+
+    Se nos puede preguntar ¿Que opción de inversión tiene mayor probabilidad de ganar? ¿Invertir 6, 7 u 8 millones, 
+    en comparación con sólo invertir 9 millones?
+
+    La primera opción es $$P(X=7 \cup X=8)$$ y la segunda opción es $$P(X=9)$$. 
+
+    Para la primera opción:
+
+    $$
+     P(X=7 \cup X=8) = P(X=7) + P(X=8) = 0.2 + 0.3 = 0.5
+    $$
+
+    La segunda opción de inversión es:
+    
+    $$
+     P(X = 9) = 0.4
+    $$
+
+    Luego es mejor invertir ya sea 7 u 8 millones, que invertir sólo  9 millones.
+
+    
 ### Regla de la probabilidad condicional
 
 - Si se quiere calcular la probabilidad de un evento dado que ya sucedió otro evento se calcula como:
