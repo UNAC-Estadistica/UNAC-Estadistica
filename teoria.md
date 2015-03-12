@@ -306,56 +306,77 @@ $$
 
 - Ejemplos:
   * Se tiene que una prueba para verificar si alguien padece de diabetes no es cien por ciento segura y
-    se ha determinado que tiene una probabilidad de equivocarse del 0.02, es decir un 2% de equivocarse o
-    también tiene un 98% de seguridad. Por otro lado se tiene que en una comunidad el 20% de las personas
-    son diabéticas, entonces si tomamos una persona al azar, la probabilidad de que sea diabética es de 0.2.
-    También se ha definido que si la persona es diabética y se le aplica la prueba, la probabilidad de que 
-    la prueba indique que es diabética dado que realmente es diabética es de 0.99. ¿Cuál es la probabilidad
-    de que si dado que la prueba resultó positiva para diabetes, realmente sea diabética?
+    se ha determinado que tiene una probabilidad de indicar diabetes cuando realmente tiene diabetes
+    es del 0.99. También se sabe que la probabilidad de indicar que no tiene diabetes cuando realmente
+    no padece esa enfermedad es de 0.95. Por otro lado se tiene que en una comunidad el 20% de las personas
+    son diabéticas, entonces si tomamos una persona al azar, la probabilidad de que sea diabética es de 0.2. 
+    Se quiere determinar cuál es la probabilidad de que una persona tomada al azar sea diabética dado que la prueba
+    dió positiva para la enfermedad. 
 
     En este caso definamos los eventos: $$D:$$ La persona es diabética, $$R:$$ El resultado de la prueba
-    es positivo para diabetes. Entonces de acuerdo a los datos $$P(D)=0.2$$, $$P(R)=0.98$$, y $$P(R|D)=0.99$$.
+    es positivo para diabetes. Entonces de acuerdo a los datos $$P(R|D)=0.99$$, $$P(R'|D')=0.95$$, $$P(D) = 0.2$$
     Y lo que se pregunta es que $$P(D|R)$$.
 
-    Entonces si partimos de la fórmula de la probabilida condicional entonces se tiene que:
+    Entonces si partimos de la fórmula de la probabilidad condicional entonces se tiene que:
 
     $$
     P(D | R) = \frac{P(D \cap R)}{P(R)}
     $$
     
-    De la fórmula tenemos a $$P(R)$$, pero no se tiene $$P(D \cap R)$$.
-
-    Pero $$P(D \cap R)$$ se puede calcular si utilizamos la misma fórmula de la siguiente manera:
+    En este caso no se conoce ni $$P(D \cap R)$$ ni $$P(R)$$. Pero utilizando la misma fórmula podemos hallar
+    $$P(D \cap R)$$ de la siguiente manera:
 
     $$
-    P(R | D) = \frac{P(R \cap D)}{P(D)}
+    P(R | D) = \frac{P(R \cap D)}{P(D)} = \frac{P(D \cap R)}{P(D)}
     $$
 
-    Porque $$P(R \cap D) = P(D \cap R)$$, además se tiene el dato de $$P(R|D)$$, y el dato de $$P(D)$$, entonces
-    despejamos a $$P(D \cap R)$$ de la siguiente manera:
+    Ya que $$P(D \cap R) = P(R \cap D)$$ entonces despejemos de la anterior fórmula $$P(D \cap R)$$, entonces:
+
+    $$
+    P(D \cap R) = P(R|D)P(D) = 0.99 \cdot 0.2 = 0.198
+    $$
+
+    Sin embargo todavía queda por hallar $$P(R)$$, para este efecto consideremos que toda la población esta sólo
+    en dos posibles estados $$D$$ y $$D'$$ y además son eventos mutuamente excluyentes, es más, también podemos
+    considerar que $$D \cap R$$ y $$D' \cap R$$ también son dos eventos mutuamente excluyentes, que se definirías como:
+    $$D \cap R:$$ La persona es diabética y le dió positivo la prueba y $$D' \cap R:$$ La persona no es diabética
+    y la prueba le dió positiva (por que la prueba no es cien por ciento segura). 
+
+    Note que $$R = (D \cap R) \cup (D' \cap R)$$, y además son dos eventos mutuamente excluyentes $$(D \cap R)$$ y $$(D' \cap R)$$,
+    como se muestra en el siguiente diagrama:
+
+    ![alt text](/teoria/bayes.png "Bayes")
+  
+    Ya hemos calculado $$P(D \cap R)$$, pero falta $$P(D' \cap R)$$.
+
+    Utilizaremos de nuevo la fórmula de probabilidad condicional de la siguiente manera:
+
+    $$
+    P(R|D') = \frac{P(R \cap D')}{P(D')}
+    $$
+
+    En este caso obtenemos a $$P(D')$$ de $$P(D') = 1-P(D)$$, y también a $$P(R|D') = 1 - P(R'|D')$$, porque tenemos
+    tanto a $$P(D)=0.2$$, como a $$=P(R'|D')=0.95$$, entonces $$P(D') = 0.8$$ y $$P(R|D') = 0.05$$, despejando
+    a $$P(R \cap D')$$ que es lo mismo que $$P(D' \cap R)$$, entonces:
+
+    $$
+    P(D' \cap R) = P(R|D') P(D') = 0.05 \cdot 0.8 = 0.04
+    $$
  
-    $$
-    P(D \cap R) = P(R | D)P(D) = 0.99 \cdot 0.2 = 0.198
-    $$
-   
-    Ahora que se tiene $$P(D \cap R) = 0.198$$ entonces tenemos todos los datos para aplicar la primera fórmula
+    Recordemos que  $$(D \cap R)$$ y $$(D' \cap R)$$ son dos eventos mutuamente excluyentes entonces:
 
     $$
-    P(D | R) = \frac{P(D \cap R)}{P(R)} = \frac{0.198}{0.98} \approx 0.202
+    P(R) = P((D \cap R) \cup (D' \cap R)) = P(D \cap R) + P(D' \cap R) = 0.198 + 0.04 = 0.238
     $$
-
-    Es decir que la probabilidad de que realmente sea diabético, dado que la prueba dió positiva es de 0.2, por 
-    lo tanto es bueno hacer más pruebas para verificar si realmente se es diabético.
-
-
     
+    Retomando la fórmula inicial tenemos que:
 
+    $$
+    P(D | R) = \frac{P(D \cap R)}{P(R)} = \frac{0.198}{0.238} = 0.8319328
+    $$
 
-
-
-
-
-
+    Entonces la probabilidad de que una persona elegida al azar tenga diabetes, dado que el resultado de la prueba dió 
+    positivo para diabetes es de aproximadamente 0.83.
 
 
 
