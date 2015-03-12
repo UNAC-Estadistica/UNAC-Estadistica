@@ -144,6 +144,17 @@ P(A \cup B) = P(A) + P(B) - P(A \cap B)
 $$
 
 
+Note que si A es un evento y A' es su complemento o su negación entonces son eventos mutuamente excluyentes y
+además $$P(A) = 1- P(A')$$, porque $$P(A \cup A') = 1$$ porque la probabilidad de que los dos eventos unidos
+ocurran es un evento seguro, porque necesariamente ha ocurrido alguno de los dos.
+
+Por ejemplo definamos el evento $$L:$$ Llueve el día de mañana, entonces $$L'$$ será su complemento y se definirá como
+$$L':$$ No llueve el día de mañana. Entonces el evento $$L \cup L'$$ es el evento que llueve o no nueve en el día
+de mañana, entonces $$P(L \cup L')=1$$, porque es seguro que alguno de los dos ocurra. Además son mutuamente excluyentes
+porque sólo puede ocurrir uno de los dos eventos, no pueden ocurrir los dos al mismo tiempo, es decir $$P(L \cap L')=0$$,
+por que es imposible que al mismo tiempo llueva y no llueva mañana. Entonces si por ejemplo la probabilidad de
+que mañana llueva es del $$P(L)=0.2$$, entonces la probabilidad de que no llueva mañana es de $$P(L')=1-P(L)=1-0.2=0.8$$.
+
 - Ejemplos:
   * Se sabe que en la UNAC el 60% de los estudiantes estudian inglés, y el 20% estudian portugués. Por otro
     lado se sabe que los que estudian tanto inglés como portugués al mismo tiempo son el 5%. ¿Cuál es la
@@ -190,24 +201,59 @@ $$
   * En una comunidad se sabe que el porcentaje que consumen un alimentos altos en grasa
     o consumen alimentos altos en azúcar o ambos tipos de alimentos es del 80%. 
     También se sabe que los que consumen altos contenidos en grasa es el 50% y los que
-    consumen altos contenidos de azúcar es del 60%. ¿Qué probabilidad existe que
-    que al seleccionar una persona de esa comunidad consuma tanto alimentos altos en
-    grasa como alimentos con altos contenidos de azúcar?
+    consumen altos contenidos de azúcar es del 60%. ¿Qué porcentaje de personas consumen
+    simultáneamente tanto altos contenidos de grasa y altos contenidos de azúcar?
 
     En este caso se tiene que $$G:$$ Consume alimentos altos en grasa,
     $$A:$$ Consumen alimentos con alto contenido de azúcar. Además se menciona
-    que $$P(G) = 0.50$$, $$P(A) = 0.60$$, y $$P(A \cup G)$$. 
+    que $$P(G) = 0.50$$, $$P(A) = 0.60$$, y $$P(G \cup A)=0.8$$. Lo que se pregunta por lo tanto es
+    $$P(G \cap A)$$.
+    
+    Dado que los eventos no son mutuamente excluyentes se despejará de la fórmula:
 
     $$
+    P(G \cup A) = P(G) + P(A) - P(G \cap A)
     $$
+
+    el valor de $$P(G \cap A)$$. Es decir:
+
+    $$
+    P(G \cap A) =  P(G) + P(A) - P(G \cup A)
+    $$
+
+    Entonces el resultado será:
+
+    $$
+    P(G \cap A) = P(G) + P(A) - P(G \cup A)  =  0.5 + 0.6 - 0.8 = 0.3
+    $$
+    
+    Entonces el porcentaje que consume altos contenidos de grasa y simultáneamente altos contenidos de azúcar es
+    del 30%.
 
 ### Regla de la probabilidad condicional
 
 - Si se quiere calcular la probabilidad de un evento dado que ya sucedió otro evento se calcula como:
 
 $$
- P(A | B) = \frac{P(A \cap B}{P(B)}
+ P(A | B) = \frac{P(A \cap B)}{P(B)}
 $$
+
+- Ejemplos:
+  * El procentaje de personas que son deshonestos y que no adquieren un buen trabajo es del 20% y por otro
+    lado el porcentaje en general de personas deshonestas se estima en un 60%. ¿Cuál es el porcentaje de personas que
+    no adquieren un buen trabajo dado que son deshonestas?
+    
+    En este caso $$D:$$ La persona es deshonesta, $$N:$$ No tiene un buen trabajo, entonces los datos que nos
+    suministran son $$P(D)=0.6$$ y $$P(N \cap D)=0.2$$, se pregunta entonces por $$P(N|D)$$.
+
+    Al usar la fórmula tenemos que:
+
+    $$
+    P(N | D) = \frac{P(N \cap D)}{P(D)} = \frac{0.2}{0.6} = \frac{1}{3} \approx 0.33
+    $$
+    
+    Luego el procentaje de personas que dado que son deshonestas, no adquieren un buen trabajo es aproximadamente del 33%.
+
 
 - Si dos eventos son independientes (el uno no influye en el otro) se tiene que:
 
@@ -222,16 +268,87 @@ $$
  P(A | B) = P(A)
 $$
 
+- Ejemplos:
+  * Un contador experto en auditoría tiene una probabilidad del 0.9 de encontrar un error en un estado de cuenta,
+    mientras que un contador recién graduado y sin mucha experiencia tiene una probabilidad de encontrar un error en
+    un estado de cuenta de 0.2. La probabilidad de que ambos encuentren un error al revisar el mismo estado de cuenta
+    es de 0.18. ¿Los dos eventos son independientes?
+    
+    En este caso consideremos $$E:$$ El contador experto encuentra un error en un estado de cuenta, y $$R:$$ El contador
+    recién graduado y sin mucha experiencia encuentra un error en un estado de cuenta. Entonces de acuerdo a los datos
+    tenemos que $$P(E)=0.9$$, $$P(R)=0.2$$ y $$P(E \cap R) = 0.18$$.
+
+    Si los eventos son independientes entonces de deberá cumplir que:
+
+    $$
+    P(E \cap R) = P(E) P(R) = 0.9 \cdot 0.2 = 0.18
+    $$
+
+    Entonces observamos que es igual a $$P(E \cap R)$$ dado como dato, por lo tanto los eventos se pueden considerar independientes.
+
+    Otra manera de resolver la situación es calcular $$P(E|R)$$, es decir, dado que el contador recién graduado ha encontrado
+    el error en el estado de cuenta, ¿cuál es la probabilida de que el contador experto también lo haga?
+
+    Entonces utilizaremos la fórmula de la probabilidad condicional
+
+    $$
+    P(E | R) = \frac{P(E \cap R)}{P(R)} = \frac{0.18}{0.2} = 0.9
+    $$
+ 
+    Es claro que $$P(E|R) = P(E) = 0.9$$, es decir que el hecho que uno de los contadores haya encontrado un error
+    en el estado de cuenta es independiente que el otro lo haya encontrado o no.
+
 Pero si los eventos **NO** son independientes entonces
 
 $$
  P(A \cap B) = P(A | B)P(B) = P(B | A)P(A)
 $$
 
-### Distribución de probabilidades
+- Ejemplos:
+  * Se tiene que una prueba para verificar si alguien padece de diabetes no es cien por ciento segura y
+    se ha determinado que tiene una probabilidad de equivocarse del 0.02, es decir un 2% de equivocarse o
+    también tiene un 98% de seguridad. Por otro lado se tiene que en una comunidad el 20% de las personas
+    son diabéticas, entonces si tomamos una persona al azar, la probabilidad de que sea diabética es de 0.2.
+    También se ha definido que si la persona es diabética y se le aplica la prueba, la probabilidad de que 
+    la prueba indique que es diabética dado que realmente es diabética es de 0.99. ¿Cuál es la probabilidad
+    de que si dado que la prueba resultó positiva para diabetes, realmente sea diabética?
 
-Si se tiene la distribución de probabilidades en el espacio muestral las probabilidades se calculan utilizando la regla 
-de la suma.
+    En este caso definamos los eventos: $$D:$$ La persona es diabética, $$R:$$ El resultado de la prueba
+    es positivo para diabetes. Entonces de acuerdo a los datos $$P(D)=0.2$$, $$P(R)=0.98$$, y $$P(R|D)=0.99$$.
+    Y lo que se pregunta es que $$P(D|R)$$.
+
+    Entonces si partimos de la fórmula de la probabilida condicional entonces se tiene que:
+
+    $$
+    P(D | R) = \frac{P(D \cap R)}{P(R)}
+    $$
+    
+    De la fórmula tenemos a $$P(R)$$, pero no se tiene $$P(D \cap R)$$.
+
+    Pero $$P(D \cap R)$$ se puede calcular si utilizamos la misma fórmula de la siguiente manera:
+
+    $$
+    P(R | D) = \frac{P(R \cap D)}{P(D)}
+    $$
+
+    Porque $$P(R \cap D) = P(D \cap R)$$, además se tiene el dato de $$P(R|D)$$, y el dato de $$P(D)$$, entonces
+    despejamos a $$P(D \cap R)$$ de la siguiente manera:
+ 
+    $$
+    P(D \cap R) = P(R | D)P(D) = 0.99 \cdot 0.2 = 0.198
+    $$
+   
+    Ahora que se tiene $$P(D \cap R) = 0.198$$ entonces tenemos todos los datos para aplicar la primera fórmula
+
+    $$
+    P(D | R) = \frac{P(D \cap R)}{P(R)} = \frac{0.198}{0.98} \approx 0.202
+    $$
+
+    Es decir que la probabilidad de que realmente sea diabético, dado que la prueba dió positiva es de 0.2, por 
+    lo tanto es bueno hacer más pruebas para verificar si realmente se es diabético.
+
+
+    
 
 
 
