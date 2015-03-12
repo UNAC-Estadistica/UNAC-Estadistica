@@ -33,6 +33,7 @@ La probabilidad está definida sólo para números reales entre 0 y 1, es decir 
 
 - **Espacio Muestral**: Es el conjunto de todas los posibles resultados de un experimento. Se
   suele denotar por $$S$$.
+
 - **Evento**: Es una subconjunto específico de resultados de un experimento.
   Es un subconjunto del espacio muestral. Se utilizan letras mayúsculas para denotarlo.
 
@@ -89,6 +90,8 @@ $$
     {n \choose {r_1 r_2}} = {c_1 \choose r_1} \cdot {c_2 \choose r_1}
   \end{aligned}
   $$
+
+  Esta fórmula también se puede extender para cuando se tengan más de dos clases.
   
   En nuestro ejemplo el número total de grupos de dos personas que se pueden formar del grupo de diez personas es:
 
@@ -192,7 +195,27 @@ $$
     $$
     
     Luego el probabilidad de encontrar al azar un estudiante que sea de La Costa o del Valle es de $$0.55$$.
-  
+
+  * Se ha observado que la distribución de porcentajes de acuerdo al número de salarios mínimos
+    mensuales legales  vigentes (SMMLV) ganan los colombianos es:
+
+    | Ingresos en SMMLV | Porcentaje |
+    | ------------------- | ------------ | 
+    | 0 | 7.4% |
+    | (0,0.5] | 21.9% |
+    | (0.5,1] | 25.8% |
+    | (1, 1.5] | 22.7% |
+    | (1.5, $$\infty$$) | 22.2% |
+
+    + ¿Qué probabilidad existe que una persona elegida al azar gane más de 1 SMMLV?
+    + ¿Qué probabilidad existe que una persona elegida al azar gane medio o menos SMMLV?
+    + ¿Qué probabilidad existe que una persona elegida al azar gane un SMMLV o menos?
+    + ¿Qué probabilidad existe que una persona elegida al azar gane algo de salario (distinto de cero)?
+
+    Definamos los eventos $$A_1:$$ Ganar cero SMMLV, $$A_2:$$ Ganar mayor que cero y
+    medio SMMLV, $$A_3:$$ Ganar mayor de medio SMMLV y un SMMLV, $$A_4$$
+
+    
   * En una comunidad se sabe que el porcentaje que consumen un alimentos altos en grasa
     o consumen alimentos altos en azúcar o ambos tipos de alimentos es del 80%. 
     También se sabe que los que consumen altos contenidos en grasa es el 50% y los que
