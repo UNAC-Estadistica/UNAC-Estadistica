@@ -229,21 +229,21 @@ $$
 - Si se quiere calcular la probabilidad de un evento dado que ya sucedió otro evento se calcula como:
 
    $$
-    P(A | B) = \frac{P(A \cap B)}{P(B)}
+    P(A / B) = \frac{P(A \cap B)}{P(B)}
    $$
 
 - Ejemplo:
-  * El procentaje de personas que son deshonestos y que no adquieren un buen trabajo es del 20% y por otro
+  * El porcentaje de personas que son deshonestos y que no adquieren un buen trabajo es del 20% y por otro
     lado el porcentaje en general de personas deshonestas se estima en un 60%. ¿Cuál es el porcentaje de personas que
     no adquieren un buen trabajo dado que son deshonestas?
     
     En este caso $$D:$$ La persona es deshonesta, $$N:$$ No tiene un buen trabajo, entonces los datos que nos
-    suministran son $$P(D)=0.6$$ y $$P(N \cap D)=0.2$$, se pregunta entonces por $$P(N|D)$$.
+    suministran son $$P(D)=0.6$$ y $$P(N \cap D)=0.2$$, se pregunta entonces por $$P(N/D)$$.
 
     Al usar la fórmula tenemos que:
 
     $$
-    P(N | D) = \frac{P(N \cap D)}{P(D)} = \frac{0.2}{0.6} = \frac{1}{3} \approx 0.33
+    P(N / D) = \frac{P(N \cap D)}{P(D)} = \frac{0.2}{0.6} = \frac{1}{3} \approx 0.33
     $$
     
     Luego el procentaje de personas que dado que son deshonestas, no adquieren un buen trabajo es aproximadamente del 33%.
@@ -258,7 +258,7 @@ $$
 - Como consecuencia tenemos que si los eventos son independientes, es decir que ninguno dependa del otro entonces:
 
   $$
-   P(A | B) = P(A)
+   P(A / B) = P(A)
   $$
 
 - Ejemplo:
@@ -279,22 +279,22 @@ $$
 
     Entonces observamos que es igual a $$P(E \cap R)$$ dado como dato, por lo tanto los eventos son independientes.
 
-    Otra manera de resolver la situación es calcular $$P(E|R)$$, es decir, dado que el contador recién graduado ha encontrado
+    Otra manera de resolver la situación es calcular $$P(E/R)$$, es decir, dado que el contador recién graduado ha encontrado
     el error en el estado de cuenta, ¿cuál es la probabilida de que el contador experto también lo haga?
 
     Entonces utilizaremos la fórmula de la probabilidad condicional
 
     $$
-    P(E | R) = \frac{P(E \cap R)}{P(R)} = \frac{0.18}{0.2} = 0.9
+    P(E / R) = \frac{P(E \cap R)}{P(R)} = \frac{0.18}{0.2} = 0.9
     $$
  
-    Es claro que $$P(E|R) = P(E) = 0.9$$, es decir que el hecho que uno de los contadores haya encontrado un error
+    Es claro que $$P(E/R) = P(E) = 0.9$$, es decir que el hecho que uno de los contadores haya encontrado un error
     en el estado de cuenta es independiente que el otro lo haya encontrado o no.
 
 Pero si los eventos **no son independientes** entonces
 
 $$
- P(A \cap B) = P(A | B)P(B) = P(B | A)P(A)
+ P(A \cap B) = P(A / B)P(B) = P(B / A)P(A)
 $$
 
 - Ejemplos:
@@ -303,32 +303,32 @@ $$
     de que el estudiante haya estudiado dado que pasó el examen?
 
     En este caso tenemos los eventos $$G:$$ Pasar o ganar el examen, $$E:$$ estudiar para el examen.
-    Entonces $$P(G)=0.8$$ y $$P(G \cap E)=0.75$$, se nos pide $$P(E|G)$$.
+    Entonces $$P(G)=0.8$$ y $$P(G \cap E)=0.75$$, se nos pide $$P(E/G)$$.
 
     $$
-     P(E | G) = \frac{P(G \cap E)}{P(G)} = \frac{0.75}{0.8} = 0.9375 \approx 0.94
+     P(E / G) = \frac{P(G \cap E)}{P(G)} = \frac{0.75}{0.8} = 0.9375 \approx 0.94
     $$
 
     Por lo tanto la probabilidad que el estudiante haya estudiado dado que ganó el examen es de 0.94.
 
   * Se sabe que el porcentaje de estudiantes residentes en la UNAC es el 70% de los estudiantes, y
-    también se ha establecido que si el estudiante es residente la probabilidad de que tenga un
+    también se ha establecido que si el estudiante es residente, la probabilidad de que tenga un
     promedio mayor a 3.8 es de 80%. ¿Cuál es el porcentaje de estudiantes que son residentes y
     tienen un promedio mayor de 3.8?
 
     Definimos a $$R:$$ El estudiante es residente, $$A:$$ El estudiante tiene un promedio alto (mayor a 3.8).
-    Luego tenemos que $$P(R)=0.7$$ y $$P(A|R)=0.8$$. Se pregunta por $$P(R \cap A)$$.
+    Luego tenemos que $$P(R)=0.7$$ y $$P(A/R)=0.8$$. Se pregunta por $$P(R \cap A)$$.
 
-    Al utilizar la fórmula de la probabilidad condicional
-
-    $$
-    P(A | R) = \frac{P(A \cap R)}{P(R)}
-    $$
- 
-    se tiene que se conoce $$P(A | R)$$ y también $$P(R)$$, entonces despejamos a $$P(A \cap R)$$.
+    Al utilizar la fórmula de la probabilidad condicional:
 
     $$
-    P(A \cap R) = P(A|R)P(R) = 0.8 \cdot 0.7 = 0.56
+     P(A/R) = \frac{P(A \cap R)}{P(R)}
+    $$
+    
+    se tiene que se conoce $$P(A/R)$$ y también $$P(R)$$, entonces despejamos a $$P(A \cap R)$$.
+
+    $$
+     P(A \cap R) = P(A/R)P(R) = 0.8 \cdot 0.7 = 0.56
     $$
 
     Por lo tanto el porcentaje de estudiantes que son residentes y tienen un promedio mayor a 3.8 es de 56%
@@ -342,26 +342,26 @@ $$
     dió positiva para la enfermedad. 
 
     En este caso definamos los eventos: $$D:$$ La persona es diabética, $$R:$$ El resultado de la prueba
-    es positivo para diabetes. Entonces de acuerdo a los datos $$P(R|D)=0.99$$, $$P(R'|D')=0.95$$, $$P(D) = 0.2$$
-    Y lo que se pregunta es que $$P(D|R)$$.
+    es positivo para diabetes. Entonces de acuerdo a los datos $$P(R/D)=0.99$$, $$P(R'/D')=0.95$$, $$P(D) = 0.2$$
+    Y lo que se pregunta es que $$P(D/R)$$.
 
     Entonces si partimos de la fórmula de la probabilidad condicional entonces se tiene que:
 
     $$
-    P(D | R) = \frac{P(D \cap R)}{P(R)}
+    P(D / R) = \frac{P(D \cap R)}{P(R)}
     $$
     
     En este caso no se conoce ni $$P(D \cap R)$$ ni $$P(R)$$. Pero utilizando la misma fórmula podemos hallar
     $$P(D \cap R)$$ de la siguiente manera:
 
     $$
-    P(R | D) = \frac{P(R \cap D)}{P(D)} = \frac{P(D \cap R)}{P(D)}
+    P(R / D) = \frac{P(R \cap D)}{P(D)} = \frac{P(D \cap R)}{P(D)}
     $$
 
     Ya que $$P(D \cap R) = P(R \cap D)$$ entonces despejemos de la anterior fórmula $$P(D \cap R)$$, entonces:
 
     $$
-    P(D \cap R) = P(R|D)P(D) = 0.99 \cdot 0.2 = 0.198
+    P(D \cap R) = P(R/D)P(D) = 0.99 \cdot 0.2 = 0.198
     $$
 
     Sin embargo todavía queda por hallar $$P(R)$$, para este efecto consideremos que toda la población esta sólo
@@ -380,15 +380,15 @@ $$
     Utilizaremos de nuevo la fórmula de probabilidad condicional de la siguiente manera:
 
     $$
-    P(R|D') = \frac{P(R \cap D')}{P(D')}
+    P(R/D') = \frac{P(R \cap D')}{P(D')}
     $$
 
-    En este caso obtenemos a $$P(D')$$ de $$P(D') = 1-P(D)$$, y también a $$P(R|D') = 1 - P(R'|D')$$, porque tenemos
-    tanto a $$P(D)=0.2$$, como a $$=P(R'|D')=0.95$$, entonces $$P(D') = 0.8$$ y $$P(R|D') = 0.05$$, despejando
+    En este caso obtenemos a $$P(D')$$ de $$P(D') = 1-P(D)$$, y también a $$P(R/D') = 1 - P(R'/D')$$, porque tenemos
+    tanto a $$P(D)=0.2$$, como a $$=P(R'/D')=0.95$$, entonces $$P(D') = 0.8$$ y $$P(R/D') = 0.05$$, despejando
     a $$P(R \cap D')$$ que es lo mismo que $$P(D' \cap R)$$, entonces:
 
     $$
-    P(D' \cap R) = P(R|D') P(D') = 0.05 \cdot 0.8 = 0.04
+    P(D' \cap R) = P(R/D') P(D') = 0.05 \cdot 0.8 = 0.04
     $$
  
     Recordemos que  $$(D \cap R)$$ y $$(D' \cap R)$$ son dos eventos mutuamente excluyentes entonces:
@@ -400,7 +400,7 @@ $$
     Retomando la fórmula inicial tenemos que:
 
     $$
-    P(D | R) = \frac{P(D \cap R)}{P(R)} = \frac{0.198}{0.238} = 0.8319328
+    P(D / R) = \frac{P(D \cap R)}{P(R)} = \frac{0.198}{0.238} = 0.8319328
     $$
 
     Entonces la probabilidad de que una persona elegida al azar tenga diabetes, dado que el resultado de la prueba dió 
