@@ -127,6 +127,29 @@ $$
 
   ¿Cuál será la probabilidad de que si se toma un grupo de dos personas la una sepa la definición de probabilidad y la otra no la sepa?
 
+   Ejemplo 3: Si un carro nuevo está disponible en tres colores (rojo, azul y gris) con posibilidad de
+   dos motores diferentes (M1 y M2). Si selecciono a azar dos combinaciones, ¿cuál es la probabilidad
+   de que escoja un carro gris con el motor M2 o un carro azul con el motor M1?
+
+   En este caso debo contar el número de posibles combinaciones, que son tres tipos colores y 
+   por cada color, dos tipos de motores, luego el total de posibilidades son $$3 \times 2$$.
+
+   El evento que me están preguntado tiene dos combinaciones: color gris con motor M2 o motor azul con
+   motor M1. $$E = \{ \textrm{gris-M2}, \textrm{azul-M1} \}$$.
+
+   Siguiendo la regla de las probabilidades tenemos que
+ 
+   $$
+   \begin{aligned}
+    P(E) = \frac{\textrm{Total de resultados favorables a E}}{\textrm{Total de resultados del espacio muestral S}}
+      = \frac{2}{6} = \frac{1}{3} \approx 0.33
+   \end{aligned}
+   $$
+   
+   Es decir que la probabilidad de que un carro elejido al azar sea un carro gris con motor M2 o un
+   carro azul con motor M1 es de aproximadamente 0.33.
+
+
 ### Regla de la suma de probabilidades
 
 - Si los eventos son mutuamente excluyentes. Es decir que **NO** se pueden suceder los dos al mismo tiempo.
@@ -294,7 +317,7 @@ $$
      P(X=8) = \frac{8-5}{10} = \frac{3}{10} = 0.3
     $$
      
-    Se puede verificar que $$P(X=6 \cup X=7 \cup X=8 \cup X=9) = P(X=6) + P(X=7) + P(X=8) + P(X=9) = 1$$, 
+    Se puede verificar que $$P(X=6 \cup X=7 \cup X=8 \cup X=9)$$ $$= P(X=6) + P(X=7) + P(X=8) + P(X=9)$$ $$= 1$$, 
     debido a que son evento mutuamente excluyentes.
 
     Se nos puede preguntar ¿Que opción de inversión tiene mayor probabilidad de ganar? ¿Invertir 6, 7 u 8 millones, 
