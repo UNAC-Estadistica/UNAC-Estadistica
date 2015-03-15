@@ -1,9 +1,9 @@
----
+<!---
 layout: curso
-title: 'Ejercicios'
-order: 05
+title: 'Soluciones'
+order: 06
 custom_js: 'mathjax'
----
+--->
 
 ## Probabilidad
 
@@ -14,27 +14,27 @@ custom_js: 'mathjax'
 
    ¿Si un estudiante elije al azar de todas las posibilidades de 
    combinación de sopa y ensalada, ¿Cuál es la probabilidad de que
-   tenga una combinación donde la ensalada tenga tomate y la sopa
+   tenga una combinación donde la ensalada tenga tomata y la sopa
    sea de fríjol?
 
 2. Josué tiene cuatro opciones de flores para regalar a la novia,
-   una rosa roja, un clavel rojo, un pompón amarillo o un girasol, y
-   tiene cuatro opciones de tarjetas: una comparada en una papelería,
+   una rosa roja, un clavel rojo, un ponpón amarillo o un girasól, y
+   tiene cuatro opciones de tarjetas una comparada en una papelería,
    otra comprada en el Éxito, otra elaborada
-   por una amiga que hace tarjetas a mano u otra elaborada por él mismo. 
+   por una amiga que hace tarjetas a mano u otras elaborada por él mismo. 
 
    Si Josué toma una de las opciones al azar para regalar una flor y
    una tarjeta ¿Qué probabilidad hay que la combinación se una flor
    de color rojo y una tarjeta elaborada?
 
-3. Si la respuesta correcta de un exámen tipo ECAES es una sóla,
+3. Si la respuesta de un exámen tipo ECAES es una sóla la correcta 
    de 5 posibilidades. ¿Cuál es la probabilidad de que un estudiante
-   acierte la respuesta correcta por  azar?
+   acierte la respuesta correcta por puro azar?
 
 4. Si se hace un exámen de una sola pregunta a un grupo de estudiantes
    y esta pregunta de cuatro posibles respuestas, sólo una es correcta.
    Y todos y cada uno de los estudiantes eligen al azar una respuesta.
-   ¿Qué porcentaje de los estudiantes se espera que acierten la respuesta?
+  ¿Qué porcentaje de los estudiantes se espera que acierten la respuesta?
 
 5. En un quiz de cinco preguntas, y cada pregunta tiene dos posibles 
    respuestas (de falso y verdadero). ¿Qué probabilidad tiene el estudiante
@@ -44,7 +44,7 @@ custom_js: 'mathjax'
    bíblico para estudiar en UNAC. Los finalistas fueron: Cecilia, Camila,
    Alberto, Carlos y Abner. ¿Cuál es la probabilidad, si todos los cinco
    finalistas tiene la misma probabilidad de ocupar el primero y segundo 
-   lugar, de que las becas sean para personas cuyos nombres empiecen por la letra C.
+   lugar de que las becas sean para personas cuyos nombres por la letra C.
 
 7. ¿Qué probabilidad existe que una persona se gane un "baloto" que
    acierte escoger 5 números de 15 números posibles, sin importar el orden?
@@ -76,55 +76,20 @@ custom_js: 'mathjax'
     esposa en su billetera. ¿Cuál es la probabilidad de econtrar un
     hombre que sólo tenga diez o más de diez mil pesos en su billetera,
     pero no tenga la foto de la novia o la esposa? (Supongamos que 
-    los eventos son independientes).
+    los eventos son independientes)
 
-12. La siguiente tabla muestra el número de accidentes donde se 
-    muestra el género del conductor y la cantidad de accidentes:
-     
-    |       | Hombres | Mujeres |
-    |:----------|:----------|:-----------|
-    | Accidentados | 10000    | 7000 |
-    | No accidentados | 40000 | 28000 |
-    {: .table .table-hover}
-  
-    Encuentre la probabilidad de que dado que sea una mujer,
-    ella se haya accidentado. También encuentre la probabilidad,
-    en general, de que una persona (sea hombre o mujer) se accidente.
-    Encuentre también la probabilidad de que un conductor sea hombre
-    o mujer si lo elegimos al azar dentro de la población.
-    
-    ¿Qué puede concluir de esos resultados? ¿Es independiente
-    el del género el la cantidad de accidentes?
-
-13. Si la probabilidad de que un estudiantes gane un parcial dado que
+12. Si la probabilidad de que un estudiantes gane un parcial dado que
     estudió es del 0.95, y que la probabilidad de que pierda un 
     parcial dado que no estudió nada es de 0.99. También se sabe que
     el 20% de un salón no estudia para un parcial.
     ¿Cuál es la probabilidad de que un estudiante realmente haya
     estudiado dado que ganó el examen?
 
-14. En un examen se tienen dos preguntas.
-    La probabilidad de que un estudiante responda correctamente la primera
-    pregunta dado que contestó bien la segunda pregunta es de 0.9, y
-    la probabilidad de que contestó bien la segunda pregunta dado que
-    contestó bien la primera es de 0.8.
-    - ¿Son independientes las probabilidades de que conteste una
-    pregunta con relación a la otra? ¿Por qué si o por qué no?
-    - Si la probabilidad de que el estudiante contesta bien ambas preguntas
-    es de 0.79. ¿Qué porcentaje de los estudiantes contestarán bien la
-    primera pregunta? ¿Qué porcentaje de los estudiantes contestarán bien
-    la segunda pregunta?
+    Sean los eventos: $$G:$$ Ganar el examen. $$E:$$ Estudiar para el examen.
+    Entonces los datos son $$P(G/E) =0.95$$, $$P(G'/E') = 0.99$$, y p(E')=0.2.
+    Nos pregutan por $$P(E/G)$$.
 
-15. Se tienen dos tipos de examen:
-    - Un examen de cinco preguntas falso y verdadero. ¿Cual es la probabilidad
-    de ganar el examen si contesta todas la preguntas al azar?
-    - Un examen de cinco preguntas y cada pregunta tiene tres opciones,
-    de las cuales solo una es correcta.
-    ¿Cuál es la probabilidad de ganar el examen si se contesta todas las 
-    preguntas al azar?
-
-
-
+    
 
 
 
