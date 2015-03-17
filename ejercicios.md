@@ -24,7 +24,7 @@ custom_js: 'mathjax'
    por una amiga que hace tarjetas a mano u otra elaborada por él mismo. 
 
    Si Josué toma una de las opciones al azar para regalar una flor y
-   una tarjeta ¿Qué probabilidad hay que la combinación se una flor
+   una tarjeta ¿Qué probabilidad hay que la combinación sea una flor
    de color rojo y una tarjeta elaborada?
 
 3. Si la respuesta correcta de un exámen tipo ECAES es una sóla,
