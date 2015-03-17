@@ -52,7 +52,7 @@ custom_js: 'mathjax'
 8. Un contador tiene tres posibilidades de aplicar a un trabajo, una
    posibilidad con una empresa  grande, otra posibilidad de trabajo con una empresa mediana
    o trabajar independiente.  Los sueldos o entradas que
-   esperaría tener serían: 3 SMMLV, 3.5 SMMLV, 4 SMMLV  o 4 SMMLV. Si el contador 
+   esperaría tener serían: 3 SMMLV, 3.5 SMMLV, 4 SMMLV  o 4.5 SMMLV. Si el contador 
    quiere un trabajo con 4 o más SMMLV y que sea con una empresa ya sea
    grande o mediana y se le asigna al azar una combinación de tipo de trabajo y
    sueldo. ¿Cuál es la probabilidad que la combinación elejida sea la de su preferencia?
