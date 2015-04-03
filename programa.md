@@ -19,7 +19,7 @@ order: 01
 ### Unidad 3: Estadística descriptiva: Medidas de tendencia central, de posición, de distribución y de asimetría.
  1. Medidas descriptivas:   tendencia central, de posición, de dispersión, de distribución y asimetría para datos no agrupados.
  2. Medidas descriptivas:   tendencia central, de posición, de dispersión, de distribución y asimetría para datos  agrupados.
- 3. Aplicaciones en PSPP Statistics.
+ 3. Aplicaciones en PSPP.
 
 ### Unidad 4: Cálculo de probabilidades y muestreo.
  1. Probabilidades, conteo, y análisis combinatorio.
