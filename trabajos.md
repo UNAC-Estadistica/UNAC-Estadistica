@@ -4,9 +4,9 @@ title: 'Trabajos'
 order: 03
 ---
 
-### Seguimiento (Trabajos)
+## Seguimiento (Trabajos)
     
-#### Trabajo 1
+### Trabajo 1 (Individual)
 - Realizar un análisis estadístico descriptivo de la variable
  de diámetro tomada con los número aleatorios de los círculos.
  
@@ -24,4 +24,6 @@ order: 03
 - Fecha de entrega: Martes 10 de marzo de 2015 antes de las 23:59 hora de
   Colombia al correo **krcabrer@unac.edu.co**.
   
-  
+
+
+
