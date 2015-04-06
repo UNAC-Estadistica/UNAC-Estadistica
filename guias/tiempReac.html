@@ -1,0 +1,1462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>Resultado de PSPP</TITLE>
+<META NAME="generator" CONTENT="GNU pspp 0.8.4">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<STYLE TYPE="text/css">
+<!--
+body {
+  background: white;
+  color: black;
+  padding: 0em 12em 0em 3em;
+  margin: 0
+}
+body>p {
+  margin: 0pt 0pt 0pt 0em
+}
+body>p + p {
+  text-indent: 1.5em;
+}
+h1 {
+  font-size: 150%;
+  margin-left: -1.33em
+}
+h2 {
+  font-size: 125%;
+  font-weight: bold;
+  margin-left: -.8em
+}
+h3 {
+  font-size: 100%;
+  font-weight: bold;
+  margin-left: -.5em }
+h4 {
+  font-size: 100%;
+  margin-left: 0em
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  color: blue
+}
+html {
+  margin: 0
+}
+code {
+  font-family: sans-serif
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em
+}
+th { background: #dddddd; font-weight: normal; font-style: oblique }
+caption {
+  text-align: left
+}
+-->
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" TEXT="#000000"
+ LINK="#1f00ff" ALINK="#ff0000" VLINK="#9900dd">
+<DIV class="GET"><H3>GET</H3>
+<PRE class="syntax">GET FILE=&quot;/home/kenneth/Dropbox/sem201501/unac/tiemposReaccion/tiemposReaccion.sav&quot;.<BR></PRE>
+<DIV class="EXAMINE"><H3>EXAMINE</H3>
+<PRE class="syntax">EXAMINE <BR>	/VARIABLES= Tiempo1 Tiempo2<BR>	BY  Genero<BR>	/ID = Nombre<BR>	/STATISTICS = DESCRIPTIVES EXTREME<BR>	/PERCENTILES<BR>	/MISSING=LISTWISE.<BR></PRE>
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Resumen del proceso de casos</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH ALIGN="CENTER" COLSPAN="6" STYLE="border-top: double; border-left: double; border-right: double"><EM>Casos</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: thin solid; border-left: double"><EM>Válido</EM></TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: thin solid; border-left: thin solid"><EM>Perdidos</EM></TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: thin solid; border-left: thin solid; border-right: double"><EM>Total</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: double"><EM>N</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>N</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>N</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: double"><EM>Porcentaje</EM></TH>
+  </TR>
+  <TR>
+    <TH ALIGN="RIGHT" STYLE="border-top: double; border-left: double"><EM>Tiempo del primer intento</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: double">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">100%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">0%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">100%</TD>
+  </TR>
+  <TR>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid; border-bottom: double; border-left: double"><EM>Tiempo del segundo intento</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-bottom: double; border-left: double">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-bottom: double; border-left: thin solid">100%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-bottom: double; border-left: thin solid">0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-bottom: double; border-left: thin solid">0%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-bottom: double; border-left: thin solid">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-bottom: double; border-left: thin solid; border-right: double">100%</TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Valores extremos</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: double"><EM>Nombre del estudiante</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid; border-right: double"><EM>Valor</EM></TH>
+  </TR>
+  <TR>
+    <TH ALIGN="RIGHT" STYLE="border-top: double; border-left: double"><EM>Tiempo del primer intento</EM></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: double">Máximo</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: double">1</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: double">Francys     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">341</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">2</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Lily        </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">331</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">3</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Darcy       </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">310</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">4</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Annet       </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">300</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">5</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Aracellys   </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">294</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">Mínimo</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">1</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">Andrey      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">244</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">2</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Moises      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">244</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">3</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Sheylla     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">253</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">4</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Juan C      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">264</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">5</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Jonshon     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">265</TD>
+  </TR>
+  <TR>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double"><EM>Tiempo del segundo intento</EM></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">Máximo</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">1</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">Lily        </TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">346</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">2</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Francys     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">338</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">3</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Dina        </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">329</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">4</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Miguel      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">300</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">5</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Juan D      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">280</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">Mínimo</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">1</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">Moises      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">234</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">2</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Jonshon     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">241</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">3</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Laura       </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">243</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">4</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Sheylla     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">254</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-bottom: double; border-left: double"></TH>
+    <TH STYLE="border-bottom: double"></TH>
+    <TH ALIGN="RIGHT" STYLE="border-bottom: double">5</TH>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: double">Lorena      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid; border-right: double">260</TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Percentiles</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH ALIGN="CENTER" COLSPAN="7" STYLE="border-top: double; border-left: double; border-right: double"><EM>Percentiles</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: double"><EM>5</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>10</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>25</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>50</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>75</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>90</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: double"><EM>95</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"><EM>Tiempo del primer intento</EM></TH>
+    <TH STYLE="border-top: double; border-left: thin solid"><EM>HAverage</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: double">244,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">244,90</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">265,25</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">283,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">293,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">328,90</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">340,50</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH STYLE="border-left: thin solid"><EM>Bisagras de Tukey</EM></TH>
+    <TD STYLE="border-left: double"></TD>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">265,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">283,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">293,00</TD>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double"><EM>Tiempo del segundo intento</EM></TH>
+    <TH STYLE="border-top: thin solid; border-left: thin solid"><EM>HAverage</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">234,35</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">241,20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">260,25</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">271,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">279,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">337,10</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">345,60</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-bottom: double; border-left: double"></TH>
+    <TH STYLE="border-bottom: double; border-left: thin solid"><EM>Bisagras de Tukey</EM></TH>
+    <TD STYLE="border-bottom: double; border-left: double"></TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">260,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">271,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">279,00</TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid"></TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid; border-right: double"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Descriptivos</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: double"><EM>Estadístico</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid; border-right: double"><EM>Error Estándar</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"><EM>Tiempo del primer intento</EM></TH>
+    <TH STYLE="border-top: double">Media</TH>
+    <TH STYLE="border-top: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: double">283,05</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">5,67</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Intervalo de Confianza 95% para la Media</TH>
+    <TH>Límite Inferior</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">271,19</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Límite Superior</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">294,91</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Media recortada al 5%</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">282,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Mediana</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">283,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Varianza</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">642,05</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Desviación Estándar</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">25,34</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Mínimo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">244,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Máximo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">341,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Intervalo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">97,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Intervalo intercuartílico</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">28,25</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Asimetría</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">,59</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">,51</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Curtosis</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">,99</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double"><EM>Tiempo del segundo intento</EM></TH>
+    <TH STYLE="border-top: thin solid">Media</TH>
+    <TH STYLE="border-top: thin solid"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">276,90</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">6,77</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Intervalo de Confianza 95% para la Media</TH>
+    <TH>Límite Inferior</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">262,74</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Límite Superior</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">291,06</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Media recortada al 5%</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">275,44</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Mediana</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">271,50</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Varianza</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">915,67</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Desviación Estándar</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">30,26</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Mínimo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">234,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Máximo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">346,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Intervalo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">112,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Intervalo intercuartílico</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">19,25</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH>Asimetría</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">1,11</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">,51</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-bottom: double; border-left: double"></TH>
+    <TH STYLE="border-bottom: double">Curtosis</TH>
+    <TH STYLE="border-bottom: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: double">,87</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid; border-right: double">,99</TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Resumen del proceso de casos</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH ALIGN="CENTER" COLSPAN="6" STYLE="border-top: double; border-left: double; border-right: double"><EM>Casos</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: thin solid; border-left: double"><EM>Válido</EM></TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: thin solid; border-left: thin solid"><EM>Perdidos</EM></TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: thin solid; border-left: thin solid; border-right: double"><EM>Total</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH ALIGN="RIGHT"><EM>Género del estudiante</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: double"><EM>N</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>N</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>N</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: double"><EM>Porcentaje</EM></TH>
+  </TR>
+  <TR>
+    <TH ALIGN="RIGHT" STYLE="border-top: double; border-left: double"><EM>Tiempo del primer intento</EM></TH>
+    <TH STYLE="border-top: double"><EM>Masculino</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: double">8</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">100%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">0%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">8</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">100%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH><EM>Femenino</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">12</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">100%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">0%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">12</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">100%</TD>
+  </TR>
+  <TR>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double"><EM>Tiempo del segundo intento</EM></TH>
+    <TH STYLE="border-top: thin solid"><EM>Masculino</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">8</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">100%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">0%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">8</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">100%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-bottom: double; border-left: double"></TH>
+    <TH STYLE="border-bottom: double"><EM>Femenino</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: double">12</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">100%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">0%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">12</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid; border-right: double">100%</TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Valores extremos</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: double"><EM>Género del estudiante</EM></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: double"><EM>Nombre del estudiante</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid; border-right: double"><EM>Valor</EM></TH>
+  </TR>
+  <TR>
+    <TH ALIGN="RIGHT" STYLE="border-top: double; border-left: double"><EM>Tiempo del primer intento</EM></TH>
+    <TH STYLE="border-top: double"><EM>Masculino</EM></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: double">Máximo</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: double">1</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: double">Juan D      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">281</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">2</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Miguel      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">279</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">3</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Giovanny    </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">268</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">4</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Brandon     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">266</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">5</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Jonshon     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">265</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">Mínimo</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">1</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">Andrey      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">244</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">2</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Moises      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">244</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">3</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Juan C      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">264</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">4</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Jonshon     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">265</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">5</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Brandon     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">266</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH STYLE="border-top: thin solid"><EM>Femenino</EM></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">Máximo</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">1</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">Francys     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">341</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">2</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Lily        </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">331</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">3</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Darcy       </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">310</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">4</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Annet       </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">300</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">5</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Aracellys   </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">294</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">Mínimo</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">1</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">Sheylla     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">253</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">2</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Marly       </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">277</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">3</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Melissa     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">285</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">4</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Jessica     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">288</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">5</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Laura       </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">289</TD>
+  </TR>
+  <TR>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double"><EM>Tiempo del segundo intento</EM></TH>
+    <TH STYLE="border-top: thin solid"><EM>Masculino</EM></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">Máximo</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">1</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">Miguel      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">300</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">2</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Juan D      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">280</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">3</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Juan C      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">278</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">4</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Giovanny    </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">269</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">5</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Andrey      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">267</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">Mínimo</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">1</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">Moises      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">234</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">2</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Jonshon     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">241</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">3</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Brandon     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">261</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">4</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Andrey      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">267</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">5</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Giovanny    </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">269</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH STYLE="border-top: thin solid"><EM>Femenino</EM></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">Máximo</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">1</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">Lily        </TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">346</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">2</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Francys     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">338</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">3</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Dina        </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">329</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">4</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Marly       </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">276</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">5</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Aracellys   </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">275</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">Mínimo</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid">1</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">Laura       </TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">243</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">2</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Sheylla     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">254</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">3</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Lorena      </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">260</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH ALIGN="RIGHT">4</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">Jessica     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">269</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-bottom: double; border-left: double"></TH>
+    <TH STYLE="border-bottom: double"></TH>
+    <TH STYLE="border-bottom: double"></TH>
+    <TH ALIGN="RIGHT" STYLE="border-bottom: double">5</TH>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: double">Melissa     </TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid; border-right: double">271</TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Percentiles</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH ALIGN="CENTER" COLSPAN="7" STYLE="border-top: double; border-left: double; border-right: double"><EM>Percentiles</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH ALIGN="RIGHT"><EM>Género del estudiante</EM></TH>
+    <TH></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: double"><EM>5</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>10</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>25</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>50</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>75</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>90</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: double"><EM>95</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"><EM>Tiempo del primer intento</EM></TH>
+    <TH STYLE="border-top: double"><EM>Masculino</EM></TH>
+    <TH STYLE="border-top: double; border-left: thin solid"><EM>HAverage</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: double">109,80</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">219,60</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">249,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">265,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">276,25</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">281,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">281,00</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH STYLE="border-left: thin solid"><EM>Bisagras de Tukey</EM></TH>
+    <TD STYLE="border-left: double"></TD>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">254,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">265,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">273,50</TD>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH STYLE="border-top: thin solid"><EM>Femenino</EM></TH>
+    <TH STYLE="border-top: thin solid; border-left: thin solid"><EM>HAverage</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">164,45</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">260,20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">285,75</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">291,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">307,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">338,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">341,00</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH STYLE="border-left: thin solid"><EM>Bisagras de Tukey</EM></TH>
+    <TD STYLE="border-left: double"></TD>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">286,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">291,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">305,00</TD>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double"><EM>Tiempo del segundo intento</EM></TH>
+    <TH STYLE="border-top: thin solid"><EM>Masculino</EM></TH>
+    <TH STYLE="border-top: thin solid; border-left: thin solid"><EM>HAverage</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">105,30</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">210,60</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">246,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">268,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">279,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">300,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">300,00</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH STYLE="border-left: thin solid"><EM>Bisagras de Tukey</EM></TH>
+    <TD STYLE="border-left: double"></TD>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">251,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">268,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">279,00</TD>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH STYLE="border-top: thin solid"><EM>Femenino</EM></TH>
+    <TH STYLE="border-top: thin solid; border-left: thin solid"><EM>HAverage</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">157,95</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">246,30</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">262,25</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">273,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">315,75</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">343,60</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">346,00</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-bottom: double; border-left: double"></TH>
+    <TH STYLE="border-bottom: double"></TH>
+    <TH STYLE="border-bottom: double; border-left: thin solid"><EM>Bisagras de Tukey</EM></TH>
+    <TD STYLE="border-bottom: double; border-left: double"></TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">264,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">273,50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">302,50</TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid"></TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid; border-right: double"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Descriptivos</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: double"><EM>Género del estudiante</EM></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: double"><EM>Estadístico</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid; border-right: double"><EM>Error Estándar</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"><EM>Tiempo del primer intento</EM></TH>
+    <TH STYLE="border-top: double"><EM>Masculino</EM></TH>
+    <TH STYLE="border-top: double">Media</TH>
+    <TH STYLE="border-top: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: double">263,88</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">4,88</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Intervalo de Confianza 95% para la Media</TH>
+    <TH>Límite Inferior</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">252,33</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH>Límite Superior</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">275,42</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Media recortada al 5%</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">264,03</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Mediana</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">265,50</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Varianza</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">190,70</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Desviación Estándar</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">13,81</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Mínimo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">244,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Máximo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">281,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Intervalo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">37,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Intervalo intercuartílico</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">27,25</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Asimetría</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">-,52</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">,75</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Curtosis</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">-,65</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">1,48</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH STYLE="border-top: thin solid"><EM>Femenino</EM></TH>
+    <TH STYLE="border-top: thin solid">Media</TH>
+    <TH STYLE="border-top: thin solid"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">295,83</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">6,72</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Intervalo de Confianza 95% para la Media</TH>
+    <TH>Límite Inferior</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">281,04</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH>Límite Superior</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">310,62</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Media recortada al 5%</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">295,70</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Mediana</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">291,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Varianza</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">541,97</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Desviación Estándar</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">23,28</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Mínimo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">253,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Máximo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">341,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Intervalo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">88,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Intervalo intercuartílico</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">21,75</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Asimetría</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">,44</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">,64</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Curtosis</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">,93</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">1,23</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double"><EM>Tiempo del segundo intento</EM></TH>
+    <TH STYLE="border-top: thin solid"><EM>Masculino</EM></TH>
+    <TH STYLE="border-top: thin solid">Media</TH>
+    <TH STYLE="border-top: thin solid"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">266,25</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">7,54</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Intervalo de Confianza 95% para la Media</TH>
+    <TH>Límite Inferior</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">248,43</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH>Límite Superior</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">284,07</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Media recortada al 5%</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">266,17</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Mediana</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">268,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Varianza</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">454,21</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Desviación Estándar</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">21,31</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Mínimo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">234,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Máximo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">300,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Intervalo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">66,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Intervalo intercuartílico</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">33,50</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Asimetría</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">-,14</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">,75</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Curtosis</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">-,18</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">1,48</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH STYLE="border-top: thin solid"><EM>Femenino</EM></TH>
+    <TH STYLE="border-top: thin solid">Media</TH>
+    <TH STYLE="border-top: thin solid"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">284,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">9,81</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Intervalo de Confianza 95% para la Media</TH>
+    <TH>Límite Inferior</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">262,41</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH></TH>
+    <TH>Límite Superior</TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">305,59</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Media recortada al 5%</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">282,83</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Mediana</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">273,50</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Varianza</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">1155,09</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Desviación Estándar</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">33,99</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Mínimo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">243,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Máximo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">346,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Intervalo</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">103,00</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Intervalo intercuartílico</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">53,50</TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH>Asimetría</TH>
+    <TH></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">1,02</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">,64</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-bottom: double; border-left: double"></TH>
+    <TH STYLE="border-bottom: double"></TH>
+    <TH STYLE="border-bottom: double">Curtosis</TH>
+    <TH STYLE="border-bottom: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: double">-,32</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid; border-right: double">1,23</TD>
+  </TR>
+</TBODY></TABLE>
+
+</BODY>
+</HTML>
+<!-- end of file -->

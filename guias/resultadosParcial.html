@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>Resultado de PSPP</TITLE>
+<META NAME="generator" CONTENT="GNU pspp 0.8.4">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<STYLE TYPE="text/css">
+<!--
+body {
+  background: white;
+  color: black;
+  padding: 0em 12em 0em 3em;
+  margin: 0
+}
+body>p {
+  margin: 0pt 0pt 0pt 0em
+}
+body>p + p {
+  text-indent: 1.5em;
+}
+h1 {
+  font-size: 150%;
+  margin-left: -1.33em
+}
+h2 {
+  font-size: 125%;
+  font-weight: bold;
+  margin-left: -.8em
+}
+h3 {
+  font-size: 100%;
+  font-weight: bold;
+  margin-left: -.5em }
+h4 {
+  font-size: 100%;
+  margin-left: 0em
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  color: blue
+}
+html {
+  margin: 0
+}
+code {
+  font-family: sans-serif
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em
+}
+th { background: #dddddd; font-weight: normal; font-style: oblique }
+caption {
+  text-align: left
+}
+-->
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" TEXT="#000000"
+ LINK="#1f00ff" ALINK="#ff0000" VLINK="#9900dd">
+<DIV class="GET_DATA"><H3>GET DATA</H3>
+<PRE class="syntax">GET DATA<BR>  /TYPE=TXT<BR>  /FILE=&quot;/home/kenneth/Dropbox/sem201501/unac/parcial/resultadosParcial_1.csv&quot;<BR>  /IMPORTCASES=ALL<BR>  /ARRANGEMENT=DELIMITED<BR>  /DELCASE=LINE<BR>  /FIRSTCASE=2<BR>  /DELIMITERS=&quot;;&quot;<BR>  /VARIABLES=<BR>    ID F2.0<BR>    p1 A1<BR>    p2 A1<BR>    p3 A1<BR>    p4 A1<BR>    p5 A1<BR>    p6 A1<BR>    p7 A1<BR>    p8 A1<BR>    p9 A1<BR>    p10 A1.<BR></PRE>
+<DIV class="SAVE"><H3>SAVE</H3>
+<PRE class="syntax">SAVE OUTFILE=&quot;resultadosParcial_1.csv.sav&quot;.<BR></PRE>
+<DIV class="SAVE"><H3>SAVE</H3>
+<PRE class="syntax">SAVE OUTFILE=&quot;resultadosParcial_1.csv.sav&quot;.<BR></PRE>
+<DIV class="SAVE"><H3>SAVE</H3>
+<PRE class="syntax">SAVE OUTFILE=&quot;/home/kenneth/Dropbox/sem201501/unac/parcial/resultadosParcial.sav&quot;.<BR></PRE>
+<DIV class="FREQUENCIES"><H3>FREQUENCIES</H3>
+<PRE class="syntax">FREQUENCIES<BR>	/VARIABLES= p1 p2 p3 p4 p5 p6 p7 p8 p9 p10<BR>	/FORMAT=AVALUE TABLE<BR>	/STATISTICS=MEAN STDDEV.<BR></PRE>
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>p1</CAPTION>
+  <TR>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Etiqueta de Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Frecuencia</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje Válido</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: thin solid"><EM>Porcentaje Acumulado</EM></TH>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">a</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">2</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">10,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">10,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: thin solid">10,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">b</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">4</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">20,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">20,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">30,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">c</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">7</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">35,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">35,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">65,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">d</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">7</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">35,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">35,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">100,00</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT" COLSPAN="2" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid"><EM>Total</EM></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid; border-right: thin solid"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>p2</CAPTION>
+  <TR>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Etiqueta de Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Frecuencia</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje Válido</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: thin solid"><EM>Porcentaje Acumulado</EM></TH>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">a</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">4</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">20,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">20,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: thin solid">20,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">b</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">2</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">10,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">10,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">30,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">c</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">6</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">30,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">30,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">60,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">d</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">8</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">40,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">40,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">100,00</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT" COLSPAN="2" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid"><EM>Total</EM></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid; border-right: thin solid"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>p3</CAPTION>
+  <TR>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Etiqueta de Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Frecuencia</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje Válido</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: thin solid"><EM>Porcentaje Acumulado</EM></TH>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">a</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">1</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">5,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">5,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: thin solid">5,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">b</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">15</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">75,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">75,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">80,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">c</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">2</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">10,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">10,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">90,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">d</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">2</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">10,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">10,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">100,00</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT" COLSPAN="2" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid"><EM>Total</EM></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid; border-right: thin solid"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>p4</CAPTION>
+  <TR>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Etiqueta de Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Frecuencia</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje Válido</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: thin solid"><EM>Porcentaje Acumulado</EM></TH>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">a</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">10</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">50,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">50,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: thin solid">50,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">b</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">5</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">25,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">25,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">75,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">c</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">5,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">5,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">80,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">d</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">4</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">20,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">20,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">100,00</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT" COLSPAN="2" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid"><EM>Total</EM></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid; border-right: thin solid"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>p5</CAPTION>
+  <TR>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Etiqueta de Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Frecuencia</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje Válido</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: thin solid"><EM>Porcentaje Acumulado</EM></TH>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">a</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">1</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">5,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">5,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: thin solid">5,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">b</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">7</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">35,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">35,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">40,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">d</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">12</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">60,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">60,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">100,00</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT" COLSPAN="2" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid"><EM>Total</EM></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid; border-right: thin solid"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>p6</CAPTION>
+  <TR>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Etiqueta de Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Frecuencia</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje Válido</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: thin solid"><EM>Porcentaje Acumulado</EM></TH>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">a</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">4</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">20,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">20,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: thin solid">20,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">b</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">3</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">15,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">15,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">35,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">c</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">5,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">5,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">40,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">d</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">12</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">60,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">60,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">100,00</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT" COLSPAN="2" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid"><EM>Total</EM></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid; border-right: thin solid"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>p7</CAPTION>
+  <TR>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Etiqueta de Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Frecuencia</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje Válido</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: thin solid"><EM>Porcentaje Acumulado</EM></TH>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">a</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">4</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">20,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">20,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: thin solid">20,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">b</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">8</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">40,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">40,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">60,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">c</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">3</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">15,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">15,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">75,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">d</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">5</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">25,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">25,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">100,00</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT" COLSPAN="2" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid"><EM>Total</EM></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid; border-right: thin solid"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>p8</CAPTION>
+  <TR>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Etiqueta de Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Frecuencia</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje Válido</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: thin solid"><EM>Porcentaje Acumulado</EM></TH>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">f</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">6</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">30,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">30,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: thin solid">30,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">v</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">14</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">70,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">70,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">100,00</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT" COLSPAN="2" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid"><EM>Total</EM></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid; border-right: thin solid"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>p9</CAPTION>
+  <TR>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Etiqueta de Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Frecuencia</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje Válido</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: thin solid"><EM>Porcentaje Acumulado</EM></TH>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">f</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">8</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">40,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">40,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: thin solid">40,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">v</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">12</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">60,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">60,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">100,00</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT" COLSPAN="2" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid"><EM>Total</EM></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid; border-right: thin solid"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>p10</CAPTION>
+  <TR>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Etiqueta de Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Valor</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Frecuencia</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Porcentaje Válido</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: thin solid"><EM>Porcentaje Acumulado</EM></TH>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">f</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">15</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">75,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">75,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: thin solid">75,00</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">v</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">5</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">25,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">25,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: thin solid">100,00</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT" COLSPAN="2" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid"><EM>Total</EM></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid">100,0</TD>
+    <TD STYLE="border-top: double; border-bottom: thin solid; border-left: thin solid; border-right: thin solid"></TD>
+  </TR>
+</TBODY></TABLE>
+
+</BODY>
+</HTML>
+<!-- end of file -->

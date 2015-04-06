@@ -103,6 +103,41 @@ order: 04
 
 5. Este es el archivo con el resultado final de los cálculos.
 
-![alt text](/guias/resultadoIC.png "Resultado final")    
+![alt text](/guias/resultadoIC.png "Resultado final")
+
+### Análisis de la base de datos de tiempos de reacción
+
+1. [Base de datos de tiempo de reacción](/guias/tiemposReaccion.sav){:target="_blank"}
+
+2. Obtener estadísticos descriptivos por factor
+   
+   ```
+   Analizar > Estadística Descriptiva > Explorar...
+   ```
+
+   ![alt text](/guias/tiempReac1.png "Configuración de variables")
+
+3. Selección de estadísticos
+
+   ![alt text](/guias/tiempReac2.png "Configuración de estadísticos")
+
+4. Resultado final
+
+   [Resultados de tiempo de reacción](/guias/tiempReac.html){:target="_blank"}
 
 
+### Análisis de frecuencia de la base de datos de los resultados del parcial
+
+1. [Base de datos de resultados del parcial](/guias/resultadosParcial.sav){:target="_blank"}
+
+2. Estadísticos descriptivos
+
+   ```
+   Analizar > Estadística Descriptiva > Frecuencias...
+   ```
+
+   ![alt text](/guias/resultadosParcial.png "Configuración de variables")
+
+3. Resultados de frecuencia
+
+   [Resultados del parcial](/guias/resultadosParcial.html){:target="_blank"}
