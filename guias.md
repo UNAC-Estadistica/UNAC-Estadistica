@@ -21,8 +21,6 @@ order: 04
 
 ## Estadística descriptiva por factor
 
-### Procedimiento en PSPP
-
 
 1. Cargar el archivo [diámetros](/guias/diametros.sav){:target="_blank"} en el programa PSPP, en formato **.sav**.
 
@@ -63,6 +61,48 @@ order: 04
     - Los valores de curtosis y de asimetría, algunas veces muestran normalidad y otras veces no lo hacen.
     - Los valores del error estándar para la media son muy parecidos entre muestras.
 
+## Obtener resultados agregados por factor
 
-    
+1. Cargar el archivo [diámetros](/guias/diametros.sav){:target="_blank"} en el programa PSPP, en formato **.sav**.
+
+2. En el menú principal se sigue:
+   
+   ```
+   Datos > Agregar...
+   ```
+
+3. Aparece el siguiente menú que permite realizar la agregación y los cálculos que se quieren obtener.
+
+![alt text](/guias/agregar1.png "Menú para agregar")
+
+4. Así debe quedar antes de presionar el boton de ```Aceptar``` para obtener los resultados requeridos.
+
+![alt text](/guias/agregar2.png "Menú configurado para obtener los resultados")
+
+5. Una vez que se tenga configurado correctamente se genera el archivo de 
+   [resumen](/guias/resumen.sav){:target="_blank"} al presionar el botón de ```Aceptar```.
+
+## Hallar el intervalo de confianza para la media de manera manual
+
+1. Se carga el archivo de [resumen](/guias/resumen.sav){:target="_blank"}
+
+2. En el menú principal se sigue de la siguiente manera:
+
+   ```
+   Transformar > Calcular...
+   ```
+
+3. Se realiza el cálculo manual del intervalo de confianza para el promedio para cada persona 
+   y la pantalla deberá quedar así, para el límite inferior.
+
+![alt text](/guias/limInf.png "Cálculo del límite inferior del intervalo de confianza para la media")
+
+4. Una vez realizado el cálculo del límite inferior se procede con el límite superior.
+
+![alt text](/guias/limSup.png "Cálculo del límite superior del intervalo de confianza para la media")    
+
+5. Este es el archivo con el resultado final de los cálculos.
+
+![alt text](/guias/resultadoIC.png "Resultado final")    
+
 
