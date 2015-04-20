@@ -62,6 +62,6 @@ order: 02
     para la media de la variable asignada.
     
 - Fecha de entrega:
-  + Jueves, 16 de abril de 2015, al correo **krcabrer@unac.edu.co** antes
+  + Martes, 21 de abril de 2015, al correo **krcabrer@unac.edu.co** antes
     de las 23:59 hora oficial de Colombia.   
   
