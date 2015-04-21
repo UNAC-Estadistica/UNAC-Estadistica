@@ -522,6 +522,123 @@ $$
     Entonces la probabilidad de que una persona elegida al azar tenga diabetes, dado que el resultado de la prueba dió 
     positivo para diabetes es de aproximadamente 0.83.
 
+## Pruebas de hipótesis.
+
+### Prueba de hipótesis para una media de una distribución normal.
+
+#### Caso unilateral:
+
+En este caso la hipótesis a probar es:
+
+ $$
+  \begin{aligned}
+   H_0 &: \mu = \mu_0\\
+   H_1 &: \mu > \mu_0\\
+  \end{aligned}
+ $$
+
+
+Se utiliza el estadístico de prueba definido como
+
+  $$
+   Z_{calc} = \frac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{n}}}
+  $$
+
+  Se rechaza $$H_0$$ si $$Z_{calc} > Z_{tabla, 1-\alpha}$$, de lo contrario no se rechaza $$H_0$$.
+
+ Si la prueba es para el otro lado se tiene:
+
+ $$
+  \begin{aligned}
+   H_0 &: \mu = \mu_0\\
+   H_1 &: \mu < \mu_0\\
+  \end{aligned}
+ $$
+
+Se utiliza el estadístico de prueba definido como:
+
+$$
+ Z_{calc} = \frac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{n}}}
+$$
+
+Se rechaza $$H_0$$ si $$Z_{calc} < Z_{tabla, \alpha}$$, de lo contrario no se rechaza $$H_0$$.
+
+#### Caso bilateral
+
+ $$
+  \begin{aligned}
+   H_0 &: \mu = \mu_0\\
+   H_1 &: \mu \ne \mu_0\\
+  \end{aligned}
+ $$
+
+Se utiliza el estadístico de prueba definido como:
+
+$$
+ Z_{calc} = \frac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{n}}}
+$$
+
+Se rechaza $$H_0$$ si $$Z_{calc} > Z_{tabla, 1-\alpha/2}$$ o $$Z_{calc} < Z_{tabla, \alpha/2}$$, de lo contrario no se rechaza $$H_0$$.
+
+
+### Prueba de hipótesis para una media de una distribución no normal y de tamaño pequeño ($$n \le 30$$).
+
+#### Caso unilateral:
+
+En este caso la hipótesis a probar es:
+
+  $$
+  \begin{aligned}
+   H_0 &: \mu = \mu_0\\
+   H_1 &: \mu > \mu_0\\
+  \end{aligned}
+  $$
+
+Se utiliza el estadístico de prueba definido como
+
+  $$
+   t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n-1}}}
+  $$
+
+  Se rechaza $$H_0$$ si $$t_{calc} > t_{tabla, \alpha, n-1}$$, de lo contrario no se rechaza $$H_0$$.
+
+Para el otro lado se tiene que en este caso la hipótesis a probar es:
+
+  $$
+  \begin{aligned}
+   H_0 &: \mu = \mu_0\\
+   H_1 &: \mu < \mu_0\\
+  \end{aligned}
+  $$
+
+xe utiliza el estadístico de prueba definido como
+
+  $$
+   t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n-1}}}
+  $$
+
+  Se rechaza $$H_0$$ si $$t_{calc} < -t_{tabla, \alpha, n-1}$$, de lo contrario no se rechaza $$H_0$$.
+
+#### Caso bilateral
+
+En este caso la hipótesis a probar es:
+
+  $$
+  \begin{aligned}
+   H_0 &: \mu = \mu_0\\
+   H_1 &: \mu \ne \mu_0\\
+  \end{aligned}
+  $$
+
+Se utiliza el estadístico de prueba definido como
+
+  $$
+   t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n-1}}}
+  $$
+
+  Se rechaza $$H_0$$ si $$t_{calc} < t_{tabla, \alpha/2, n-1}$$ o
+             $$H_0$$ si $$t_{calc} > t_{tabla, \alpha/2, n-1}$$,
+             de lo contrario no se rechaza $$H_0$$.
 
 
 
