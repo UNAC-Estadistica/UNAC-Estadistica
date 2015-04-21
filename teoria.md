@@ -636,7 +636,7 @@ Se utiliza el estadístico de prueba definido como
    t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n-1}}}
   $$
 
-  Se rechaza $$H_0$$ si $$t_{calc} < t_{tabla, \alpha/2, n-1}$$ o
+  Se rechaza $$H_0$$ si $$t_{calc} < -t_{tabla, \alpha/2, n-1}$$ o
              $$H_0$$ si $$t_{calc} > t_{tabla, \alpha/2, n-1}$$,
              de lo contrario no se rechaza $$H_0$$.
 
