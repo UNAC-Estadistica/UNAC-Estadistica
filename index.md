@@ -46,3 +46,7 @@ información y aportar conocimiento.
 - [video para meditar](VID-20150302-WA0000.mp4){:target="_blank"}
 
 - [Solución al parcial de probabilidad](parcial1.pdf){:target="_blank"}
+
+- [Examen ejemplo del GRE](/guias/ejemplo1.png){:target="_blank"}
+
+  
