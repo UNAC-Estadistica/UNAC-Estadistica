@@ -141,3 +141,19 @@ order: 04
 3. Resultados de frecuencia
 
    [Resultados del parcial](/guias/resultadosParcial.html){:target="_blank"}
+
+### Tablas de la distribución normal (Z)
+
+#### Tabla para valores negativos de Z
+
+   <img src="/guias/tabla_normal_01.png" width="1000">
+
+#### Tabla para valores negativos de Z
+
+   <img src="/guias/tabla_normal_02.png" width="1000">
+
+### Tabla de la distribución t de student (t)
+
+   <img src="/guias/tabla_t.png" width="1000">
+
+
