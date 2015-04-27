@@ -124,6 +124,67 @@ custom_js: 'mathjax'
     preguntas al azar?
 
 
+***
+
+***
+
+## Pruebas de hipótesis
+
+1. Una muestra aleatoria de edad de muerte de 150 personas de cierta comunidad
+   mostró un promedio de 86.5 años. Si se sabe que la desviación estándar de la
+   edad de muerte es de 10 años ($$\sigma = 10$$) ¿Indica este resultado que
+   el promedio de vida de esa comunidad es mayor a 85 años, con un 95% de confianza?
+
+2. Una muestra aleatoria de edad de muerte de 150 personas de cierta comunidad
+   mostró un promedio de 86.5 años. Si se sabe que la desviación estándar de la
+   edad de muerte es de 10 años ($$\sigma = 10$$) ¿Indica este resultado que
+   el promedio de vida de esa comunidad es mayor a 85 años, con un 99% de confianza?
+
+3. Una muestra aleatoria de edad de muerte de 50 personas de cierta comunidad
+   mostró un promedio de 86.5 años. Si se sabe que la desviación estándar de la
+   edad de muerte es de 10 años ($$\sigma = 10$$) ¿Indica este resultado que
+   el promedio de vida de esa comunidad es mayor a 85 años, con un 95% de confianza?
+
+4. Una muestra aleatoria de edad de muerte de 150 personas de cierta comunidad
+   mostró un promedio de 86.5 años. Si se sabe que la desviación estándar de la
+   edad de muerte es de 10 años ($$\sigma = 15$$) ¿Indica este resultado que
+   el promedio de vida de esa comunidad es mayor a 85 años, con un 95% de confianza?
+
+5. Una empresa eléctrica fabrica focos que tienen una duración que está distribuida
+   aproximadamente de forma normal con una media de 800 horas y una desviación estándar
+   de 40 horas. Pruebe la hipótesis de que $$\mu=$$ 800 horas en contraposición
+   de la alternativa de que $$\mu \ne$$ 800 horas si una muestra aleatoria de 30
+   focos tiene una duración promedio de 788 horas. Utilice un nivel de significancia de 0.04.
+
+6. Una muestra aleatoria de 36 refrescos de una máquina despachadora automática tiene
+   un contenido promedio de 21.9 decilitros, con una desviación estándar de 1.42 decilitros.
+   Prueba la hipótesis de que $$\mu=$$ 22.2 decilitros en contraposición a la hipótesis
+   alterna, $$\mu < 22.2$$ en un nivel de significancia de 0.05.
+
+7. Alguien afirmó que los paquetes de granola de Vitarrico están empacando menos de la 
+   cantidad correcta en los paquetes de 250 gramos. Se tomó una muestra aleatoria
+   de 10 paquetes y los resultados del peso den gramos fueron: 
+   251, 248, 247, 252, 245, 246, 257, 246, 242 y 240. ¿Con un 95% de confianza,
+   cosidera usted que hay evidencia de la afirmación hecha?
+
+8. Se tomó una muestra aleatoria de una prueba del GRE a unos estudiantes. La prueba
+   consta de siete preguntas. El resultado, si los estudiantes contestan al azar, el
+   promedio es de 1.4 preguntas correctas. 
+   Sin embargo al realizar la prueba a 20 estudiantes, los resultados
+   fueron: 4, 2, 2, 2, 4, 1, 4, 4, 3, 3, 1, 1, 1, 3, 2, 3, 2, 3, 5 y 2. ¿Existe evidencia
+   de que los estudiantes no contestaron al azar, sino que el promedio no es de 1.4,
+   sino mayor de 1.4 a un 99% de confianza?
+
+9. Se supone que el promedio del peso de los huevos AAA deberá ser de 72.45 gr. 
+   ¿Tendría suficiente evidencia  para mostrar que los huevos no cumplen con el 
+   peso AAA dada la siguiente muestra del peso de 15 huevos? 68.7, 71.0, 68.2, 74.8, 
+   71.3, 68.2, 71.8, 72.5, 72.0, 69.6, 74.6, 71.5, 68.8, 64.4 y 73.5.
+
+10. La siguiente es una muestra aleatoria de la cantidad de calorías que tiene varias
+    chocolatinas de 12 gramos 55, 53, 59, 49, 50, 53, 58, 47, 46 y 59. 
+    Con un 95% de confianza determine si hay evidencia que el valor promedio de
+    las chocolatinas es superior a 50 calorías.
+   
 
 
 
