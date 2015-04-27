@@ -522,9 +522,10 @@ $$
     Entonces la probabilidad de que una persona elegida al azar tenga diabetes, dado que el resultado de la prueba dió 
     positivo para diabetes es de aproximadamente 0.83.
 
+
 ## Pruebas de hipótesis.
 
-### Prueba de hipótesis para una media de una distribución normal.
+### Prueba de hipótesis para una media de una distribución normal y varianza conocida.
 
 #### Caso unilateral:
 
@@ -546,6 +547,42 @@ Se utiliza el estadístico de prueba definido como
 
   Se rechaza $$H_0$$ si $$Z_{calc} > Z_{tabla, 1-\alpha}$$, de lo contrario no se rechaza $$H_0$$.
 
+#### Ejemplo:
+
+La distribución de las estaturas de los hombres colombianos es normal con una desviación estándar de
+cuatro centímetros ($$\sigma$$ = 4). Un extranjero afirma que el promedio de estatura de los
+colombianos es mayor de 170 cm. Para verificar ese supuesto se tomó una muestra de 64 estaturas y se halló que la media muestral
+es de 171 cm. ($$\bar{x}$$ = 171) ¿Estaría usted de acuerdo o no con el extranjero? Plantee y verifique la prueba
+respectiva con un 95% de confianza.
+
+En este caso la hipótesis a probar es:
+
+ $$
+  \begin{aligned}
+   H_0 &: \mu = 170\\
+   H_1 &: \mu > 170\\
+  \end{aligned}
+ $$
+
+Se calcula el estadístico de prueba sabiendo que: $$\bar{x}$$ = 171, $$\sigma$$=4 y $$n$$ = 64.
+
+  $$
+   Z_{calc} = \frac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{n}}} = \frac{171 - 170}{\frac{4}{\sqrt{64}}} = \frac{1}{\frac{4}{8}} =
+              \frac{1}{\frac{1}{2}} = 2
+  $$
+
+El valor de $$\alpha$$=0.05, luego $$1 - \alpha$$ = 0.95
+
+El $$Z_{tabla, 1- \alpha}$$ = $$Z_{tabla, 0.95} \approx 1.64 $$ 
+
+Dado que le valor de $$Z_{calc} = 2 > Z_{tabla, 0.95} =$$ 1.64 entonces se rechaza $$H_0$$, es decir que
+hay suficiente evidencia para mostrar que el promedio de estatura de los hombres colombianos es mayor de 1.70,
+por lo tanto el extranjero tiene la razón.
+
+ ***
+ 
+ ***
+
  Si la prueba es para el otro lado se tiene:
 
  $$
@@ -562,6 +599,42 @@ $$
 $$
 
 Se rechaza $$H_0$$ si $$Z_{calc} < Z_{tabla, \alpha}$$, de lo contrario no se rechaza $$H_0$$.
+
+#### Ejemplo:
+
+La distribución de las estaturas de las mujeres colombianas es normal con una desviación estándar de
+tres centímetros ($$\sigma$$ = 3). Un extranjero afirma que el promedio de estatura de las
+colombianas es menor de 165 cm. Para verificar ese supuesto se tomó una muestra de 36 estaturas y se halló que la media muestral
+es de 164.5 cm. ($$\bar{x}$$ = 164.5) ¿Estaría usted de acuerdo o no con el extranjero? Plantee y verifique la prueba
+respectiva con un 95% de confianza.
+
+En este caso la hipótesis a probar es:
+
+ $$
+  \begin{aligned}
+   H_0 &: \mu = 165\\
+   H_1 &: \mu < 165\\
+  \end{aligned}
+ $$
+
+Se calcula el estadístico de prueba sabiendo que: $$\bar{x}$$ = 164.5, $$\sigma$$=3 y $$n$$ = 36.
+
+  $$
+   Z_{calc} = \frac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{n}}} = \frac{164.5 - 165}{\frac{3}{\sqrt{36}}} = \frac{-0.5}{\frac{3}{6}} =
+              \frac{-0.5}{\frac{1}{2}} = -1
+  $$
+
+El valor de $$\alpha$$=0.05.
+
+El $$Z_{tabla, \alpha}$$ = $$Z_{tabla, 0.05} \approx -1.64 $$ 
+
+Dado que le valor de $$Z_{calc} = -1 \nless Z_{tabla, 0.05} = -1.64$$ entonces no se rechaza $$H_0$$, es decir que
+no hay suficiente evidencia para mostrar que el promedio de estatura de las mujeres colombianas es menor de 165 cm,
+por lo tanto el extranjero no tiene la razón.
+
+ ***
+ 
+ *** 
 
 #### Caso bilateral
 
@@ -581,7 +654,43 @@ $$
 Se rechaza $$H_0$$ si $$Z_{calc} > Z_{tabla, 1-\alpha/2}$$ o $$Z_{calc} < Z_{tabla, \alpha/2}$$, de lo contrario no se rechaza $$H_0$$.
 
 
-### Prueba de hipótesis para una media de una distribución no normal y de tamaño pequeño ($$n \le 30$$).
+#### Ejemplo:
+
+La distribución de los futbolistas colombianos es normal con una desviación estándar de
+dos centímetros ($$\sigma$$ = 2). Un extranjero afirma que el promedio de estatura de
+los futbolistas colombianos es diferente a 175 cm. 
+Para verificar ese supuesto se tomó una muestra de 16 estaturas de futbolistas y se halló que la media muestral
+es de 175.5 cm. ($$\bar{x}$$ = 175.5) ¿Estaría usted de acuerdo o no con el extranjero? Plantee y verifique la prueba
+respectiva con un 95% de confianza.
+
+En este caso la hipótesis a probar es:
+
+ $$
+  \begin{aligned}
+   H_0 &: \mu = 175\\
+   H_1 &: \mu \ne 175\\
+  \end{aligned}
+ $$
+
+Se calcula el estadístico de prueba sabiendo que: $$\bar{x}$$ = 165.5, $$\sigma$$=2 y $$n$$ = 16.
+
+  $$
+   Z_{calc} = \frac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{n}}} = \frac{175.5 - 175}{\frac{2}{\sqrt{16}}} = \frac{0.5}{\frac{2}{4}} =
+              \frac{0.5}{\frac{1}{2}} = 1
+  $$
+
+El valor de $$\alpha$$=0.05, entonces $$\alpha/2 = 0.025$$ y $$(1-\alpha/2) = 0.975$$, entonces:
+
+El $$Z_{tabla, \alpha/2}$$ = $$Z_{tabla, 0.025} \approx -1.96 $$, y
+ $$Z_{tabla, 1-\alpha/2}$$ = $$Z_{tabla, 0.975} \approx 1.96 $$.
+
+Dado que le valor de $$Z_{calc} = 1$$, entonces no se rechaza $$H_0$$, porque $$Z_{calc}= 1$$ ni es 
+es menor de $$Z_{tabla, 0.025} \approx -1.96 $$ ni es mayor de $$Z_{tabla, 0.975} \approx 1.96 $$ es decir que
+no hay suficiente evidencia para mostrar que el promedio de estatura de los futbolistas colombianos
+sea diferente de 175 cm, por lo tanto el extranjero no tiene la razón.
+
+
+### Prueba de hipótesis para una media de una distribución  normal y de tamaño pequeño ($$n \le 30$$) y varianza desconocida.
 
 #### Caso unilateral:
 
@@ -597,10 +706,51 @@ En este caso la hipótesis a probar es:
 Se utiliza el estadístico de prueba definido como
 
   $$
-   t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n-1}}}
+   t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n}}}
   $$
 
   Se rechaza $$H_0$$ si $$t_{calc} > t_{tabla, \alpha, n-1}$$, de lo contrario no se rechaza $$H_0$$.
+
+#### Ejemplo:
+
+Se tomó una muestra aleatoria de 10 estudiantes de la UNAC, y se les midió el 
+IMC (Índice de Masa Corporal) y los resultados son los siguientes:
+28, 35, 31, 32, 33, 32, 28 ,29, 34, 31. ¿Se puede establecer si el promedio
+del IMC de los estudiantes de la UNAC está en obesidad (El valor de referencia
+para obesidad es de 30) con un nivel de confianza del 99%?
+
+En este caso la hipótesis a probar es:
+
+  $$
+  \begin{aligned}
+   H_0 &: \mu = 30\\
+   H_1 &: \mu > 30\\
+  \end{aligned}
+  $$
+
+De los datos obtenemos que $$\bar{x}$$ = 31.3, y $$S$$ = 2.4, con un $$n$$=10.
+
+Entonces el estadístico de prueba es:
+
+Se utiliza el estadístico de prueba definido como
+
+  $$
+   t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n}}} 
+            = \frac{31.3-30}{\frac{2.4}{\sqrt{10}}} 
+            = \frac{1.3}{\frac{2.4}{\sqrt{10}}} 
+            = \frac{1.3}{\frac{2.4}{3.162278}} 
+            = \frac{1.3}{0.7589466} = 1.712901
+  $$
+
+El valor $$t_{tabla, \alpha, n-1}$$ = $$t_{tabla, 0.01, 9}$$ = 2.821
+ 
+Dado que el valor $$t_{calc}$$ = 1.712901 $$\ngtr$$ $$t_{tabla, 0.01, 9}$$ = 2.821, entonces
+no rechazamos $$H_0$$ y no hay suficiente evidencia para decir que el promedio del
+IMC de los estudiantes de la UNAC está en obesidad.
+
+ ***
+ 
+ ***
 
 Para el otro lado se tiene que en este caso la hipótesis a probar es:
 
@@ -611,13 +761,61 @@ Para el otro lado se tiene que en este caso la hipótesis a probar es:
   \end{aligned}
   $$
 
-xe utiliza el estadístico de prueba definido como
+se utiliza el estadístico de prueba definido como:
 
   $$
-   t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n-1}}}
+   t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n}}}
   $$
 
   Se rechaza $$H_0$$ si $$t_{calc} < -t_{tabla, \alpha, n-1}$$, de lo contrario no se rechaza $$H_0$$.
+
+#### Ejemplo:
+
+En experiencias pasadas se ha encontrado que el tiempo para que realicen
+un examen los estudiantes de úlitmo año escolar es normal y
+además tiene una media de 35 minutos.
+
+Si se tiene una muestra aleatoria de 20 estudiantes y el promedio dió 
+ahora 33.1 minutos con una desviación de 4.3 minutos. ¿Se puede afirmar
+con un 95% de confianza que el tiempo promedio para que los estudiantes
+realicen un examen ha disminuido?
+
+La hipótesis ha probar es:
+
+  $$
+  \begin{aligned}
+   H_0 &: \mu = 35\\
+   H_1 &: \mu < 35\\
+  \end{aligned}
+  $$
+
+El estadístico de prueba es:
+
+  $$
+   t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n}}}
+  $$
+
+Debido a que se tiene un tamaño de muestra pequeño ($$n$$ < 20).
+En este caso se tiene $$\bar{x}$$ = 33.1, $$\mu_0$$ = 25,
+$$S = $$ 4.3 y $$n=$$ 20. 
+
+  $$
+   t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n-1}}} =
+              \frac{33.1-35}{\frac{4.3}{\sqrt{20}}}  =
+              \frac{-1.9}{\frac{4.3}{\sqrt{20}}}  =
+              \frac{-1.9}{\frac{4.3}{4.472136}}  =
+              \frac{-1.9}{0.9615092}  = -1.97606
+  $$
+
+El valor de $$\alpha = $$ 0.05 luego se tiene que el
+valor $$-t_{tabla,\alpha,n-1}$$ = $$-t_{tabla,0.05,19}$$ = -1.729
+
+Como el valor $$t_{calc} =$$ -1.97606 $$\le$$ $$-t_{tabla,0.05,19}$$ = -1.729,
+entonces rechazamos $$H_0$$ y se considera que hay suficiente 
+evidencia estadística al 95% de confianza para mostrar que el promedio del tiempo para
+tomar el examen ha disminuido con respecto a 35 minutos.
+
+
 
 #### Caso bilateral
 
@@ -633,12 +831,53 @@ En este caso la hipótesis a probar es:
 Se utiliza el estadístico de prueba definido como
 
   $$
-   t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n-1}}}
+   t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n}}}
   $$
 
   Se rechaza $$H_0$$ si $$t_{calc} < -t_{tabla, \alpha/2, n-1}$$ o
              $$H_0$$ si $$t_{calc} > t_{tabla, \alpha/2, n-1}$$,
              de lo contrario no se rechaza $$H_0$$.
 
+#### Ejemplo:
+
+Se tomó el [tiempo de reacción con un juego de internet](http://www.humanbenchmark.com/tests/reactiontime)
+ de cinco estudiantes y el resultado fue el siguiente: 200 220 216 190 250.
+
+¿Hay evidencia suficiente para decir que el tiempo de reacción de los estudiantes
+es diferente al promedio, con una confianza del 90%?
+
+En este caso la hipótesis a probar es:
+
+  $$
+  \begin{aligned}
+   H_0 &: \mu = 215\\
+   H_1 &: \mu \ne 215\\
+  \end{aligned}
+  $$
+
+De los datos se tiene que: $$\bar{x}$$ = 215.2, $$S$$ = 22.91724 y $$n$$=5
+
+El estadístico de prueba es:
+
+  $$
+   t_{calc} = \frac{\bar{x}-\mu}{\frac{S}{\sqrt{n}}} =
+            = \frac{215.2-215}{\frac{22.91724}{\sqrt{5}}}
+            = \frac{0.2}{\frac{22.91724}{2.236068}}
+            = \frac{0.2}{10.2489} = \frac{0.2}{10.2489}  = 0.01951429
+  $$
+
+Dado que $$\alpha = 0.1$$ luego $$\alpha/2 = 0.05$$, entonces
+los valores de la tabla son:
+
+$$-t_{tabla, \alpha/2, n-1}$$ = $$-t_{tabla, 0.05, 4}$$ = -2.132
+
+y
+
+$$t_{tabla, \alpha/2, n-1}$$ = $$t_{tabla, 0.05, 4}$$ = 2.132
+
+Luego el valor $$t_{calc}$$=0.01951429 no es ni menor a -2.132 ni mayor 
+de 2.132 entonces no rechazamos $$H_0$$, luego no hay evidencia
+para decir que el tiempo de reacción en el juego de internet es
+diferente al promedio general de 215 milisegundos.
 
 
