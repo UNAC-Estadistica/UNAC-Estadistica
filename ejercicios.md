@@ -149,25 +149,25 @@ custom_js: 'mathjax'
 
 10. Calcule el valor de $$z$$ tal que $$P(Z < z) = 0.01$$ es equivalente a $$Z_{tabla,0.01}$$.
 
-11. Calcule el valor de $$z$$ tal que $$P(Z < z) = 0.01$$ es equivalente a $$Z_{tabla,0.01}$$.
+11. Calcule el valor de $$z$$ tal que $$P(Z < z) = 0.001$$ es equivalente a $$Z_{tabla,0.001}$$.
 
-12. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.01, es decir $$t_{tabla,0.01, 2}$$.
+12. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.01 con 2 grados de libertad, es decir $$t_{tabla,0.01, 2}$$.
 
-13. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.01, es decir $$t_{tabla,0.01, 10}$$.
+13. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.01 con 10 grados de libertad, es decir $$t_{tabla,0.01, 10}$$.
 
-14. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.05, es decir $$t_{tabla,0.05, 10}$$.
+14. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.05 con 10 grados de libertad, es decir $$t_{tabla,0.05, 10}$$.
 
-15. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.005, es decir $$t_{tabla,0.005, 10}$$.
+15. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.005 con 10 grados de libertad, es decir $$t_{tabla,0.005, 10}$$.
 
-16. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.05, es decir $$t_{tabla,0.05, 20}$$.
+16. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.05 con 20 grados de libertad, es decir $$t_{tabla,0.05, 20}$$.
 
-17. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.025, es decir $$t_{tabla,0.025, 19}$$.
+17. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.025 con 19 grados de libertad, es decir $$t_{tabla,0.025, 19}$$.
 
-18. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.1, es decir $$t_{tabla,0.1, 19}$$.
+18. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.1 con 19 grados de libertad, es decir $$t_{tabla,0.1, 19}$$.
 
-19. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.005, es decir $$t_{tabla,0.005, 19}$$.
+19. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.005 con 19 grados de libertad, es decir $$t_{tabla,0.005, 19}$$.
 
-20. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.05, es decir $$t_{tabla,0.05, 29}$$.
+20. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.05 con 29 grados de libertad, es decir $$t_{tabla,0.05, 29}$$.
 
 
 ***

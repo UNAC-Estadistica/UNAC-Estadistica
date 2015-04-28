@@ -527,7 +527,7 @@ $$
 
 ### Prueba de hipótesis para una media de una distribución normal y varianza conocida.
 
-#### Caso unilateral:
+#### Caso unilateral o de una sola cola:
 
 En este caso la hipótesis a probar es:
 
@@ -575,7 +575,7 @@ El valor de $$\alpha$$=0.05, luego $$1 - \alpha$$ = 0.95
 
 El $$Z_{tabla, 1- \alpha}$$ = $$Z_{tabla, 0.95} \approx 1.64 $$ 
 
-Dado que le valor de $$Z_{calc} = 2 > Z_{tabla, 0.95} =$$ 1.64 entonces se rechaza $$H_0$$, es decir que
+Dado que el valor de $$Z_{calc} = 2 > Z_{tabla, 0.95} =$$ 1.64 entonces se rechaza $$H_0$$, es decir que
 hay suficiente evidencia para mostrar que el promedio de estatura de los hombres colombianos es mayor de 1.70,
 por lo tanto el extranjero tiene la razón.
 
@@ -636,7 +636,7 @@ por lo tanto el extranjero no tiene la razón.
  
  *** 
 
-#### Caso bilateral
+#### Caso bilateral o de dos colas
 
  $$
   \begin{aligned}
@@ -656,7 +656,7 @@ Se rechaza $$H_0$$ si $$Z_{calc} > Z_{tabla, 1-\alpha/2}$$ o $$Z_{calc} < Z_{tab
 
 #### Ejemplo:
 
-La distribución de los futbolistas colombianos es normal con una desviación estándar de
+La distribución de la estatura de los futbolistas colombianos es normal con una desviación estándar de
 dos centímetros ($$\sigma$$ = 2). Un extranjero afirma que el promedio de estatura de
 los futbolistas colombianos es diferente a 175 cm. 
 Para verificar ese supuesto se tomó una muestra de 16 estaturas de futbolistas y se halló que la media muestral
@@ -684,7 +684,7 @@ El valor de $$\alpha$$=0.05, entonces $$\alpha/2 = 0.025$$ y $$(1-\alpha/2) = 0.
 El $$Z_{tabla, \alpha/2}$$ = $$Z_{tabla, 0.025} \approx -1.96 $$, y
  $$Z_{tabla, 1-\alpha/2}$$ = $$Z_{tabla, 0.975} \approx 1.96 $$.
 
-Dado que le valor de $$Z_{calc} = 1$$, entonces no se rechaza $$H_0$$, porque $$Z_{calc}= 1$$ ni es 
+Dado que el valor de $$Z_{calc} = 1$$, entonces no se rechaza $$H_0$$, porque $$Z_{calc}= 1$$ ni es 
 es menor de $$Z_{tabla, 0.025} \approx -1.96 $$ ni es mayor de $$Z_{tabla, 0.975} \approx 1.96 $$ es decir que
 no hay suficiente evidencia para mostrar que el promedio de estatura de los futbolistas colombianos
 sea diferente de 175 cm, por lo tanto el extranjero no tiene la razón.
@@ -692,7 +692,7 @@ sea diferente de 175 cm, por lo tanto el extranjero no tiene la razón.
 
 ### Prueba de hipótesis para una media de una distribución  normal y de tamaño pequeño ($$n \le 30$$) y varianza desconocida.
 
-#### Caso unilateral:
+#### Caso unilateral o de dos colas:
 
 En este caso la hipótesis a probar es:
 
@@ -817,7 +817,7 @@ tomar el examen ha disminuido con respecto a 35 minutos.
 
 
 
-#### Caso bilateral
+#### Caso bilateral o de dos colas
 
 En este caso la hipótesis a probar es:
 
