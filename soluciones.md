@@ -1,7 +1,6 @@
 <!---
 layout: curso
 title: 'Soluciones'
-order: 06
 custom_js: 'mathjax'
 --->
 

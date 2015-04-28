@@ -1,7 +1,7 @@
 ---
 layout: curso
 title: 'Estadística'
-order: 00
+order: 1
 ---
 
 La estadística es la ciencia y el arte de tomar datos, transformalos en

@@ -1,7 +1,7 @@
 ---
 layout: curso
 title: 'Trabajos'
-order: 03
+order: 3
 ---
 
 ## Seguimiento (Trabajos)

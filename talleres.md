@@ -1,7 +1,7 @@
 ---
 layout: curso
 title: 'Talleres'
-order: 02
+order: 2
 ---
 
 ### Seguimiento (Talleres)
