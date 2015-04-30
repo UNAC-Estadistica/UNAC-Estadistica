@@ -880,4 +880,16 @@ de 2.132 entonces no rechazamos $$H_0$$, luego no hay evidencia
 para decir que el tiempo de reacción en el juego de internet es
 diferente al promedio general de 215 milisegundos.
 
+Nota:
+
+La fórmula más fácil para calcular la desviación estándar es:
+
+***
+
+***
+
+$$
+S = \sqrt{\frac{\Sigma x^2 - \frac{(\Sigma x)^2}{n}}{n-1}}
+$$
+
 
