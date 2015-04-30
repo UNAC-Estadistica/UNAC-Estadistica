@@ -1,7 +1,7 @@
 ---
 layout: curso
 title: 'Examen final'
-order: 07
+order: 7
 ---
 
 

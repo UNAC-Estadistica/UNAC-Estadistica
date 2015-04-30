@@ -1,7 +1,7 @@
 ---
 layout: curso
 title: 'Guías'
-order: 04
+order: 4
 ---
 
 ## Estadística descriptiva

@@ -1,7 +1,7 @@
 ---
 layout: curso
 title: 'Teoría'
-order: 05
+order: 5
 custom_js: 'mathjax'
 ---
 

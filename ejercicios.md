@@ -1,7 +1,7 @@
 ---
 layout: curso
 title: 'Ejercicios'
-order: 06
+order: 6
 custom_js: 'mathjax'
 ---
 
