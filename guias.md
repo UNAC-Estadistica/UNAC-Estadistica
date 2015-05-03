@@ -156,4 +156,6 @@ order: 4
 
    <img src="/guias/tabla_t.png" width="1000">
 
+### Tabla de la distribución f de Fisher (f)
 
+   [Tablas de la distribución f](/guias/FTable.pdf){:target="_blank"}
