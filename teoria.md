@@ -925,7 +925,7 @@ Resumen de pruebas de hipótesis para comparación de medias (muestras independi
   |                 |                       | $$S_p = \frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$         |  |
   | $$\mu_1=\mu_2$$ | $$\mu_1 \neq \mu_2$$  | $$t_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{S_p\sqrt{1/n_1+1/n_2}}$$ | $$t_{calc} < -t_{tabla,\alpha/2,n_1+n_2-2}$$ o $$t_{calc} > t_{tabla,\alpha/2,n_1+n_2-2}$$ |
   |                 |                       | $$v=n_1+n_2-2, \sigma_1 = \sigma_2$$ pero desconocidas         |  |
-  |                 |                       | $$S_p = \frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$         |  |
+  |                 |                       | $$S_p^2 = \frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$         |  |
   | $$\mu_1=\mu_2$$ | $$\mu_1 < \mu_2$$     | $$t_{calc}=\frac{\bar{x}-\mu_0}{\sqrt{S_1^2/n_1+S_2^2/n_2}}$$|  $$t_{calc} < -t_{tabla,\alpha,v}$$ |
   |                 |                       | $$v = \frac{(S_1^2/n_1+S_2^2/n_2)^2}{\frac{(S_1^2/n_1)^2}{n_1-1}+\frac{(S_2^2/n_2)^2}{n_2-1}}$$ |    |
   |                 |                       | $$\sigma_1 \neq \sigma_2$$ y desconocidas                                               |    |
@@ -954,7 +954,98 @@ Prueba estadística para igualdad de varianzas:
   | $$H_0$$   | $$H_1$$  | Estadístico de prueba |  Critero de rechazo |
   |:--------:|:-------------------:|:------------:|:------------:|
   |$$\sigma_1^2 = \sigma_2^2$$  | $$\sigma_1^2 \neq \sigma_2^2$$ | $$f_{calc} = \frac{S_1^2}{S_2^2}$$ | $$f_{calc} < f_{tabla, 1-\alpha/2, n_1-1,n_2-1}$$ o $$f_{calc} > f_{tabla,\alpha/2, n_1-1,n_2-1}$$ |
-  |                             |                                |                                    | $$f_{calc,1-\alpha/2,n_1-1,n_2-1}=1/f_{calc,\alpha,n_2-1,n_1-1}$$
+  |                             |                                |                                    | $$f_{calc,1-\alpha/2,n_1-1,n_2-1}=1/f_{calc,\alpha,n_2-1,n_1-1}$$ |
   {: .table .table-hover}
+
+***
+
+***
+
+Ejemplo:
+
+Al realizar un experimento en los estudiantes de la UNAC sobre los tiempos de
+reacción a un juego de internet, se encontró que en un primer intento los
+resultados en milisegundos de los hombres fue: 265, 281, 264, 279, 268, 266,
+244, 244. Mientras que para los mujeres los resultados fueron: 285, 341, 310,
+288, 277, 253, 331, 300, 292, 294, 289, 290.
+
+¿Existe evidencia que los tiempo de reacción en el primer intento son
+diferentes entre los géneros?
+
+En este caso se tiene que la hipótesis que se plantea es la siguiente:
+
+  $$
+  \begin{aligned}
+   H_0 &: \mu_H = \mu_M \\
+   H_1 &: \mu_H \ne \mu_M\\
+  \end{aligned}
+  $$
+
+Donde $$\mu_H$$ es el promedio poblacional del tiempo de reacción de los hombre,
+mientras que $$\mu_M$$ es el promedio poblacional del tiempo de reacción de las mujeres.
+
+Dado que las muestras son independientes se tienen dos posibilidades que $$\sigma_H = \sigma_M$$
+o por el contrario $$\sigma_H \neq \sigma_M$$, por lo tanto se hace necesario probar cuál de
+las dos situaciones es correcta, entonces se debe realizar una prueba de hipótesis con
+respecto a las varianzas poblacionales, del siguiente modo:
+
+  $$
+  \begin{aligned}
+   H_0 &: \sigma^2_H = \sigma^2_M \\
+   H_1 &: \sigma^2_H \ne \sigma^2_M\\
+  \end{aligned}
+  $$
+
+En este caso el estadístico es el valor de $$f$$ y tomamos a $$\sigma^2_H$$ como el $$\sigma^2_1$$, 
+luego $$n_1 = n_H = 8$$ y $$n_2 = n_M = 12$$.
+
+Entonces se calculan tanto $$S^2_H$$ como $$S^2_M$$, obteniéndose como resultados: 
+$$S^2_H=190.6964$$ y $$S^2_M=541.9697$$, se tiene entonces que el valor de $$f_{calc}$$ es:
+
+$$
+ f_{calc} = \frac{S^2_H}{S^2_M} = \frac{190.6964}{541.9697} = 0.351858
+$$
+
+El criterio de rechazo es: $$f_{calc} < f_{tabla, 1-\alpha/2, n_1-1,n_2-1}$$ o $$f_{calc} > f_{tabla,\alpha/2, n_1-1,n_2-1}$$
+para nuestro caso se tiene que, $$\alpha = 0.05$$, $$n_1 = n_H = 8$$, y $$n_2 = n_M = 12$$, luego 
+$$f_{tabla,\alpha/2, n_1-1,n_2-1} = f_{tabla,0.025, 7, 11} = 3.76 $$, y como $$f_{tabla, 1-\alpha/2, n_1-1,n_2-1}$$, no
+se encuentra en la tabla, se halla inicialmente $$f_{tabla, \alpha/2, n_2-1,n_1-1} \approx 4.76 $$ y luego mediante la transformación,
+se halla $$f_{tabla, 1-\alpha/2, n_1-1,n_2-1} = 1/f_{tabla, \alpha/2, n_2-1,n_1-1} = 1/4.76 = 0.2123381$$.
+
+Se observa que $$f_{calc}=0.351858$$ ni es menor de 0.2123381 ni mayor de 3.76, entonces no se rechaza $$H_0$$, 
+es decir que no hay suficiente evidencia para decir que las varianzas son diferentes, por lo tanto es
+razonable suponerlas iguales.
+
+Dado, entonces que es posible suponer las varianzas iguales, también las desviaciones estándar se
+pueden suponer constantes entonces para la hipótesis de igualdad de medias se utiliza el estadístico
+que considera las desviaciones estándar iguales pero desconocidas.
+
+El estadístico entonces es:
+
+$$
+  t_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{S_p\sqrt{1/n_1+1/n_2}}
+$$
+
+Para hallar a $$S_p$$ se utiliza entonces la fórmula y reemplazando:
+
+$$
+ S_p^2 = \frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2} = \frac{7 \cdot 190.6964 + 11 \cdot 541.9697}{8+12-2}=\frac{7296.541}{18}=405.3634
+$$
+
+Reemplazando en la fórmula del estadístico con $$ S_p = \sqrt{S_p^2}= \sqrt{405.3634} = 20.13364 $$
+
+Dado que $$\bar{x}_1 = \bar{x}_H = 263.875 $$ y $$\bar{x}_2 = \bar{x}_M = 295.8333 $$, entonces reemplazando:
+
+$$
+  t_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{S_p\sqrt{1/n_1+1/n_2}}=\frac{263.875-295.8333}{20.13364\sqrt{1/8+1/12}}=\frac{-31.95833}{9.189707}=-3.477623
+$$
+
+En este caso el criterio de rechazo es: $$t_{calc} < -t_{tabla,\alpha/2,n_1+n_2-2}$$ o $$t_{calc} > t_{tabla,\alpha/2,n_1+n_2-2}$$,
+en nuestro caso $$t_{tabla,0.025,18} = 2.101 $$, entonces el $$t_{calc}=-3.477623$$  es menor de $$-t_{tabla,0.025,18}=-2.101$$, por lo tanto
+rechazo $$H_0$$ lo que indica que hay suficiente evidencia que el tiempo de reacción de los hombres 
+fue diferente al de las mujeres en el primer turno. Se muestra que los hombres tienen un mejor tiempo de reacción 
+en el primer intento del [juego de reacción](http://www.humanbenchmark.com/tests/reactiontime/).
+
+
 
 
