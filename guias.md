@@ -146,16 +146,47 @@ order: 4
 
 #### Tabla para valores negativos de Z
 
-   <img src="/guias/tabla_normal_01.png" width="1000">
+   <img src="/guias/tabla_normal_01.png" width="800">
 
 #### Tabla para valores negativos de Z
 
-   <img src="/guias/tabla_normal_02.png" width="1000">
+   <img src="/guias/tabla_normal_02.png" width="800">
 
 ### Tabla de la distribución t de student (t)
 
-   <img src="/guias/tabla_t.png" width="1000">
+   <img src="/guias/tabla_t.png" width="800">
 
 ### Tabla de la distribución f de Fisher (f)
 
    [Tablas de la distribución f](/guias/FTable.pdf){:target="_blank"}
+
+### Prueba de hipótesis para igualdad de medias con PSPP.
+
+1. Cargar la base de datos (en este caso [tiempo de reacción](/guias/tiemposReaccion.sav){:target="_blank"}).
+
+   <img src="/guias/01cargaBaseDatos.png" alt="Carga de la base de datos" style="width: 500px;"/>
+
+2. En el menú principal seguir los siguientes pasos:
+
+   ```
+   Analizar > Comparar Medias > Prueba T para Muestras Independientes...
+   ```
+
+   <img src="/guias/02ComparacionIndependientes.PNG" alt="Comparaciones Independientes 1" style="width: 500px;"/>
+
+3. Se toma como variable de contraste la variable respuesta en este caso el Tiempo de reacción en el primer intento (Tiempo1) y
+   la "Variable de agrupación" es en este caso el Género del estudiante (Genero).
+
+   <img src="/guias/03ComparacionIndependienteLleno.PNG" alt="Comparaciones Independientes 2" style="width: 500px;"/>
+
+4. Se presiona el botón ```Definir Grupos``` y aparece la siguiente pantalla.
+
+   <img src="/guias/04DefincionGrupos.PNG" alt="Definicion de grupos 1" style="width: 500px;"/>
+
+5. Se selecciona los grupos en el orden que se quieren que aparezcan como se muestra a continuación.
+
+   <img src="/guias/05DefinicionGruposLleno.PNG" alt="Definicion de grupos 2" style="width: 500px;"/>
+
+6. Resultado final. Se presiona el botón ```Aceptar``` y se obtiene el siguiente resultado.
+
+   [Resultados de igualdad de medias](/guias/resultadosIgualdadMedias.html){:target="_blank"}

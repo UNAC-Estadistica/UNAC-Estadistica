@@ -964,7 +964,7 @@ Prueba estadística para igualdad de varianzas:
 Ejemplo:
 
 Al realizar un experimento en los estudiantes de la UNAC sobre los tiempos de
-reacción a un juego de internet, se encontró que en un primer intento los
+[reacción a un juego de internet](http://www.humanbenchmark.com/tests/reactiontime/), se encontró que en un primer intento los
 resultados en milisegundos de los hombres fue: 265, 281, 264, 279, 268, 266,
 244, 244. Mientras que para los mujeres los resultados fueron: 285, 341, 310,
 288, 277, 253, 331, 300, 292, 294, 289, 290.

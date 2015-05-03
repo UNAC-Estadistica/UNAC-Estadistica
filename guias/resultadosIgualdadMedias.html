@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>Resultado de PSPP</TITLE>
+<META NAME="generator" CONTENT="GNU pspp 0.8.4-g6036c7">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<STYLE TYPE="text/css">
+<!--
+body {
+  background: white;
+  color: black;
+  padding: 0em 12em 0em 3em;
+  margin: 0
+}
+body>p {
+  margin: 0pt 0pt 0pt 0em
+}
+body>p + p {
+  text-indent: 1.5em;
+}
+h1 {
+  font-size: 150%;
+  margin-left: -1.33em
+}
+h2 {
+  font-size: 125%;
+  font-weight: bold;
+  margin-left: -.8em
+}
+h3 {
+  font-size: 100%;
+  font-weight: bold;
+  margin-left: -.5em }
+h4 {
+  font-size: 100%;
+  margin-left: 0em
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  color: blue
+}
+html {
+  margin: 0
+}
+code {
+  font-family: sans-serif
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em
+}
+th { background: #dddddd; font-weight: normal; font-style: oblique }
+caption {
+  text-align: left
+}
+-->
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" TEXT="#000000"
+ LINK="#1f00ff" ALINK="#ff0000" VLINK="#9900dd">
+<DIV class="GET"><H3>GET</H3>
+<PRE class="syntax">GET FILE=&quot;Z:\Dropbox\sem201501\unac\pruebasHip\pspp_Pruebas_hipotesis\tiemposReaccion.sav&quot;.<BR></PRE>
+<DIV class="T-TEST"><H3>T-TEST</H3>
+<PRE class="syntax">T-TEST /VARIABLES= Tiempo1<BR>	/GROUPS=Genero(&quot;1        &quot;,&quot;2        &quot;)	/MISSING=ANALYSIS<BR>	/CRITERIA=CIN(0.95).<BR></PRE>
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Estadísticas de grupo</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double"><EM>Género del estudiante</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid"><EM>N</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid"><EM>Media</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid"><EM>Desviación Estándar</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid; border-right: double"><EM>Err.Est.Media</EM></TH>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-left: double">Tiempo del primer intento</TD>
+    <TD STYLE="border-top: double; border-left: thin solid">Masculino</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">8</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">263,88</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">13,81</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">4,88</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-bottom: double; border-left: double"></TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid">Femenino</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">12</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">295,83</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">23,28</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid; border-right: double">6,72</TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Prueba para muestras independientes</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: double; border-left: double">Prueba de Levene para la igualdad de varianzas</TH>
+    <TH ALIGN="CENTER" COLSPAN="7" STYLE="border-top: double; border-left: thin solid; border-right: double">Prueba T para la Igualdad de Medias</TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH STYLE="border-top: thin solid; border-left: double"></TH>
+    <TH STYLE="border-top: thin solid; border-left: thin solid"></TH>
+    <TH STYLE="border-top: thin solid; border-left: thin solid"></TH>
+    <TH STYLE="border-top: thin solid; border-left: thin solid"></TH>
+    <TH STYLE="border-top: thin solid; border-left: thin solid"></TH>
+    <TH STYLE="border-top: thin solid; border-left: thin solid"></TH>
+    <TH STYLE="border-top: thin solid; border-left: thin solid"></TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">Intervalo de confianza 95% de la Diferencia</TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH></TH>
+    <TH ALIGN="CENTER" STYLE="border-left: double"><EM>F</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-left: thin solid"><EM>Sign.</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-left: thin solid"><EM>t</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-left: thin solid"><EM>df</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-left: thin solid"><EM>Sign. (2-colas)</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-left: thin solid"><EM>Diferencia Media</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-left: thin solid"><EM>Err.Est. de la Diferencia</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Inferior</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: double"><EM>Superior</EM></TH>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-left: double">Tiempo del primer intento</TD>
+    <TD STYLE="border-top: double; border-left: thin solid">Se asume igualdad de varianzas</TD>
+    <TD ALIGN="CENTER" STYLE="border-top: double; border-left: double">1,12</TD>
+    <TD ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid">,304</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">-3,48</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">18,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">,003</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">-31,96</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">9,19</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">-51,27</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">-12,65</TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-bottom: double; border-left: double"></TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid">Igualdad de varianzas no asumida</TD>
+    <TD STYLE="border-bottom: double; border-left: double"></TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">-3,85</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">17,86</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">,001</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">-31,96</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">8,31</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">-49,42</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid; border-right: double">-14,50</TD>
+  </TR>
+</TBODY></TABLE>
+
+</BODY>
+</HTML>
+<!-- end of file -->
