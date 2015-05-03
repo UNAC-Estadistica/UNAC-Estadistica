@@ -52,7 +52,7 @@ $$
   
   ¿Cuál es la probabilidad de que esa persona que elijamos al azar sepa la definción de probabilidad?
  
-  $$S = \{\textrm{sabe, sabe, sabe, sabe, sabe, sabe, sabe, no sabe, no sabe, no sabe}\}$$   
+  $$S = \{\textrm{sabe, sabe, sabe, sabe, sabe, sabe, sabe, no sabe, no sabe, no sabe}\}$$
 
   $$E: \textrm{Elegir una persona que sabe la definición de probabilidad}$$
 
@@ -891,5 +891,70 @@ La fórmula más fácil para calcular la desviación estándar es:
 $$
 S = \sqrt{\frac{\Sigma x^2 - \frac{(\Sigma x)^2}{n}}{n-1}}
 $$
+
+
+***
+
+***
+
+Resumen de pruebas de hipótesis para una sola media:
+
+  | $$H_0$$   | $$H_1$$  | Estadístico de prueba |  Critero de rechazo |
+  |:--------:|:-------------------:|:------------:|:------------:|
+  | $$\mu=\mu_0$$ | $$\mu < \mu_0$$     | $$z_{calc}=\frac{\bar{x}-\mu_0}{\sigma/\sqrt{n}}$$, $$\sigma$$ conocida | $$z_{calc} < z_{tabla,\alpha}$$ |
+  | $$\mu=\mu_0$$ | $$\mu > \mu_0$$     | $$z_{calc}=\frac{\bar{x}-\mu_0}{\sigma/\sqrt{n}}$$, $$\sigma$$ conocida | $$z_{calc} > z_{tabla,1-\alpha}$$ |
+  | $$\mu=\mu_0$$ | $$\mu \neq \mu_0$$  | $$z_{calc}=\frac{\bar{x}-\mu_0}{\sigma/\sqrt{n}}$$, $$\sigma$$ conocida | $$z_{calc} < z_{tabla,\alpha/2}$$ o $$z_{calc} > z_{tabla,1-\alpha/2}$$ |
+  | $$\mu=\mu_0$$ | $$\mu < \mu_0$$     | $$t_{calc}=\frac{\bar{x}-\mu_0}{S/\sqrt{n}}$$| $$t_{calc} < -t_{tabla,\alpha,n-1}$$ |
+  | $$\mu=\mu_0$$ | $$\mu > \mu_0$$     | $$t_{calc}=\frac{\bar{x}-\mu_0}{S/\sqrt{n}}$$| $$t_{calc} > t_{tabla,\alpha,n-1}$$ |
+  | $$\mu=\mu_0$$ | $$\mu \neq \mu_0$$  | $$t_{calc}=\frac{\bar{x}-\mu_0}{S/\sqrt{n}}$$ | $$t_{calc} < -t_{tabla,\alpha/2,n-1}$$ o $$t_{calc} > t_{tabla,\alpha/2,n-1}$$ |
+  {: .table .table-hover}
+
+
+Resumen de pruebas de hipótesis para comparación de medias (muestras independientes):
+
+  | $$H_0$$   | $$H_1$$  | Estadístico de prueba |  Critero de rechazo |
+  |:--------:|:-------------------:|:------------:|:------------:|
+  | $$\mu_1=\mu_2$$ | $$\mu_1 < \mu_2$$     | $$z_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{\sqrt{(\sigma_1^2/n_1+\sigma_2^2/n_2}}$$, $$\sigma_1$$ y $$\sigma_2$$ conocidas | $$z_{calc} < z_{tabla,\alpha}$$ |
+  | $$\mu_1=\mu_2$$ | $$\mu_1 > \mu_2$$     | $$z_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{\sqrt{(\sigma_1^2/n_1+\sigma_2^2/n_2}}$$, $$\sigma_1$$ y $$\sigma_2$$ conocidas  | $$z_{calc} > z_{tabla,1-\alpha}$$ |
+  | $$\mu_1=\mu_2$$ | $$\mu_1 \neq \mu_2$$  | $$z_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{\sqrt{(\sigma_1^2/n_1+\sigma_2^2/n_2}}$$, $$\sigma_1$$ y $$\sigma_2$$ conocidas  | $$z_{calc} < z_{tabla,\alpha/2}$$ o $$z_{calc} > z_{tabla,1-\alpha/2}$$ |
+  | $$\mu_1=\mu_2$$ | $$\mu_1 < \mu_2$$     | $$t_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{S_p\sqrt{1/n_1+1/n_2}}$$ | $$t_{calc} < -t_{tabla,\alpha,n_1+n_2-2}$$ |
+  |                 |                       | $$v=n_1+n_2-2, \sigma_1 = \sigma_2$$ pero desconocidas         |  |
+  |                 |                       | $$S_p = \frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$         |  |
+  | $$\mu_1=\mu_2$$ | $$\mu_1 > \mu_2$$     | $$t_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{S_p\sqrt{1/n_1+1/n_2}}$$ | $$t_{calc} > t_{tabla,\alpha,n_1+n_2-2}$$ |
+  |                 |                       | $$v=n_1+n_2-2, \sigma_1 = \sigma_2$$ pero desconocidas         |  |
+  |                 |                       | $$S_p = \frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$         |  |
+  | $$\mu_1=\mu_2$$ | $$\mu_1 \neq \mu_2$$  | $$t_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{S_p\sqrt{1/n_1+1/n_2}}$$ | $$t_{calc} < -t_{tabla,\alpha/2,n_1+n_2-2}$$ o $$t_{calc} > t_{tabla,\alpha/2,n_1+n_2-2}$$ |
+  |                 |                       | $$v=n_1+n_2-2, \sigma_1 = \sigma_2$$ pero desconocidas         |  |
+  |                 |                       | $$S_p = \frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$         |  |
+  | $$\mu_1=\mu_2$$ | $$\mu_1 < \mu_2$$     | $$t_{calc}=\frac{\bar{x}-\mu_0}{\sqrt{S_1^2/n_1+S_2^2/n_2}}$$|  $$t_{calc} < -t_{tabla,\alpha,v}$$ |
+  |                 |                       | $$v = \frac{(S_1^2/n_1+S_2^2/n_2)^2}{\frac{(S_1^2/n_1)^2}{n_1-1}+\frac{(S_2^2/n_2)^2}{n_2-1}}$$ |    |
+  |                 |                       | $$\sigma_1 \neq \sigma_2$$ y desconocidas                                               |    |
+  | $$\mu_1=\mu_2$$ | $$\mu_1 > \mu_2$$     | $$t_{calc}=\frac{\bar{x}-\mu_0}{\sqrt{S_1^2/n_1+S_2^2/n_2}}$$|  $$t_{calc} > t_{tabla,\alpha,v}$$ |
+  |                 |                       | $$v = \frac{(S_1^2/n_1+S_2^2/n_2)^2}{\frac{(S_1^2/n_1)^2}{n_1-1}+\frac{(S_2^2/n_2)^2}{n_2-1}}$$ |    |
+  |                 |                       | $$\sigma_1 \neq \sigma_2$$ y desconocidas                                               |    |
+  | $$\mu_1=\mu_2$$ | $$\mu_1 \neq \mu_2$$  | $$t_{calc}=\frac{\bar{x}-\mu_0}{\sqrt{S_1^2/n_1+S_2^2/n_2}}$$ | $$t_{calc} < -t_{tabla,\alpha,v}$$ o $$t_{calc} > t_{tabla,\alpha,v}$$ |
+  |                 |                       | $$v = \frac{(S_1^2/n_1+S_2^2/n_2)^2}{\frac{(S_1^2/n_1)^2}{n_1-1}+\frac{(S_2^2/n_2)^2}{n_2-1}}$$ |    |
+  |                 |                       | $$\sigma_1 \neq \sigma_2$$ y desconocidas                                               |    |
+  {: .table .table-hover}
+
+Resumen de pruebas de hipótesis para comparación de medias (valores pareados):
+
+  | $$H_0$$   | $$H_1$$  | Estadístico de prueba |  Critero de rechazo |
+  |:--------:|:-------------------:|:------------:|:------------:|
+  | $$\mu_D=0$$ | $$\mu_D < 0$$     | $$t_{calc}=\frac{\bar{d}}{S_d/\sqrt{n}}$$,   | $$t_{calc} < -t_{tabla,\alpha,n-1}$$ |
+  |             |                   | $$v=n-1$$, observaciones pareadas.           |                                      |
+  | $$\mu_D=0$$ | $$\mu_D > 0$$     | $$t_{calc}=\frac{\bar{d}}{S_d/\sqrt{n}}$$,   | $$t_{calc} > t_{tabla,\alpha,n-1}$$  |
+  |             |                   | $$v=n-1$$, observaciones pareadas.           |                                      |
+  | $$\mu_D=0$$ | $$\mu_D \neq 0$$  | $$t_{calc}=\frac{\bar{d}}{S_d/\sqrt{n}}$$,   | $$t_{calc} < -t_{tabla,\alpha/2,n-1}$$ o $$t_{calc} > t_{tabla,\alpha/2,n-1}$$ |
+  |             |                   | $$v=n-1$$, observaciones pareadas.           |                                                                                |
+  {: .table .table-hover}
+
+Prueba estadística para igualdad de varianzas:
+
+  | $$H_0$$   | $$H_1$$  | Estadístico de prueba |  Critero de rechazo |
+  |:--------:|:-------------------:|:------------:|:------------:|
+  |$$\sigma_1^2 = \sigma_2^2$$  | $$\sigma_1^2 \neq \sigma_2^2$$ | $$f_{calc} = \frac{S_1^2}{S_2^2}$$ | $$f_{calc} < f_{tabla, 1-\alpha/2, n_1-1,n_2-1}$$ o $$f_{calc} > f_{tabla,\alpha/2, n_1-1,n_2-1}$$ |
+  |                             |                                |                                    | $$f_{calc,1-\alpha/2,n_1-1,n_2-1}=1/f_{calc,\alpha,n_2-1,n_1-1}$$
+  {: .table .table-hover}
 
 
