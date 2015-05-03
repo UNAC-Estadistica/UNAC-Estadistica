@@ -89,6 +89,10 @@ recavar evidencia para tener un critero más cuantitativo como respuesta a esta 
 8. Si el grupo indica otra u otras variables que quieran incoporar en la investigación deberán 
    incluir la pregunta de investigación correspondiente y realizar todo el análisis.
 9. Ningún miembro del equipo puede hacer parte de la muestra.
+10. Estos tres documentos en sirven de orientación a la elaboración del póster:
+   - [Póster científico](/docs/DocumentoPrincipalEGuardiola_poster_cientifico.pdf){:target="_blank"}
+   - [Resumen corto de los elementos de un póster científico](/docs/mgi20400.pdf){:target="_blank"}
+   - [Guía rápida para elaboración de un póster científico](/docs/poster-1209925152397079-9.pdf){:target="_blank"}
 
 
 ### Entregables
@@ -141,5 +145,6 @@ de la presentación del examen final.
 4. (5%) Bases de datos en formato **.sav** de PSPP.
 5. (10%) Análisis adicional de alguna otra variable propuesta por el grupo.
 
-     
+
+
 
