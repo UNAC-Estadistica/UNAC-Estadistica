@@ -176,6 +176,8 @@ custom_js: 'mathjax'
 
 ## Pruebas de hipótesis
 
+### Pruebas con relación a una media
+
 1. Una muestra aleatoria de edad de muerte de 150 personas de cierta comunidad
    mostró un promedio de 86.5 años. Si se sabe que la desviación estándar de la
    edad de muerte es de 10 años ($$\sigma = 10$$) ¿Indica este resultado que
@@ -232,8 +234,81 @@ custom_js: 'mathjax'
     las chocolatinas es superior a 50 calorías.
    
 
+### Pruebas con relación a comparación de medias
+
+1. Se realizó un estudio para estimar la diferencia de salarios de los profesores de
+   universidades privadas con respecto a los profesores de universidades públicas.
+   Una muestra aletoria de 100 profesores de universidades privadas indicó un salario
+   promedio durante 9 meses de $3'200.000 con una desviación estándar poblacional de $500.000 pesos.
+   Una muestra aleatoria de 200 profesores de universidades públicas mostró una promedio 
+   de salario de $3'900.000 con una desviación estándar poblacional de $400.000 pesos.
+   Pruebe la hipótesis de que el salario promedio de los profesores de las universidades
+   estatales es mayor que el de las universidades privadas. Utilice un nivel de significancia de 0.01.
 
 
+2. Se realizó un estudio para determinar si el material que se trata en un curso de estadística 
+   se entiende mejor cuando un laboratorio forma parte del curso. Se seleccionarion aleatoriamente
+   estudiantes para participar en, ya sea, un curso de 3 horas/semana sin laboratorio o 
+   en un curso de 4 horas/semana con laboratorio. En la sección con laboratorio 11 estudiantes tuvieron
+   una calificación promedio de 4.25 con una desviación estándar de 2.3 y en la sección sin
+   laboratorio 17 estudiantes tuvieron una calificación promedio de 3.95 con una desviación estándar 
+   de 3.1. ¿Diría usted que el curso con laboratorio incremente la calificación promedio? Suponga
+   que las poblaciones tienen distribuciones aproximadamente normal con varianzas iguales.
 
+3. Un investigador de la Universidad de UCLA asegura que la vida promedio de los ratones puede
+   extenderse hasta por 8 meses cuando las calorías en sus alimentos se reducen aproximadamente
+   40% dede el momento en que son destetados. Las dietas restringidas son enriquecidas a niveles
+   normales con vitaminas y proteínas. Suponga que una muestra aleatoria de 10 ratones se alimenta
+   con una dieta normal y vive un promedio de 32.1 meses con una desviación estándar de 3.2 meses,
+   mientras que una muestra aleatoria de 15 ratones come la dieta restringida y vive un promedio
+   37.6 meses con una desviación estándar de 2.8. Prueba la hipótesis con un nivel de 
+   significancia de 0.05, de que la vida promedio de los ratones bajo esta dieta restringida se incrementa
+   en 8 meses. Suponga varianzas iguales.
 
+4. Se realizó un estudio en donde se determinó si hay diferencia entre el rendimiento académico
+   de los estudiantes residentes en la UNAC y lo que viven como externos. Las muestras aleatorias
+   arrojaron los siguientes resultados en el promedio académico:
+
+    | Residentes | Externos |
+    |:----------|:-----------|
+    |  4.2    | 4.1 |
+    |  3.2    | 3.2 |
+    |  3.0    | 3.0 |
+    |  3.8    | 3.1 |
+    |  3.6    | 4.2 |
+    |  3.7    | 3.1 |
+    |  3.1    | 3.8 |
+    |  3.2    | 3.0 |
+    |  3.6    | 3.0 |
+    |  3.8    | 3.1 |
+    |         | 3.0 |
+    |         | 3.1 |
+    {: .table .table-hover}
+
+    Pruebe la hipótesis que no hay diferencia en el promedio académico de los que residen en 
+    los dormitorios de la UNAC y de los que viven externos.
+
+5. Para determinar si existe diferencia entre el rendimiento académico ente los estudiantes
+   que vienen de la costa atlántica y de los que vienen del los llanos orientales se realizó
+   un muestreo aleatorio en donde se mostraron los siguientes resultados:
+
+    | Costa Alántica | Interior del país |
+    |:----------|:-----------|
+    |  3.7    | 3.1 |
+    |  3.1    | 3.8 |
+    |  3.2    | 3.0 |
+    |  3.6    | 3.0 |
+    |  3.8    | 3.1 |
+    |  3.1    | 3.0 |
+    |  3.0    | 3.5 |
+    |  3.3    | 3.8 |
+    |  3.7    | 3.9 |
+    |  4.2    | 4.6 |
+    |  3.0    | 4.7 |
+    |  4.6    | 3.0 |
+    |  4.1    | 3.2 |
+    {: .table .table-hover}
+
+    Pruebe si existe o no hay diferencia en los redimientos promedios de los estudiantes provenientes
+    de las dos regiones del país.
    
