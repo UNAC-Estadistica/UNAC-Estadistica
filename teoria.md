@@ -1009,10 +1009,10 @@ $$
 El criterio de rechazo es: $$f_{calc} < f_{tabla, 1-\alpha/2, n_1-1,n_2-1}$$ o $$f_{calc} > f_{tabla,\alpha/2, n_1-1,n_2-1}$$
 para nuestro caso se tiene que, $$\alpha = 0.05$$, $$n_1 = n_H = 8$$, y $$n_2 = n_M = 12$$, luego 
 $$f_{tabla,\alpha/2, n_1-1,n_2-1} = f_{tabla,0.025, 7, 11} = 3.76 $$, y como $$f_{tabla, 1-\alpha/2, n_1-1,n_2-1}$$, no
-se encuentra en la tabla, se halla inicialmente $$f_{tabla, \alpha/2, n_2-1,n_1-1} \approx 4.76 $$ y luego mediante la transformación,
-se halla $$f_{tabla, 1-\alpha/2, n_1-1,n_2-1} = 1/f_{tabla, \alpha/2, n_2-1,n_1-1} = 1/4.76 = 0.2123381$$.
+se encuentra en la tabla, se halla inicialmente $$f_{tabla, \alpha/2, n_2-1,n_1-1} \approx 4.715 $$ y luego mediante la transformación,
+se halla $$f_{tabla, 1-\alpha/2, n_1-1,n_2-1} = 1/f_{tabla, \alpha/2, n_2-1,n_1-1} = 1/4.715 = 0.2120891$$.
 
-Se observa que $$f_{calc}=0.351858$$ ni es menor de 0.2123381 ni mayor de 3.76, entonces no se rechaza $$H_0$$, 
+Se observa que $$f_{calc}=0.351858$$ ni es menor de 0.2120891 ni mayor de 3.76, entonces no se rechaza $$H_0$$, 
 es decir que no hay suficiente evidencia para decir que las varianzas son diferentes, por lo tanto es
 razonable suponerlas iguales.
 
@@ -1043,8 +1043,9 @@ $$
 En este caso el criterio de rechazo es: $$t_{calc} < -t_{tabla,\alpha/2,n_1+n_2-2}$$ o $$t_{calc} > t_{tabla,\alpha/2,n_1+n_2-2}$$,
 en nuestro caso $$t_{tabla,0.025,18} = 2.101 $$, entonces el $$t_{calc}=-3.477623$$  es menor de $$-t_{tabla,0.025,18}=-2.101$$, por lo tanto
 rechazo $$H_0$$ lo que indica que hay suficiente evidencia que el tiempo de reacción de los hombres 
-fue diferente al de las mujeres en el primer turno. Se muestra que los hombres tienen un mejor tiempo de reacción 
-en el primer intento del [juego de reacción](http://www.humanbenchmark.com/tests/reactiontime/).
+fue diferente al de las mujeres en el primer turno. Se observa que los hombres tienen un mejor tiempo de reacción 
+en el primer intento del [juego de reacción](http://www.humanbenchmark.com/tests/reactiontime/). ¿Pasará lo mismo en el
+segundo intento? ¿Seguirán siendo diferentes los tiempos de reacción?
 
 
 
