@@ -257,7 +257,7 @@ custom_js: 'mathjax'
 
 3. Un investigador de la Universidad de UCLA asegura que la vida promedio de los ratones puede
    extenderse hasta por 8 meses cuando las calorías en sus alimentos se reducen aproximadamente
-   40% dede el momento en que son destetados. Las dietas restringidas son enriquecidas a niveles
+   40% desde el momento en que son destetados. Las dietas restringidas son enriquecidas a niveles
    normales con vitaminas y proteínas. Suponga que una muestra aleatoria de 10 ratones se alimenta
    con una dieta normal y vive un promedio de 32.1 meses con una desviación estándar de 3.2 meses,
    mientras que una muestra aleatoria de 15 ratones come la dieta restringida y vive un promedio

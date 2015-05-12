@@ -919,10 +919,10 @@ Resumen de pruebas de hipótesis para comparación de medias (muestras independi
   | $$\mu_1=\mu_2$$ | $$\mu_1 \neq \mu_2$$  | $$z_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{\sqrt{(\sigma_1^2/n_1+\sigma_2^2/n_2}}$$, $$\sigma_1$$ y $$\sigma_2$$ conocidas  | $$z_{calc} < z_{tabla,\alpha/2}$$ o $$z_{calc} > z_{tabla,1-\alpha/2}$$ |
   | $$\mu_1=\mu_2$$ | $$\mu_1 < \mu_2$$     | $$t_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{S_p\sqrt{1/n_1+1/n_2}}$$ | $$t_{calc} < -t_{tabla,\alpha,n_1+n_2-2}$$ |
   |                 |                       | $$v=n_1+n_2-2, \sigma_1 = \sigma_2$$ pero desconocidas         |  |
-  |                 |                       | $$S_p = \frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$         |  |
+  |                 |                       | $$S_p^2 = \frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$         |  |
   | $$\mu_1=\mu_2$$ | $$\mu_1 > \mu_2$$     | $$t_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{S_p\sqrt{1/n_1+1/n_2}}$$ | $$t_{calc} > t_{tabla,\alpha,n_1+n_2-2}$$ |
   |                 |                       | $$v=n_1+n_2-2, \sigma_1 = \sigma_2$$ pero desconocidas         |  |
-  |                 |                       | $$S_p = \frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$         |  |
+  |                 |                       | $$S_p^2 = \frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$         |  |
   | $$\mu_1=\mu_2$$ | $$\mu_1 \neq \mu_2$$  | $$t_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{S_p\sqrt{1/n_1+1/n_2}}$$ | $$t_{calc} < -t_{tabla,\alpha/2,n_1+n_2-2}$$ o $$t_{calc} > t_{tabla,\alpha/2,n_1+n_2-2}$$ |
   |                 |                       | $$v=n_1+n_2-2, \sigma_1 = \sigma_2$$ pero desconocidas         |  |
   |                 |                       | $$S_p^2 = \frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$         |  |
@@ -1077,7 +1077,7 @@ También es una relación lineal, no por $$x$$ o $$x^2$$ sino la relación linea
 en que los $$\beta's$$ están siendo expresados.
 
 
-Supongamos que se tomaron al azar [precios de viviendas en Medellín y Bogotá](/guias/casas.csv){:target="_blank"}.
+Supongamos que se tomaron al azar [precios de viviendas en Medellín y Bogotá](/teoria/casas.csv){:target="_blank"}.
 
 ¿Existirá una relación lineal entre el precio de la vivienda y los metros cuadrados en las ciudades
 de Medellín y Bogotá?
