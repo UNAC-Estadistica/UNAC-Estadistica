@@ -1096,13 +1096,15 @@ El resultado gráfico es el siguiente:
 
 ![alt text](/teoria/regresion2.png "Gráfico de dispersión")
 
-Mediante el programa *PSPP* el resultado es el siguiente:
+Mediante el programa **PSPP** el resultado es el siguiente:
 
-
+[Regresion lineal simple total](/teoria/regresion1.html){:target="_blank"}
 
 ![alt text](/teoria/regresion3.png "Gráfico de dispersión")
 
+Mediante el programa **PSPP** el resultado de la regresion por ciudad es el siguiente:
 
+[Regresion lineal simple por ciudad](/teoria/regresion2.html){:target="_blank"}
 
 
 

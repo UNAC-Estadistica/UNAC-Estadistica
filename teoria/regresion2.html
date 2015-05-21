@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>Resultado de PSPP</TITLE>
+<META NAME="generator" CONTENT="GNU pspp 0.8.4">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<STYLE TYPE="text/css">
+<!--
+body {
+  background: white;
+  color: black;
+  padding: 0em 12em 0em 3em;
+  margin: 0
+}
+body>p {
+  margin: 0pt 0pt 0pt 0em
+}
+body>p + p {
+  text-indent: 1.5em;
+}
+h1 {
+  font-size: 150%;
+  margin-left: -1.33em
+}
+h2 {
+  font-size: 125%;
+  font-weight: bold;
+  margin-left: -.8em
+}
+h3 {
+  font-size: 100%;
+  font-weight: bold;
+  margin-left: -.5em }
+h4 {
+  font-size: 100%;
+  margin-left: 0em
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  color: blue
+}
+html {
+  margin: 0
+}
+code {
+  font-family: sans-serif
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em
+}
+th { background: #dddddd; font-weight: normal; font-style: oblique }
+caption {
+  text-align: left
+}
+-->
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" TEXT="#000000"
+ LINK="#1f00ff" ALINK="#ff0000" VLINK="#9900dd">
+<DIV class="SORT_CASES"><H3>SORT CASES</H3>
+<PRE class="syntax">SORT CASES BY ciudad.<BR></PRE>
+<DIV class="SPLIT_FILE"><H3>SPLIT FILE</H3>
+<PRE class="syntax">SPLIT FILE SEPARATE BY  ciudad.<BR></PRE>
+<DIV class="REGRESSION"><H3>REGRESSION</H3>
+<PRE class="syntax">REGRESSION<BR>	/VARIABLES= Area<BR>	/DEPENDENT=	 Precio<BR>	/STATISTICS=COEFF CI R ANOVA.<BR></PRE>
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Resumen del modelo (Precio)</CAPTION>
+  <TR>
+    <TD STYLE="border-top: double; border-left: double"></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: double"><EM>R</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: double; border-left: double"><EM>R Cuadrada</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid"><EM>R Cuadrada Ajustada</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid; border-right: double"><EM>Error estándard del Estimador</EM></TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-bottom: double; border-left: double"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: double; border-left: thin solid">,46</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: double; border-left: double">,21</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: double; border-left: thin solid">,17</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: double; border-left: thin solid; border-right: double">65,09</TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>ANOVA (Precio)</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: double"><EM>Suma de Cuadrados</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid"><EM>df</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid"><EM>Cuadrado medio</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid"><EM>F</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid; border-right: double"><EM>Sign.</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double; border-left: thin solid"><EM>Regresión</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: double">23388,31</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">1</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">23388,31</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">5,52</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">,029</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH STYLE="border-left: thin solid"><EM>Residual</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">88983,16</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">21</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">4237,29</TD>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-bottom: double; border-left: double"></TH>
+    <TH STYLE="border-bottom: double; border-left: thin solid"><EM>Total</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: double">112371,48</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">22</TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid"></TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid"></TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid; border-right: double"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Coeficientes (Precio)</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: double; border-left: double"><EM>Unstandardized Coefficients</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid"><EM>Standardized Coefficients</EM></TH>
+    <TH STYLE="border-top: double; border-left: thin solid"></TH>
+    <TH STYLE="border-top: double; border-left: thin solid"></TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: double; border-left: thin solid; border-right: double"><EM>95% Confidence Interval for B</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH STYLE="border-left: thin solid"></TH>
+    <TD ALIGN="CENTER" STYLE="border-top: thin solid; border-left: double"><EM>B</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Error Estándar</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Beta</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-left: thin solid"><EM>t</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-left: thin solid"><EM>Sign.</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Límite Inferior</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: double"><EM>Límite Superior</EM></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double; border-left: thin solid"><EM>(Constant)</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: double">87,54</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">45,43</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">1,93</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">,067</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">-6,93</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">182,01</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-bottom: double; border-left: double"></TH>
+    <TH STYLE="border-bottom: double; border-left: thin solid">Area</TH>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: double">1,47</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">,62</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">,46</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">2,35</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">,029</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">,17</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid; border-right: double">2,76</TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Resumen del modelo (Precio)</CAPTION>
+  <TR>
+    <TD STYLE="border-top: double; border-left: double"></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: double"><EM>R</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: double; border-left: double"><EM>R Cuadrada</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid"><EM>R Cuadrada Ajustada</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid; border-right: double"><EM>Error estándard del Estimador</EM></TD>
+  </TR>
+  <TR>
+    <TD STYLE="border-top: double; border-bottom: double; border-left: double"></TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: double; border-left: thin solid">,75</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: double; border-left: double">,57</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: double; border-left: thin solid">,53</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-bottom: double; border-left: thin solid; border-right: double">127,27</TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>ANOVA (Precio)</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: double"><EM>Suma de Cuadrados</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid"><EM>df</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid"><EM>Cuadrado medio</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid"><EM>F</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid; border-right: double"><EM>Sign.</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double; border-left: thin solid"><EM>Regresión</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: double">252468,18</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">1</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">252468,18</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">15,59</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">,002</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH STYLE="border-left: thin solid"><EM>Residual</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">194369,03</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">12</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">16197,42</TD>
+    <TD STYLE="border-left: thin solid"></TD>
+    <TD STYLE="border-left: thin solid; border-right: double"></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-bottom: double; border-left: double"></TH>
+    <TH STYLE="border-bottom: double; border-left: thin solid"><EM>Total</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: double">446837,21</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">13</TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid"></TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid"></TD>
+    <TD STYLE="border-bottom: double; border-left: thin solid; border-right: double"></TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Coeficientes (Precio)</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double"></TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: double; border-left: double"><EM>Unstandardized Coefficients</EM></TH>
+    <TH ALIGN="CENTER" STYLE="border-top: double; border-left: thin solid"><EM>Standardized Coefficients</EM></TH>
+    <TH STYLE="border-top: double; border-left: thin solid"></TH>
+    <TH STYLE="border-top: double; border-left: thin solid"></TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: double; border-left: thin solid; border-right: double"><EM>95% Confidence Interval for B</EM></TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH STYLE="border-left: thin solid"></TH>
+    <TD ALIGN="CENTER" STYLE="border-top: thin solid; border-left: double"><EM>B</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Error Estándar</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Beta</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-left: thin solid"><EM>t</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-left: thin solid"><EM>Sign.</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid"><EM>Límite Inferior</EM></TD>
+    <TD ALIGN="CENTER" STYLE="border-top: thin solid; border-left: thin solid; border-right: double"><EM>Límite Superior</EM></TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH STYLE="border-top: double; border-left: thin solid"><EM>(Constant)</EM></TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: double">-114,99</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">88,22</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">,00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">-1,30</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">,215</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid">-307,19</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: double; border-left: thin solid; border-right: double">77,22</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-bottom: double; border-left: double"></TH>
+    <TH STYLE="border-bottom: double; border-left: thin solid">Area</TH>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: double">2,95</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">,75</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">,75</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">3,95</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">,002</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">1,32</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid; border-right: double">4,58</TD>
+  </TR>
+</TBODY></TABLE>
+
+</BODY>
+</HTML>
+<!-- end of file -->

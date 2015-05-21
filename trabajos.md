@@ -25,5 +25,22 @@ order: 3
   Colombia al correo **krcabrer@unac.edu.co**.
   
 
+### Trabajo 2 (Individual)
+
+- Realizar un análisis de regresión lineal simple para comparar los precios de las viviendas
+  en dos comunas distintas de Medellín de acuerdo a lo asignado por el profesor:
+
+- El trabajo escrito con en análisis de los resultados deberá contener:
+  * Portada.
+  * Objetivo(s).
+  * Diagrama de dispersión de los datos totales utilizando el Excel.
+    [Diagramas de dispersión y líneas de regresión en Excel](https://www.youtube.com/watch?v=ekr4GNlUY4A)
+  * Análisis de los resultados totales.
+  * Diagrama de dispersión de los datos por comuna.
+    [Diagramas de dispersión y líneas de regresión en Excel](https://www.youtube.com/watch?v=ekr4GNlUY4A)
+  * Análisis comparativo de las rectas de regresión de cada comuna.
+
+- Fecha de entrega: Viernes 29 de mayo de 2015 antes de las 17:59 hora colombiana, antes de la puesta del sol.
+  al correo **krcabrer@unac.edu.co**.
 
 
