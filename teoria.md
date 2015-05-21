@@ -1086,7 +1086,21 @@ En este caso la variable independiente son los metros cuadrados y la variable de
 
 Una manera de ver esa relación es mediante un diagrama de dispersión:
 
-![alt text](/teoria/casas.png "Gráfico de dispersión")
+![alt text](/teoria/regresion1.png "Gráfico de dispersión")
+
+
+Mediante el procedimiento de regresión lineal simple se puede estimar los 
+valores de la pendiente y el intercepto de la recta de regresión.
+
+El resultado gráfico es el siguiente:
+
+![alt text](/teoria/regresion2.png "Gráfico de dispersión")
+
+Mediante el programa *PSPP* el resultado es el siguiente:
+
+
+
+![alt text](/teoria/regresion3.png "Gráfico de dispersión")
 
 
 
