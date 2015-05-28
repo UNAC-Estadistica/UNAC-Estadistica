@@ -926,13 +926,13 @@ Resumen de pruebas de hipótesis para comparación de medias (muestras independi
   | $$\mu_1=\mu_2$$ | $$\mu_1 \neq \mu_2$$  | $$t_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{S_p\sqrt{1/n_1+1/n_2}}$$ | $$t_{calc} < -t_{tabla,\alpha/2,n_1+n_2-2}$$ o $$t_{calc} > t_{tabla,\alpha/2,n_1+n_2-2}$$ |
   |                 |                       | $$v=n_1+n_2-2, \sigma_1 = \sigma_2$$ pero desconocidas         |  |
   |                 |                       | $$S_p^2 = \frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$         |  |
-  | $$\mu_1=\mu_2$$ | $$\mu_1 < \mu_2$$     | $$t_{calc}=\frac{\bar{x}-\mu_0}{\sqrt{S_1^2/n_1+S_2^2/n_2}}$$|  $$t_{calc} < -t_{tabla,\alpha,v}$$ |
+  | $$\mu_1=\mu_2$$ | $$\mu_1 < \mu_2$$     | $$t_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{\sqrt{S_1^2/n_1+S_2^2/n_2}}$$|  $$t_{calc} < -t_{tabla,\alpha,v}$$ |
   |                 |                       | $$v = \frac{(S_1^2/n_1+S_2^2/n_2)^2}{\frac{(S_1^2/n_1)^2}{n_1-1}+\frac{(S_2^2/n_2)^2}{n_2-1}}$$ |    |
   |                 |                       | $$\sigma_1 \neq \sigma_2$$ y desconocidas                                               |    |
-  | $$\mu_1=\mu_2$$ | $$\mu_1 > \mu_2$$     | $$t_{calc}=\frac{\bar{x}-\mu_0}{\sqrt{S_1^2/n_1+S_2^2/n_2}}$$|  $$t_{calc} > t_{tabla,\alpha,v}$$ |
+  | $$\mu_1=\mu_2$$ | $$\mu_1 > \mu_2$$     | $$t_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{\sqrt{S_1^2/n_1+S_2^2/n_2}}$$|  $$t_{calc} > t_{tabla,\alpha,v}$$ |
   |                 |                       | $$v = \frac{(S_1^2/n_1+S_2^2/n_2)^2}{\frac{(S_1^2/n_1)^2}{n_1-1}+\frac{(S_2^2/n_2)^2}{n_2-1}}$$ |    |
   |                 |                       | $$\sigma_1 \neq \sigma_2$$ y desconocidas                                               |    |
-  | $$\mu_1=\mu_2$$ | $$\mu_1 \neq \mu_2$$  | $$t_{calc}=\frac{\bar{x}-\mu_0}{\sqrt{S_1^2/n_1+S_2^2/n_2}}$$ | $$t_{calc} < -t_{tabla,\alpha,v}$$ o $$t_{calc} > t_{tabla,\alpha,v}$$ |
+  | $$\mu_1=\mu_2$$ | $$\mu_1 \neq \mu_2$$  | $$t_{calc}=\frac{\bar{x}_1 - \bar{x}_2}{\sqrt{S_1^2/n_1+S_2^2/n_2}}$$ | $$t_{calc} < -t_{tabla,\alpha/2,v}$$ o $$t_{calc} > t_{tabla,\alpha/2,v}$$ |
   |                 |                       | $$v = \frac{(S_1^2/n_1+S_2^2/n_2)^2}{\frac{(S_1^2/n_1)^2}{n_1-1}+\frac{(S_2^2/n_2)^2}{n_2-1}}$$ |    |
   |                 |                       | $$\sigma_1 \neq \sigma_2$$ y desconocidas                                               |    |
   {: .table .table-hover}
@@ -954,7 +954,7 @@ Prueba estadística para igualdad de varianzas:
   | $$H_0$$   | $$H_1$$  | Estadístico de prueba |  Critero de rechazo |
   |:--------:|:-------------------:|:------------:|:------------:|
   |$$\sigma_1^2 = \sigma_2^2$$  | $$\sigma_1^2 \neq \sigma_2^2$$ | $$f_{calc} = \frac{S_1^2}{S_2^2}$$ | $$f_{calc} < f_{tabla, 1-\alpha/2, n_1-1,n_2-1}$$ o $$f_{calc} > f_{tabla,\alpha/2, n_1-1,n_2-1}$$ |
-  |                             |                                |                                    | $$f_{calc,1-\alpha/2,n_1-1,n_2-1}=1/f_{calc,\alpha,n_2-1,n_1-1}$$ |
+  |                             |                                |                                    | $$f_{calc,1-\alpha/2,n_1-1,n_2-1}=1/f_{calc,\alpha/2,n_2-1,n_1-1}$$ |
   {: .table .table-hover}
 
 ***
