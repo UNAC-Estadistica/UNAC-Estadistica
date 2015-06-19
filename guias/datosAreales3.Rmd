@@ -1,0 +1,53 @@
+---
+title: "Datos areales"
+author: "Universidad Nacional de Colombia, Sede Medellín"
+date: '`r format(Sys.Date(),"%A, %d de %B de %Y")`'
+output:
+  html_document:
+    highlight: textmate
+    theme: readable
+    toc: yes
+---
+
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=12, 
+                      fig.height=8)
+```
+
+## Lectura del mapa de municipios de Antioquia.
+
+```{r}
+# Paquetes requeridos
+require(spdep)
+require(maps)
+require(maptools)
+require(classInt)
+require(RColorBrewer)
+require(data.table)
+require(rgdal)
+require(rgeos)
+```
+
+```{r}
+muniantioq <- readShapeSpatial("muniantioq.shp")
+proj4string(muniantioq) <- CRS("+proj=tmerc +lat_0=4.599047222222222  +lon_0=-74.08091666666667 +k=1 +x_0=1000000 +y_0=1000000 +ellps=intl +towgs84=307,304,-318,0,0,0,0 +units=m +no_defs")
+```
+
+```{r}
+carreteras <- readShapeSpatial("antioquia_highway.shp")
+proj4string(carreteras) <- CRS("+proj=longlat +datum=WGS84")
+carreteras <- spTransform(carreteras, CRS(proj4string(muniantioq)))
+```
+
+## Despliegue del mapa de municipios de Antioquia con carreteras
+```{r}
+plot(muniantioq)
+plot(carreteras, col="red", add=TRUE)
+```
+
+```{r}
+inter1 <- over(muniantioq,carreteras)
+inter2 <- over(carreteras,muniantioq)
+```
+
