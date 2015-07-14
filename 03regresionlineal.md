@@ -2,7 +2,7 @@
 layout: curso
 title: 'Regresión lineal'
 custom_js: 'mathjax'
-order: 4
+order: 5
 ---
 
 

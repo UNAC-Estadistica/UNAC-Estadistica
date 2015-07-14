@@ -2,7 +2,7 @@
 layout: curso
 title: 'Pruebas de hipótesis'
 custom_js: 'mathjax'
-order: 3
+order: 4
 ---
 
 

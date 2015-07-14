@@ -2,7 +2,7 @@
 layout: curso
 title: 'Probabilidad'
 custom_js: 'mathjax'
-order: 2
+order: 3
 ---
 
 
