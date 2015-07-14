@@ -1,9 +1,8 @@
----
+<!---
 layout: curso
 title: 'Ejercicios'
-order: 6
 custom_js: 'mathjax'
----
+--->
 
 ## Probabilidad
 

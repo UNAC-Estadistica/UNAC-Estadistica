@@ -1,8 +1,7 @@
----
+<!---
 layout: curso
 title: 'Examen final'
-order: 7
----
+--->
 
 
 ## ¿Afecta la música la concentración?
