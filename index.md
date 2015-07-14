@@ -9,9 +9,10 @@ información y aportar conocimiento.
 
 
 ### Unidad 1: Introducción a la estadística.
- 1. Concepto global de estadística.
- 2. Clases de estadística y aplicaciones.
- 3. Definiciones básicas (población, nuestra, variables, niveles de medición, etc).
+ 1. Episodio de la serie NUMB3RS (45 minutos). 
+ 2. Concepto global de estadística.
+ 3. Clases de estadística y aplicaciones.
+ 4. Definiciones básicas (población, nuestra, variables, niveles de medición, etc).
 
 ### Unidad 2: Descripción de datos
  1. Distribuciones de frecuencia, intervalos y puntos medios de clase.
@@ -41,12 +42,5 @@ información y aportar conocimiento.
  3. Regresión lineal
  4. Error estadístico y pruebas de confiabilidad
 
-### Complementarios
-
-- [video para meditar](VID-20150302-WA0000.mp4){:target="_blank"}
-
-- [Solución al parcial de probabilidad](parcial1.pdf){:target="_blank"}
-
-- [Examen ejemplo del GRE](/guias/ejemplo1.png){:target="_blank"}
 
   
