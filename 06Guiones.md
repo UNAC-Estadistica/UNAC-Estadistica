@@ -2,7 +2,7 @@
 layout: curso
 title: 'Guiones'
 custom_js: 'mathjax'
-order: 6
+order: 8
 ---
 
 ## Ejemplo 1: Hábitos de estudio
