@@ -18,8 +18,8 @@ En particular se prefiere que sea una carpeta nueva para impedir que se
 se confunda con bases de datos y guiones diferentes.
 
 En la imagen se muestra los archivos de
-[tiemposReacion.xlsx](/datos/tiemposReaccion.xlsx){:target="_blank"} y
-[tiemposReacion.csv](/datos/tiemposReaccion.csv){:target="_blank"}.
+[tiemposReaccion.xlsx](/datos/tiemposReaccion.xlsx){:target="_blank"} y
+[tiemposReaccion.csv](/datos/tiemposReaccion.csv){:target="_blank"}.
 
 Recuerden que en este 
 [enlace](http://www.gerencie.com/manejo-de-archivos-delimitado-por-comas.html){:target="_blank"} se encuentra el procedimiento para convertir un archivo
