@@ -21,10 +21,5 @@ order: 8
 
 [colores](/docs/ColorChart.pdf){:target="_blank"}
 
-## Ejemplo : Hábitos de estudio
-
-- [Ejemplo ](/guiones/01LecturaBaseDeDatos.html){:target="_blank"}
-- [Base de datos (excel)](/guiones/HabitosEstudio.xlsx){:target="_blank"}
-- [Base de datos (csv)](/guiones/HabitosEstudio.csv){:target="_blank"}
 
 
