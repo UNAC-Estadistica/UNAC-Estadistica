@@ -144,4 +144,45 @@ Este archivo lo abre automáticamente el RStudio al iniciar una sesión en el mi
 
 <img src="/lecturaR/lecturaR14n.png" alt="Lectura de bases de datos  en el R" style="width: 800px;"/>
 
+---
 
+---
+
+## Situaciones especiales
+
+### Archivo con formato anglosajón (Separados por comas)
+
+Se pueden encontrar archivos que como el siguiente:
+[tiemposReaccion_dif_1.csv](/datos/tiemposReaccion_dif_1.csv){:target="_blank"},
+no están separados los campos por comas (,) y no por punto y coma (;) como
+lo están los formatos latinoamericanos.
+
+En este caso se examina con el block de notas cuál es el tipo de separador, y
+de acuerdo a esta situación el código cambia sólo el la función `read.`. 
+
+En este caso se utiliza como se muestra a continuación la función `read.csv()`
+
+
+    # Lectura de los tiempos de reacción.
+     
+    TR <- read.csv("tiemposReaccion_dif_1.csv")
+    TR
+
+### Archivo con codificación UTF8 (Codificación más universal)
+
+El formato de windows (latin1) no es universal para la codificación de archivos,
+por eso es frecuente encontrar archivos como el siguiente,
+[tiemposReaccion_dif_2.csv](/datos/tiemposReaccion_dif_2.csv){:target="_blank"},
+ que tiene formato UTF8. Y se identifica porque las tíldes no se leen correctamente. 
+
+Para solucionar este inconveniente se utiliza la modificación siguiente a
+la función `read`. 
+
+    # Lectura de los tiempos de reacción.
+     
+    TR <- read.csv("tiemposReaccion_dif_2.csv", enc = "utf8")
+    TR
+
+Esta modificación funciona tanto si está en formato latinoamericano, como en
+formato anglosajón, es decir que funciona tanto con `read.csv2()` como
+con `read.csv()`.
