@@ -6,9 +6,11 @@ order: 9
 ---
 ## Lectura de datos en R
 
-La mejor manera de tabajar con datos es realizando una lectura de una base de datos externa para procesar.
+La mejor manera de tabajar con datos es realizando una lectura
+de una base de datos externa para procesar.
 
-A continuación se indicarán los pasos y las recomendaciones para realizar este procedimiento.
+A continuación se indicarán los pasos y 
+las recomendaciones para realizar este procedimiento.
 
 ### Ubicación de los archivos que tienen la base de datos.
 
@@ -22,11 +24,14 @@ En la imagen se muestra los archivos de
 [tiemposReaccion.csv](/datos/tiemposReaccion.csv){:target="_blank"}.
 
 Recuerden que en este 
-[enlace](http://www.gerencie.com/manejo-de-archivos-delimitado-por-comas.html){:target="_blank"} se encuentra el procedimiento para convertir un archivo
-de tipo `.xlsx` a uno de tipo `.csv`.
+[enlace](http://www.gerencie.com/manejo-de-archivos-delimitado-por-comas.html){:target="_blank"}
+ se encuentra el procedimiento para convertir un archivo de tipo
+ `.xlsx` a uno de tipo `.csv`.
 
-En la misma dirección, bajo el título de [Descargar trabajo completo](http://uploadgerencie.com/medios/excel-separado-comas.zip), como archivo comprimido, se muestran algunos otros aspectos que hay que tener en cuenta cuando se hace este tipo de conversión y procedimiento.
-
+En la misma dirección, bajo el título de
+[Descargar trabajo completo](http://uploadgerencie.com/medios/excel-separado-comas.zip),
+ como archivo comprimido, se muestran algunos otros aspectos que hay que
+ tener en cuenta cuando se hace este tipo de conversión y procedimiento.
 
 <img src="/lecturaR/lecturaR01n.png" alt="Lectura de bases de datos  en el R" style="width: 800px;"/>
 
@@ -62,7 +67,6 @@ Para que el RStudio se ubique correctamente se procede a realizar el siguiente c
 `Session` > `Set Working Directory` > `To Source File Location`.
 
 Así como se muestra en la siguiente imagen.
-
 
 <img src="/lecturaR/lecturaR06n.png" alt="Lectura de bases de datos  en el R" style="width: 800px;"/>
 
@@ -168,7 +172,7 @@ En este caso se utiliza como se muestra a continuación la función `read.csv()`
     TR <- read.csv("tiemposReaccion_dif_1.csv")
     TR
 
-### Archivo con codificación UTF8 (Codificación más universal)
+### Archivo con codificación UTF-8 (Codificación más universal)
 
 El formato de windows (latin1) no es universal para la codificación de archivos,
 por eso es frecuente encontrar archivos como el siguiente,
@@ -176,7 +180,7 @@ por eso es frecuente encontrar archivos como el siguiente,
  que tiene formato UTF-8. Y se identifica porque las tíldes no se leen correctamente. 
 
 Para solucionar este inconveniente se procede a modificar el código de la siguiente
-manera para que la codificación se la adecuada:
+manera para que la codificación sea la adecuada:
 
     # Lectura de los tiempos de reacción.
      
