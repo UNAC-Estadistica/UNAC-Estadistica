@@ -173,14 +173,14 @@ En este caso se utiliza como se muestra a continuación la función `read.csv()`
 El formato de windows (latin1) no es universal para la codificación de archivos,
 por eso es frecuente encontrar archivos como el siguiente,
 [tiemposReaccion_dif_2.csv](/datos/tiemposReaccion_dif_2.csv){:target="_blank"},
- que tiene formato UTF8. Y se identifica porque las tíldes no se leen correctamente. 
+ que tiene formato UTF-8. Y se identifica porque las tíldes no se leen correctamente. 
 
-Para solucionar este inconveniente se utiliza la modificación siguiente a
-la función `read`. 
+Para solucionar este inconveniente se procede a modificar el código de la siguiente
+manera para que la codificación se la adecuada:
 
     # Lectura de los tiempos de reacción.
      
-    TR <- read.csv("tiemposReaccion_dif_2.csv", enc = "utf8")
+    TR <- read.csv("tiemposReaccion_dif_2.csv", enc = "UTF-8")
     TR
 
 Esta modificación funciona tanto si está en formato latinoamericano, como en
