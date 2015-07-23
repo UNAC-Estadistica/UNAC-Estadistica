@@ -16,8 +16,8 @@ order: 8
 - [Ejemplo gráficos 2](/guiones/guion05_grafica.R){:target="_blank"}
 - [Tarea gráfica](/guiones/guion06_grafica.R){:target="_blank"}
 
-<img src="/docs/points.png" alt="Puntos en R" style="width: 400px;"/>
-<img src="/docs/lines.png" alt="Puntos en R" style="width: 400px;"/>
+<img src="/docs/points.png" alt="Puntos en R" style="width: 450px;"/>
+<img src="/docs/lines.png" alt="Puntos en R" style="width: 450px;"/>
 
 [colores](/docs/ColorChart.pdf){:target="_blank"}
 
