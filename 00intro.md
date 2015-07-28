@@ -90,6 +90,71 @@ Todos los individuos de la población tiene la misma posibilidad de entrar en la
 Los resultados de varias muestras pueden ser diferentes, aún si se toma
 de la misma población.
 
+## Tipos de variables
+
+A continuación se menciona una clasificación usual de los tipos de variables
+que se pueden utilizar en estadística.
+
+### Variables cualitativas
+
+Son variables que indican cualidades, y no cantidades.
+
+Se dividen en dos categorías ordinales y nominales.
+#### Variables ordinales
+Las variables cualitativas ordinales indican una cualidad pero que tienen
+algún orden.
+
+Por ejemplo agrado de un sabor: desagradable, ni agradable ni
+desagradable, agradable, muy agradable.
+
+#### Variables nominales
+Las variables cualitativas nominales indican una categoría que no refiere
+ningún orden en particular.
+
+Por ejemplo el género: masculino, femenino. Ciudad de origen: Medellín,
+Bogotá, Bucaramanga, etc.
+
+### Variables cuantitativas
+
+Son variables que indican cantidades o magnitudes.
+
+Se dividen en discretas y continuas y también se clasifican como variables
+de razón o de intervalo.
+
+#### Variables discretas
+
+Son variables que se refieren a cantidades enteras y que no admiten fracciones.
+Por ejemplo número de hijos: 0, 1, 2, .... 
+
+#### Variables continuas
+
+Son variables que pueden tomar valores fraccionarios y todos los posibles
+varlores de los número reales.
+
+Por ejemplo estatura: 1.67, 1.68, 1.712, etc.
+
+#### De razón
+
+Las variables de razón son en las que se tiene que el cero tiene un significado
+de ausencia de la característica y que se puden hacer todas las operaciones
+aritméticas como suma, resta, multiplicación y división.
+
+Por ejemplo: Salario.
+
+#### De intervalo
+
+Son variables que tienen un cero relativo. Y se es utiliza como referencia.
+Se pueden hacer operaciones de suma y resta, pero no de multiplicación o
+de división.
+
+Por ejemplo: Temperatura en grados centígrados: El cero no es ausencia de
+calor, solo es el punto de congelación del agua. Y una temperatura de 20 grados
+centígrados no es el doble de una temperatura de 10 grados centígrados.
+
+La temperatura en Kelvin, si es una variable de razón, porque el cero
+absoluto indica ausencia total de calor.
+
+
 
 
 
