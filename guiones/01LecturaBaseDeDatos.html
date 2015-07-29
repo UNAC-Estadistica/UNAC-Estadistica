@@ -347,12 +347,15 @@ img {
 </div>
 <div id="guardar-una-subbase-con-algun-criterio" class="section level2">
 <h2>Guardar una subbase con algún criterio</h2>
-<pre class="r"><code># Guarda en alguna subbase las mujeres de estrato mayor de 4.
-encuestaHabitos2 &lt;- subset(encuestaHabitos, Género == &quot;Femenino&quot; &amp; Estrato &gt;= 3)</code></pre>
+<pre class="r"><code># Guarda en alguna subbase las mujeres de estrato mayor o igual a 3.
+encuestaHabitos2 &lt;- subset(encuestaHabitos, Género == &quot;Femenino&quot; &amp; Estrato &gt;= 3)
+# Ver las dimensiones de la nueva base de datos
+dim(encuestaHabitos2)</code></pre>
+<pre><code>## [1] 14 25</code></pre>
 </div>
 <div id="hallar-estadisticos-resumen-de-la-subbase" class="section level2">
 <h2>Hallar estadísticos resumen de la subbase</h2>
-<pre class="r"><code># Muestra los estadísticos resumen de la subbase utilizada
+<pre class="r"><code># Muestra los estadísticos resumen de la subbase calculada.
 summary(encuestaHabitos2)</code></pre>
 <pre><code>##      NroEnc            Género        Edad                 Carrera      Semestre     
 ##  Min.   : 2.00   Femenino :14   Min.   :16.00   Estadística   :11   Min.   : 2.000  
@@ -399,7 +402,7 @@ summary(encuestaHabitos2)</code></pre>
 <h2>Seleccionar un hábito de estudio y variables de análisis de la subbase.</h2>
 <pre class="r"><code># Selección del hábito de estudio Trasnocha.
 encuestaHabitos3 &lt;- subset(encuestaHabitos2, 
-                           select = c(Edad, Carrera, Estrato, PromAcad, H10_Trasnocha))</code></pre>
+                  select = c(Edad, Carrera, Estrato, PromAcad, H10_Trasnocha))</code></pre>
 </div>
 <div id="hallar-los-estadisticos-de-la-base-seleccionada." class="section level2">
 <h2>Hallar los estadísticos de la base seleccionada.</h2>
@@ -408,7 +411,9 @@ encuestaHabitos3 &lt;- subset(encuestaHabitos2,
 summary(encuestaHabitos3$PromAcad)</code></pre>
 <pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##   3.600   3.900   4.000   4.021   4.250   4.500</code></pre>
-<pre class="r"><code>with(encuestaHabitos3, table(H10_Trasnocha))</code></pre>
+<pre class="r"><code># Hallar una tabla de frecuencia de los que trasnochan o no de
+# la subbase hallada
+with(encuestaHabitos3, table(H10_Trasnocha))</code></pre>
 <pre><code>## H10_Trasnocha
 ##  0  1 
 ## 12  2</code></pre>
