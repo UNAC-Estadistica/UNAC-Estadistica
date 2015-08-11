@@ -5,22 +5,28 @@ custom_js: 'mathjax'
 order: 3
 ---
 
+## Contenido
+{: .no_toc}
 
-### Definición
+* ToC
+{: toc}
+
+### Definición de probabilidad.
+
 La probabilidad es una medida de la incertidumbre.
 
 La probabilidad mide la posibilidad con la cual pueda ocurrir un evento al realizar un experimento.
 
 Si denotamos $$A$$ por el evento, entonces $$P(A)$$ se asocia a la probabilidad de ese evento.
 
-Por ejemplo si examinamos el estado del tiempo para Medellín y nos dice que a las 11:00 pm de 
-hoy hay una probabilidad del 51% de que llueva entonces escribimos:
+Por ejemplo si examinamos el estado del tiempo para Medellín y nos dice que a las 6:00 pm de 
+hoy hay una probabilidad del 35% de que llueva entonces escribimos:
 
 $$
 \begin{aligned}
- A & :  \textrm{Llover en Medellín a las 11:00 pm del día de hoy.} \\
- P(A) & :  \textrm{Probabilidad de que lloverá en Medellín a las 11:00 pm el día de hoy.}\\
- P(A) & = 0.51
+ A & :  \textrm{Llover en Medellín a las 6:00 pm del día de hoy.} \\
+ P(A) & :  \textrm{Probabilidad de que lloverá en Medellín a las 6:00 pm el día de hoy.}\\
+ P(A) & = 0.35
 \end{aligned}
 $$
 
@@ -28,13 +34,13 @@ La probabilidad está definida sólo para números reales entre 0 y 1, es decir 
 
 ![alt text](/teoria/probabilidad.png "Probabilidad")
 
-### Definiciones
+### Definciones de términos.
 
-- **Espacio Muestral**: Es el conjunto de todas los posibles resultados de un experimento. Se
-  suele denotar por $$S$$.
+- **Espacio Muestral**: Es el conjunto de todas los posibles resultados de un experimento 
+  o de un proceso aleatorio. Se suele denotar por $$S$$.
 
 - **Evento**: Es una subconjunto específico de resultados de un experimento.
-  Es un subconjunto del espacio muestral. Se utilizan letras mayúsculas para denotarlo.
+  Es un subconjunto del espacio muestral. Se utilizan letras mayúsculas para denotarlo ($$A, B, C, ...$$).
 
 ### ¿Cómo se calculan probabilidades?
 - Fórmula frecuentista: Si todos los posibles resultados tienen la misma posibilidad de ocurrir,
@@ -46,29 +52,29 @@ $$
 \end{aligned}
 $$
 
-- Ejemplo 1: Definimos el experimento como elegir al azar una persona de un grupo de 10 personas de las cuales
+- Ejemplo 1: Definimos el experimento como elegir al azar una persona de un grupo de 11 personas de las cuales
   sólo siete saben la definición de probabilidad.
   
   ¿Cuál es la probabilidad de que esa persona que elijamos al azar sepa la definción de probabilidad?
  
-  $$S = \{\textrm{sabe, sabe, sabe, sabe, sabe, sabe, sabe, no sabe, no sabe, no sabe}\}$$
+  $$S = \{\textrm{sabe, sabe, sabe, sabe, sabe, sabe, sabe, no sabe, no sabe, no sabe, sabe}\}$$
 
   $$E: \textrm{Elegir una persona que sabe la definición de probabilidad}$$
 
-  $$E= \{\textrm{sabe, sabe, sabe, sabe, sabe, sabe, sabe} \}$$
+  $$E= \{\textrm{sabe, sabe, sabe, sabe, sabe, sabe, sabe, sabe} \}$$
 
   Entonces:
 
   $$
   \begin{aligned}
-  P(E) & = \frac{\textrm{Total de personas que sabe la definición de probabilidad}}{\textrm{Total de personas del grupo}} = \frac{7}{10} = 0.7 \\
-  P(E) & = 0.7
+  P(E) & = \frac{\textrm{Total de personas que sabe la definición de probabilidad}}{\textrm{Total de personas del grupo}} = \frac{8}{11} = 0.727272... \\
+  P(E) & = 0.727272...
   \end{aligned}
   $$
 
 - Ejempo 2: ¿Cuál es la probabilidad de que tomando dos personas ambas sepan la definición de probabilidad?
 
-  En este caso el espacio muestral es el número total de parejas que puedo formar con las diez personas. 
+  En este caso el espacio muestral es el número total de parejas que puedo formar con las once personas. 
   Utilizando la fórmula de calcular de un grupo de $$n$$ individuos formar grupos de $$r$$ individuos:
 
   $$
@@ -86,18 +92,21 @@ $$
 
   $$
   \begin{aligned}
-    {n \choose {r_1 r_2}} = {c_1 \choose r_1} \cdot {c_2 \choose r_1}
+    {n \choose {r_1 \quad r_2}} = {c_1 \choose r_1} \cdot {c_2 \choose r_1}
   \end{aligned}
   $$
 
   Esta fórmula también se puede extender para cuando se tengan más de dos clases.
   
-  En nuestro ejemplo el número total de grupos de dos personas que se pueden formar del grupo de diez personas es:
+  En nuestro ejemplo el número total de grupos de dos personas que se pueden formar del grupo de once personas es:
 
   $$
   \begin{aligned}
-    {10 \choose 2} & = \frac{10!}{2!(10-2)!} = \frac{10!}{2! \cdot 8!} = \frac{10 \cdot 9 }{ 2} = 5 \cdot 9 = 45\\
-    {10 \choose 2} & = 45
+    {11 \choose 2} & = \frac{11!}{2!(11-2)!} = \frac{11!}{2! \cdot 9!} = 
+      \frac{11 \cdot 10 \cdot 9! }{ 2 \cdot 9!} =
+      \frac{11 \cdot 10 }{ 2} =
+      11 \cdot 5 = 55\\
+    {11 \choose 2} & = 55
   \end{aligned}
   $$
 
@@ -107,11 +116,11 @@ $$
 
   $$
   \begin{aligned}
-    {10 \choose {2 \quad 0}} & = {7 \choose 2} {3 \choose 0}  = 
-    \frac{7!}{2!(7-2)!} \cdot \frac{3!}{0!(3-0)!} =
-      = \frac{7!}{2! \cdot 5!} \cdot \frac{3!}{3!} 
-      = \frac{7 \cdot 6 }{ 2}  \cdot 1 = 7 \cdot 3 = 21\\
-    {10 \choose {2 \quad 0}} & = 21
+    {11 \choose {2 \quad 0}} & = {8 \choose 2} {3 \choose 0}  = 
+    \frac{8!}{2!(8-2)!} \cdot \frac{3!}{0!(3-0)!} =
+      = \frac{8!}{2! \cdot 6!} \cdot \frac{3!}{3!} 
+      = \frac{8 \cdot 7 }{ 2}  \cdot 1 = 4 \cdot 7 = 28\\
+    {11 \choose {2 \quad 0}} & = 28
   \end{aligned}
   $$
 
@@ -119,8 +128,9 @@ $$
 
   $$
   \begin{aligned}
-    P(E) & = \frac{\textrm{Total de grupos donde ambas personas saben la definición de probabilidad}}{\textrm{Total de grupos de dos personas}} = \frac{21}{45} = \frac{7}{15} \approx 0.46..\\
-    P(E) & = \frac{7}{15} \approx 0.46..
+    P(E) & = \frac{\textrm{Total de grupos donde ambas personas saben la definición de probabilidad}}{\textrm{Total de grupos de dos personas}} =
+             \frac{28}{55} \approx 0.51\\
+    P(E) & = \frac{28}{55} \approx 0.51
   \end{aligned}
   $$
 
