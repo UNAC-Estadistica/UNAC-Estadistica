@@ -22,5 +22,7 @@ order: 8
 
 [colores](/docs/ColorChart.pdf){:target="_blank"}
 
+[Fórmulas de probabilidad](/docs/cheat_sheet.pdf){:target="_blank"}
+
 
 

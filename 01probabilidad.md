@@ -531,6 +531,9 @@ $$
     Entonces la probabilidad de que una persona elegida al azar tenga diabetes, dado que el resultado de la prueba dió 
     positivo para diabetes es de aproximadamente 0.83.
 
+### Fórmulas para el cálculo de probabilidades
+
+[Fórmulas de probabilidad](/docs/cheat_sheet.pdf){:target="_blank"}
 
 
 
