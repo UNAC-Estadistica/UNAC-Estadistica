@@ -43,7 +43,7 @@ order: 11
    una tarjeta ¿Qué probabilidad hay que la combinación sea una flor
    de color rojo y una tarjeta elaborada?
 
-3. Si la respuesta correcta de un exámen tipo ECAES es una sóla,
+3. Si la respuesta correcta de un examen tipo ECAES es una sóla,
    de 5 posibilidades. ¿Cuál es la probabilidad de que un estudiante
    acierte la respuesta correcta por  azar?
 
