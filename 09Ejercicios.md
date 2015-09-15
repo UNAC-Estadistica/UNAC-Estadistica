@@ -143,5 +143,51 @@ order: 11
 
 ----
 
+## Ejercicios con la tabla normal (Z) y la tabla t
+
+1. Calcule $$P(Z < 1)$$
+
+2. Calcule $$P(Z < -1)$$
+
+3. Calcule $$P(Z < 2.2)$$
+
+4. Calcule $$P(Z < -2.2)$$
+
+5. Calcule $$P(Z > 1.5)$$
+
+6. Calcule $$P(Z > -1.5)$$
+
+7. Calcule $$P(Z < -2 \cup Z > 2)$$
+
+8. Calcule el valor de $$z$$ tal que $$P(Z < z) = 0.9$$ es equivalente a $$Z_{tabla,0.9}$$.
+
+9. Calcule el valor de $$z$$ tal que $$P(Z < z) = 0.8$$ es equivalente a $$Z_{tabla,0.8}$$.
+
+10. Calcule el valor de $$z$$ tal que $$P(Z < z) = 0.01$$ es equivalente a $$Z_{tabla,0.01}$$.
+
+11. Calcule el valor de $$z$$ tal que $$P(Z < z) = 0.001$$ es equivalente a $$Z_{tabla,0.001}$$.
+
+12. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.01 con 2 grados de libertad, es decir $$t_{tabla,0.01, 2}$$.
+
+13. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.01 con 10 grados de libertad, es decir $$t_{tabla,0.01, 10}$$.
+
+14. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.05 con 10 grados de libertad, es decir $$t_{tabla,0.05, 10}$$.
+
+15. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.005 con 10 grados de libertad, es decir $$t_{tabla,0.005, 10}$$.
+
+16. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.05 con 20 grados de libertad, es decir $$t_{tabla,0.05, 20}$$.
+
+17. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.025 con 19 grados de libertad, es decir $$t_{tabla,0.025, 19}$$.
+
+18. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.1 con 19 grados de libertad, es decir $$t_{tabla,0.1, 19}$$.
+
+19. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.005 con 19 grados de libertad, es decir $$t_{tabla,0.005, 19}$$.
+
+20. Calcule el valor de $$t$$ tal que $$P(T > t) = $$ 0.05 con 29 grados de libertad, es decir $$t_{tabla,0.05, 29}$$.
+
+----
+
+----
+
 
 
