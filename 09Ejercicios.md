@@ -189,5 +189,45 @@ order: 11
 
 ----
 
+Normalización:
+
+Si $$X \sim N(\mu,\sigma^2)$$ entonces si se hace la
+siguiente transformación $$Z = \frac{X-\mu}{\sigma}$$ ahora $$Z \sim N(0,1)$$
+
+----
+
+----
 
 
+## Ejercicios de distribución normal
+
+1. La duración promedios de un televisor es de ocho años y su desviación típica
+   (desviación estándar) es de 0.5 años. Sabiendo que la vida útil de los
+   televisores de distribuye normal, hallar la probabilidad de que al
+   adquirir un televisor dure más de nueve años.
+   
+2. Las ventas mensuales de llantas para automóviles en el Medellín,
+   tiene una distribución normal con media de $12.000.000 y una desviación
+   estándar de $2'250.000. Al vendedor le gustaría establecer niveles de
+   inventario de manera que sólo haya 5% de probabilidad de que se agoten
+   las existencias. ¿Dónde se debe establecer los niveles de inventario?
+
+   
+1. La media de los pesos de 500 estudiantes de un colegio es 70 kg y la desviación típica 3 kg. Suponiendo que los pesos se distribuyen normalmente, hallar cuántos estudiantes pesan:
+  - Entre 60 kg y 75 kg.
+  - Más de 90 Kg.
+  - Menos de 64 Kg.
+  - 64 Kg exactos.
+  - 64 kg o menos.
+  - ¿Por encima de qué peso están el 90% de los estudiantes?
+
+2.  En una ciudad se estima que la temperatura máxima en el mes de junio sigue una distribución normal, con media 23° y desviación típica 5°. Calcular el número de días del mes en los que se espera alcanzar máximas entre 21° y 27°
+
+3. El tiempo de vida útil de una SSD (Unidad de Estado Sólido) se distribuye
+normal con un promedio de 7 años y una desviación estándar de 2 años.
+  - ¿Cuál es la probabilidad de que una Unidad de Estado Sólido dure más de 10 años?
+  - Si un vendedor hace un reemplazo de garantía por las unidades que duren
+    menos de un cierto número de años. ¿Cuál es el número de años que debe
+    garantizar para que sólo el 2.5% de las unidades sean reeplazadas por garantía?
+    
+    
