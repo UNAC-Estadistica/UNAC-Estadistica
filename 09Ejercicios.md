@@ -147,7 +147,11 @@ order: 11
 
 1. Calcule $$P(Z < 1)$$
 
+1. Calcule $$P(Z < 1.5)$$
+
 2. Calcule $$P(Z < -1)$$
+
+3. Calcule $$P(Z < 1.5)$$
 
 3. Calcule $$P(Z < 2.2)$$
 
